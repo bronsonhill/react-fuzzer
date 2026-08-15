@@ -22,12 +22,21 @@ export interface AbstractionOptions {
   literalHooks?: string[];
   /** Hook names excluded from state identity entirely. */
   ignoreHooks?: string[];
-  /** Full override; if it returns a StateKey, that value wins outright. */
-  custom?: (snapshot: ComponentSnapshot) => StateKey | undefined;
+  /**
+   * Full override; if it returns a StateKey, that value wins outright.
+   * `props` (the component's current prop values, M2.5 Deliverable C) is
+   * passed as a second argument so a `custom` function can derive bounds
+   * (e.g. Counter's min/max) from the actual props of this run instead of
+   * hard-coding them, which is what M2's Counter override had to do because
+   * this signature used to only see hooks. Existing single-argument `custom`
+   * implementations remain valid: TypeScript allows a callback that ignores
+   * trailing parameters.
+   */
+  custom?: (snapshot: ComponentSnapshot, props: Record<string, unknown>) => StateKey | undefined;
 }
 
 /** Only these hook kinds contribute to state identity; everything else is presentation/plumbing. */
-const IDENTITY_KINDS = new Set(["state", "reducer"]);
+export const IDENTITY_KINDS = new Set(["state", "reducer"]);
 
 function indexBasedNames(identityHooks: HookRecord[]): string[] {
   return identityHooks.map((h) => `hook${h.index}`);
@@ -40,8 +49,11 @@ function indexBasedNames(identityHooks: HookRecord[]): string[] {
  * runtime hook list in length or kind order, since a mismatch there means
  * the static analysis missed or misattributed a hook and trusting it would
  * silently produce a wrong mapping rather than a merely coarse one.
+ *
+ * Exported for reuse by src/abstraction/adaptive.ts (M2.5), which needs the
+ * same name resolution but a different (dynamic) canonicalisation rule.
  */
-function resolveHookNames(
+export function resolveHookNames(
   identityHooks: HookRecord[],
   options: AbstractionOptions,
   warnings: string[],
@@ -80,8 +92,12 @@ function resolveHookNames(
  * Abstracts one component's hook values into a StateKey. `custom`, if
  * provided and it returns a value, wins outright over the default rules.
  */
-export function abstractState(snapshot: ComponentSnapshot, options: AbstractionOptions): StateKey {
-  const custom = options.custom?.(snapshot);
+export function abstractState(
+  snapshot: ComponentSnapshot,
+  options: AbstractionOptions,
+  props: Record<string, unknown> = {},
+): StateKey {
+  const custom = options.custom?.(snapshot, props);
   if (custom) return custom;
 
   const warnings: string[] = [];
