@@ -33,14 +33,49 @@ export interface StateNode {
   key: string;
   fields: Record<string, unknown>;
   provenance: Provenance;
-  witness: { props: unknown; actions: ActionRef[] };
+  witness: {
+    props: unknown;
+    actions: ActionRef[];
+    /**
+     * Set when this state is only reachable via an automatic transition
+     * (a timer firing, a promise resolving) after `actions`, not by
+     * `actions` alone landing here directly under settle()'s
+     * settle-to-quiescence contract. Such a state cannot be independently
+     * replayed to (replaying `actions` and settling will run straight past
+     * it to wherever it actually settles) — see `transient` below.
+     */
+    note?: string;
+  };
   domFingerprint?: string;
+  /**
+   * True for a state observed only as an intermediate commit en route to
+   * quiescence — never (yet) observed as the point where settle() actually
+   * stopped. Exploration does not try user actions from a transient state
+   * (see docs/m3-5-refinement-report.md's "transient-state rule"): trying to
+   * stop and interact mid-flight isn't something settle()'s contract can
+   * reproduce, and treating a transient state as an ordinary frontier node
+   * would explode the graph with states no replay could ever land back on.
+   * A state can start transient and later be reclassified (transient:
+   * false) if some other action sequence settles there for real; once that
+   * happens its actions are seeded like any other state's.
+   */
+  transient?: boolean;
 }
+
+export type EdgeKind = "user" | "auto";
+
+/** What (as far as the engine can honestly tell) drove an `auto` edge. See CommitDriver in src/settle.ts. */
+export type AutoDriver = "timer" | "microtask";
 
 export interface Edge {
   from: string;
   to: string;
-  action: ActionRef;
+  /** `"user"`: caused by a discovered UI action (`action` is set). `"auto"`: no user input, observed as a later commit within the same settle() call that the preceding user action started (`driver` says what, if known, drove it). */
+  kind: EdgeKind;
+  /** Set when kind is "user". */
+  action?: ActionRef;
+  /** Set when kind is "auto". */
+  driver?: AutoDriver;
   provenance: Provenance;
   stable: boolean;
   nonDeterministic?: { observedDestinations: string[] };

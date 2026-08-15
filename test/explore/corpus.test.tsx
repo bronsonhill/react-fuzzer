@@ -155,7 +155,14 @@ describe("corpus: ValidatedForm", () => {
 });
 
 describe("corpus: FetchList", () => {
-  it("with a deterministic (call-count-independent) fetchItems: finds exactly 1 state -- root is 'error' immediately (settle() drains the mount before the root is even observed, so 'loading' is never captured as its own node), and Retry loops back to the same 'error' state", async () => {
+  it("M3.5: with a deterministic (call-count-independent) fetchItems: finds both 'loading' and 'error', 'loading' transient with an auto edge to 'error', and Retry loops back through 'loading' again", async () => {
+    // M3 found only 1 state here ('error'): settle() drained the mount to
+    // quiescence before the root was ever observed, so the intermediate
+    // 'loading' commit was invisible. M3.5 fixes this by having settle()
+    // report every commit it observes, not just the final one -- see
+    // docs/m3-5-refinement-report.md, "Problem 1". The old "finds exactly 1
+    // state" assertion was therefore testing a real gap, not a feature; this
+    // replacement assertion is the corrected expectation, not a loosening.
     const fetchItems = vi.fn(() => Promise.reject(new Error("boom")));
 
     const result = await exploreComponent({
@@ -172,8 +179,22 @@ describe("corpus: FetchList", () => {
       invokableProps: {},
     });
 
-    expect(result.graph.states.length).toBe(1);
-    expect(result.graph.states[0]!.fields.status).toBe("error");
+    expect(result.graph.states.length).toBe(2);
+    const loading = result.graph.states.find((s) => s.fields.status === "loading");
+    const error = result.graph.states.find((s) => s.fields.status === "error");
+    expect(loading).toBeDefined();
+    expect(error).toBeDefined();
+    expect(loading!.transient).toBe(true);
+    expect(error!.transient).toBe(false);
+
+    const loadingToError = result.graph.edges.find((e) => e.from === loading!.id && e.to === error!.id);
+    expect(loadingToError).toBeDefined();
+    expect(loadingToError!.kind).toBe("auto");
+
+    const retryEdge = result.graph.edges.find((e) => e.kind === "user" && e.from === error!.id);
+    expect(retryEdge).toBeDefined();
+    expect(retryEdge!.to).toBe(loading!.id);
+
     expect(result.findings.replayDivergences.length).toBe(0);
   });
 
@@ -209,7 +230,14 @@ describe("corpus: DebouncedSearch", () => {
   beforeEach(() => vi.useFakeTimers());
   afterEach(() => vi.useRealTimers());
 
-  it("reaches idle and searching (not waiting: settle() always drains fake timers to quiescence, so the transient 'waiting' phase between a keystroke and the debounce firing is never the state actually observed), using a query mock that is a pure function of the searched text (replay-safe, unlike a hidden call counter -- see the FetchList section above)", async () => {
+  it("M3.5: reaches idle, waiting, and searching -- 'waiting' and 'searching' are now discovered as transient states with auto edges onward, using a query mock that is a pure function of the searched text (replay-safe, unlike a hidden call counter -- see the FetchList section above)", async () => {
+    // M3 could not observe 'waiting' at all: settle() always drains fake
+    // timers to quiescence, so by the time anything was observed, the
+    // debounce timer had already fired. M3.5 fixes this the same way as
+    // FetchList's 'loading' above -- see docs/m3-5-refinement-report.md,
+    // "Problem 1". The old "waiting is never observed" assertion documented
+    // a real gap, not a feature of the design; this replacement is the
+    // corrected expectation.
     const results: SearchResult[] = [{ id: "1", label: "Result A" }];
     // Pure function of `text`: deterministic and replay-safe, since every
     // remount that types the same text gets the same outcome, unlike a
@@ -235,8 +263,31 @@ describe("corpus: DebouncedSearch", () => {
 
     const statuses = new Set(result.graph.states.map((s) => s.fields.phase));
     expect(statuses.has("idle")).toBe(true);
-    expect(statuses.has("waiting")).toBe(false); // structurally unobservable via settle(); see it() description above
+    expect(statuses.has("waiting")).toBe(true); // now discovered, transient, via the commit-chain fix
+    expect(statuses.has("searching")).toBe(true); // likewise transient
     expect(result.graph.states.length).toBeGreaterThanOrEqual(2);
+    expect(result.budget.exhausted).toBe(false);
+
+    const waitingStates = result.graph.states.filter((s) => s.fields.phase === "waiting");
+    expect(waitingStates.length).toBeGreaterThan(0);
+    for (const s of waitingStates) expect(s.transient).toBe(true);
+
+    const searchingStates = result.graph.states.filter((s) => s.fields.phase === "searching");
+    expect(searchingStates.length).toBeGreaterThan(0);
+    for (const s of searchingStates) expect(s.transient).toBe(true);
+
+    // A settled outcome (results/no-results/error) must not be transient,
+    // and must be reached from its 'searching' predecessor via an auto edge.
+    const settled = result.graph.states.filter((s) =>
+      ["results", "no-results", "error"].includes(s.fields.phase as string),
+    );
+    expect(settled.length).toBeGreaterThan(0);
+    for (const s of settled) {
+      expect(s.transient).toBe(false);
+      const incoming = result.graph.edges.filter((e) => e.to === s.id);
+      expect(incoming.some((e) => e.kind === "auto")).toBe(true);
+    }
+
     expect(result.findings.replayDivergences.length).toBe(0);
   });
 });
