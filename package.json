@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "explore": "node src/cli.ts"
   },
   "dependencies": {
     "react": "19.1.0",
@@ -20,6 +21,7 @@
     "@types/react-dom": "^19.0.2",
     "fast-check": "^3.23.2",
     "jsdom": "^25.0.1",
+    "mermaid": "^11.16.1",
     "ts-morph": "^24.0.0",
     "typescript": "^5.7.2",
     "vitest": "^2.1.8"

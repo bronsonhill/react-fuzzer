@@ -1,0 +1,6195 @@
+{
+  "schemaVersion": 1,
+  "kind": "multi-assignment",
+  "merged": {
+    "component": "Counter",
+    "graph": {
+      "states": [
+        {
+          "id": "gen10:s0",
+          "key": "gen10:s0",
+          "fields": {
+            "value": 94
+          },
+          "provenance": "generated-props",
+          "witness": {
+            "props": {
+              "min": -78,
+              "max": -98,
+              "start": 94
+            },
+            "actions": []
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(94)},button[aria-label=decrement]{#(-)},button[aria-label=increment;disabled=]{#(+)}}}",
+          "transient": false
+        },
+        {
+          "id": "gen4:s0",
+          "key": "gen4:s0",
+          "fields": {
+            "value": -4
+          },
+          "provenance": "generated-props",
+          "witness": {
+            "props": {
+              "min": 0,
+              "max": 5,
+              "start": -4
+            },
+            "actions": []
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(-4)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+          "transient": false
+        },
+        {
+          "id": "gen6:s0",
+          "key": "gen6:s0",
+          "fields": {
+            "value": -98
+          },
+          "provenance": "generated-props",
+          "witness": {
+            "props": {
+              "min": -4,
+              "max": 0,
+              "start": -98
+            },
+            "actions": []
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(-98)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+          "transient": false
+        },
+        {
+          "id": "gen7:s0",
+          "key": "gen7:s0",
+          "fields": {
+            "value": -87
+          },
+          "provenance": "generated-props",
+          "witness": {
+            "props": {
+              "max": 93,
+              "start": -87
+            },
+            "actions": []
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(-87)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+          "transient": false
+        },
+        {
+          "id": "gen8:s0",
+          "key": "gen8:s0",
+          "fields": {
+            "value": 66
+          },
+          "provenance": "generated-props",
+          "witness": {
+            "props": {
+              "min": 3,
+              "max": -82,
+              "start": 66
+            },
+            "actions": []
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(66)},button[aria-label=decrement]{#(-)},button[aria-label=increment;disabled=]{#(+)}}}",
+          "transient": false
+        },
+        {
+          "id": "s0",
+          "key": "s0",
+          "fields": {
+            "value": 0
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "min": 0,
+              "max": 5,
+              "start": 0
+            },
+            "actions": []
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(0)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+          "transient": false
+        },
+        {
+          "id": "s1",
+          "key": "s1",
+          "fields": {
+            "value": 1
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "min": 0,
+              "max": 5,
+              "start": 0
+            },
+            "actions": [
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            ]
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(1)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+          "transient": false
+        },
+        {
+          "id": "s2",
+          "key": "s2",
+          "fields": {
+            "value": 2
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "min": 0,
+              "max": 5,
+              "start": 0
+            },
+            "actions": [
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            ]
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(2)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+          "transient": false
+        },
+        {
+          "id": "s3",
+          "key": "s3",
+          "fields": {
+            "value": 3
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "min": 0,
+              "max": 5,
+              "start": 0
+            },
+            "actions": [
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            ]
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(3)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+          "transient": false
+        },
+        {
+          "id": "s4",
+          "key": "s4",
+          "fields": {
+            "value": 4
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "min": 0,
+              "max": 5,
+              "start": 0
+            },
+            "actions": [
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            ]
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(4)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+          "transient": false
+        },
+        {
+          "id": "s5",
+          "key": "s5",
+          "fields": {
+            "value": 5
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "min": 0,
+              "max": 5,
+              "start": 0
+            },
+            "actions": [
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            ]
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(5)},button[aria-label=decrement]{#(-)},button[aria-label=increment;disabled=]{#(+)}}}",
+          "transient": false
+        },
+        {
+          "id": "s6",
+          "key": "s6",
+          "fields": {
+            "value": -1
+          },
+          "provenance": "generated-props",
+          "witness": {
+            "props": {
+              "min": -4,
+              "max": 5,
+              "start": 0
+            },
+            "actions": [
+              {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            ]
+          },
+          "domFingerprint": "div[]{div[]{output[aria-label=count]{#(-1)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+          "transient": false
+        }
+      ],
+      "edges": [
+        {
+          "from": "gen10:s0",
+          "to": "gen10:s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "gen4:s0",
+          "to": "gen4:s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "gen4:s0",
+          "to": "s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "gen6:s0",
+          "to": "gen6:s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "gen7:s0",
+          "to": "gen7:s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "gen8:s0",
+          "to": "gen8:s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s0",
+          "to": "s6",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s0",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s0",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s0",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s2",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s2",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s2",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s2",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s2",
+          "to": "s3",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s2",
+          "to": "s3",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s3",
+          "to": "s2",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s3",
+          "to": "s2",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s3",
+          "to": "s4",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s3",
+          "to": "s4",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s4",
+          "to": "s3",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s4",
+          "to": "s3",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s4",
+          "to": "s5",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s4",
+          "to": "s5",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s5",
+          "to": "s4",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s5",
+          "to": "s4",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s6",
+          "to": "s6",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"decrement\"",
+            "kind": "click",
+            "label": "click button \"decrement\""
+          }
+        },
+        {
+          "from": "s6",
+          "to": "s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        },
+        {
+          "from": "s6",
+          "to": "s6",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          }
+        }
+      ]
+    },
+    "unavailableActions": [
+      {
+        "state": "gen10:s0",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "gen4:s0",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "gen6:s0",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "gen7:s0",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "gen8:s0",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s2",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s2",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s2",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s2",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s2",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s2",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s3",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s3",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s3",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s3",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s3",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s3",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s4",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s4",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s4",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s4",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s4",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s6",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s6",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s6",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s6",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s7",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s7",
+        "action": {
+          "id": "click:button:\"decrement\"",
+          "kind": "click",
+          "label": "click button \"decrement\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s7",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s7",
+        "action": {
+          "id": "click:button:\"increment\"",
+          "kind": "click",
+          "label": "click button \"increment\""
+        },
+        "reason": "disabled"
+      }
+    ],
+    "findings": {
+      "unstable": [],
+      "nonDeterministic": [
+        {
+          "from": "gen4:s0",
+          "to": "gen4:s0",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          },
+          "nonDeterministic": {
+            "observedDestinations": [
+              "s0",
+              "s4"
+            ]
+          }
+        },
+        {
+          "from": "gen4:s0",
+          "to": "gen4:s0",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          },
+          "nonDeterministic": {
+            "observedDestinations": [
+              "s0",
+              "s4"
+            ]
+          }
+        },
+        {
+          "from": "gen4:s0",
+          "to": "gen4:s0",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          },
+          "nonDeterministic": {
+            "observedDestinations": [
+              "s0",
+              "s4"
+            ]
+          }
+        },
+        {
+          "from": "gen4:s0",
+          "to": "gen4:s0",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"increment\"",
+            "kind": "click",
+            "label": "click button \"increment\""
+          },
+          "nonDeterministic": {
+            "observedDestinations": [
+              "s0",
+              "s4"
+            ]
+          }
+        }
+      ],
+      "replayDivergences": []
+    },
+    "budget": {
+      "actionsUsed": 570,
+      "statesFound": 12,
+      "exhausted": false
+    },
+    "unexploredFrontier": [],
+    "rekeyMerges": [
+      {
+        "from": [
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "to": "s0"
+      },
+      {
+        "from": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "to": "s0"
+      },
+      {
+        "from": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "to": "s0"
+      },
+      {
+        "from": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "to": "s0"
+      },
+      {
+        "from": [
+          "s1",
+          "s2",
+          "s3",
+          "s4",
+          "s5",
+          "s6",
+          "s7"
+        ],
+        "to": "s0"
+      },
+      {
+        "from": [
+          "s2",
+          "s3",
+          "s4",
+          "s5"
+        ],
+        "to": "s1"
+      },
+      {
+        "from": [
+          "s6",
+          "s7"
+        ],
+        "to": "s5"
+      },
+      {
+        "from": [
+          "s7"
+        ],
+        "to": "s6"
+      }
+    ],
+    "domPruneReport": [
+      {
+        "hookName": "value",
+        "variedNoDomCount": 0,
+        "everCoVaried": true,
+        "pruned": false
+      }
+    ]
+  },
+  "runs": [
+    {
+      "assignment": {
+        "source": "example",
+        "props": {
+          "min": 0,
+          "max": 5,
+          "start": 0
+        }
+      },
+      "shapeHash": "states[value=0,value=1,value=2,value=3,value=4,value=5]|edges[value=0::value=1::user::click:button:\"increment\",value=1::value=0::user::click:button:\"decrement\",value=1::value=2::user::click:button:\"increment\",value=2::value=1::user::click:button:\"decrement\",value=2::value=3::user::click:button:\"increment\",value=3::value=2::user::click:button:\"decrement\",value=3::value=4::user::click:button:\"increment\",value=4::value=3::user::click:button:\"decrement\",value=4::value=5::user::click:button:\"increment\",value=5::value=4::user::click:button:\"decrement\"]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(0)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "value": 1
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(1)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "value": 2
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(2)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "value": 3
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(3)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s4",
+              "key": "s4",
+              "fields": {
+                "value": 4
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(4)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s5",
+              "key": "s5",
+              "fields": {
+                "value": 5
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(5)},button[aria-label=decrement]{#(-)},button[aria-label=increment;disabled=]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 56,
+          "statesFound": 6,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "value",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "min": 3,
+          "max": -82,
+          "start": 66
+        }
+      },
+      "shapeHash": "states[value=66]|edges[value=66::value=66::user::click:button:\"decrement\"]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": 66
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 3,
+                  "max": -82,
+                  "start": 66
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(66)},button[aria-label=decrement]{#(-)},button[aria-label=increment;disabled=]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s2",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s3",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s4",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s6",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s7",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 44,
+          "statesFound": 1,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [
+          {
+            "from": [
+              "s1",
+              "s2",
+              "s3",
+              "s4",
+              "s5",
+              "s6",
+              "s7"
+            ],
+            "to": "s0"
+          }
+        ],
+        "domPruneReport": [
+          {
+            "hookName": "value",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "min": -78,
+          "max": -98,
+          "start": 94
+        }
+      },
+      "shapeHash": "states[value=94]|edges[value=94::value=94::user::click:button:\"decrement\"]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": 94
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": -78,
+                  "max": -98,
+                  "start": 94
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(94)},button[aria-label=decrement]{#(-)},button[aria-label=increment;disabled=]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s2",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s3",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s4",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s6",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s7",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 44,
+          "statesFound": 1,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [
+          {
+            "from": [
+              "s1",
+              "s2",
+              "s3",
+              "s4",
+              "s5",
+              "s6",
+              "s7"
+            ],
+            "to": "s0"
+          }
+        ],
+        "domPruneReport": [
+          {
+            "hookName": "value",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "min": -4,
+          "max": 0,
+          "start": -98
+        }
+      },
+      "shapeHash": "states[value=-98]|edges[value=-98::value=-98::user::click:button:\"increment\"]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": -98
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": -4,
+                  "max": 0,
+                  "start": -98
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(-98)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s2",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s3",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s4",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s6",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s7",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 44,
+          "statesFound": 1,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [
+          {
+            "from": [
+              "s1",
+              "s2",
+              "s3",
+              "s4",
+              "s5",
+              "s6",
+              "s7"
+            ],
+            "to": "s0"
+          }
+        ],
+        "domPruneReport": [
+          {
+            "hookName": "value",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "max": 93,
+          "start": -87
+        }
+      },
+      "shapeHash": "states[value=-87]|edges[value=-87::value=-87::user::click:button:\"increment\"]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": -87
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "max": 93,
+                  "start": -87
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(-87)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s2",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s3",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s4",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s6",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s7",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 44,
+          "statesFound": 1,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [
+          {
+            "from": [
+              "s1",
+              "s2",
+              "s3",
+              "s4",
+              "s5",
+              "s6",
+              "s7"
+            ],
+            "to": "s0"
+          }
+        ],
+        "domPruneReport": [
+          {
+            "hookName": "value",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "min": 11
+        }
+      },
+      "shapeHash": "states[value=0,value=1,value=2,value=3,value=4,value=5]|edges[value=0::value=1::user::click:button:\"increment\",value=1::value=2::user::click:button:\"increment\",value=2::value=3::user::click:button:\"increment\",value=3::value=4::user::click:button:\"increment\",value=4::value=5::user::click:button:\"increment\"]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 11
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(0)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "value": 1
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 11
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(1)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "value": 2
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 11
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(2)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "value": 3
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 11
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(3)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s4",
+              "key": "s4",
+              "fields": {
+                "value": 4
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 11
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(4)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s5",
+              "key": "s5",
+              "fields": {
+                "value": 5
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 11
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(5)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment;disabled=]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s2",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s3",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s4",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 30,
+          "statesFound": 6,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "value",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "max",
+        "props": {
+          "min": 0,
+          "max": -4,
+          "start": 0
+        }
+      },
+      "shapeHash": "states[value=0]|edges[]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": -4,
+                  "start": 0
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(0)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment;disabled=]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": []
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 0,
+          "statesFound": 1,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "max",
+        "props": {
+          "min": 0,
+          "start": 0
+        }
+      },
+      "shapeHash": "states[value=0,value=1,value=2,value=3,value=4,value=5]|edges[value=0::value=1::user::click:button:\"increment\",value=1::value=0::user::click:button:\"decrement\",value=1::value=2::user::click:button:\"increment\",value=2::value=1::user::click:button:\"decrement\",value=2::value=3::user::click:button:\"increment\",value=3::value=2::user::click:button:\"decrement\",value=3::value=4::user::click:button:\"increment\",value=4::value=3::user::click:button:\"decrement\",value=4::value=5::user::click:button:\"increment\",value=5::value=4::user::click:button:\"decrement\"]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "start": 0
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(0)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "value": 1
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(1)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "value": 2
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(2)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "value": 3
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(3)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s4",
+              "key": "s4",
+              "fields": {
+                "value": 4
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(4)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s5",
+              "key": "s5",
+              "fields": {
+                "value": 5
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(5)},button[aria-label=decrement]{#(-)},button[aria-label=increment;disabled=]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 56,
+          "statesFound": 6,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "value",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "min",
+        "props": {
+          "min": -4,
+          "max": 5,
+          "start": 0
+        }
+      },
+      "shapeHash": "states[value=-1,value=0,value=1]|edges[value=-1::value=-1::user::click:button:\"decrement\",value=-1::value=-1::user::click:button:\"increment\",value=-1::value=0::user::click:button:\"increment\",value=0::value=-1::user::click:button:\"decrement\",value=0::value=1::user::click:button:\"increment\",value=1::value=0::user::click:button:\"decrement\",value=1::value=1::user::click:button:\"decrement\",value=1::value=1::user::click:button:\"increment\"]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": -4,
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(0)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "value": 1
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": -4,
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(1)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s6",
+              "key": "s6",
+              "fields": {
+                "value": -1
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": -4,
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"decrement\"",
+                    "kind": "click",
+                    "label": "click button \"decrement\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(-1)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 71,
+          "statesFound": 3,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [
+          {
+            "from": [
+              "s2",
+              "s3",
+              "s4",
+              "s5"
+            ],
+            "to": "s1"
+          },
+          {
+            "from": [
+              "s7"
+            ],
+            "to": "s6"
+          }
+        ],
+        "domPruneReport": [
+          {
+            "hookName": "value",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "min",
+        "props": {
+          "max": 5,
+          "start": 0
+        }
+      },
+      "shapeHash": "states[value=0,value=1,value=2,value=3,value=4,value=5]|edges[value=0::value=1::user::click:button:\"increment\",value=1::value=0::user::click:button:\"decrement\",value=1::value=2::user::click:button:\"increment\",value=2::value=1::user::click:button:\"decrement\",value=2::value=3::user::click:button:\"increment\",value=3::value=2::user::click:button:\"decrement\",value=3::value=4::user::click:button:\"increment\",value=4::value=3::user::click:button:\"decrement\",value=4::value=5::user::click:button:\"increment\",value=5::value=4::user::click:button:\"decrement\"]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(0)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "value": 1
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(1)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "value": 2
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(2)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "value": 3
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(3)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s4",
+              "key": "s4",
+              "fields": {
+                "value": 4
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(4)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s5",
+              "key": "s5",
+              "fields": {
+                "value": 5
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "max": 5,
+                  "start": 0
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(5)},button[aria-label=decrement]{#(-)},button[aria-label=increment;disabled=]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 56,
+          "statesFound": 6,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "value",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "start",
+        "props": {
+          "min": 0,
+          "max": 5,
+          "start": -4
+        }
+      },
+      "shapeHash": "states[value=-4,value=0,value=1]|edges[value=-4::value=-4::user::click:button:\"increment\",value=-4::value=0::user::click:button:\"increment\",value=0::value=1::user::click:button:\"increment\",value=1::value=0::user::click:button:\"decrement\",value=1::value=1::user::click:button:\"increment\"]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": -4
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5,
+                  "start": -4
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(-4)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s4",
+              "key": "s4",
+              "fields": {
+                "value": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5,
+                  "start": -4
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(0)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s5",
+              "key": "s5",
+              "fields": {
+                "value": 1
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5,
+                  "start": -4
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(1)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              "nonDeterministic": {
+                "observedDestinations": [
+                  "s0",
+                  "s4"
+                ]
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              "nonDeterministic": {
+                "observedDestinations": [
+                  "s0",
+                  "s4"
+                ]
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              "nonDeterministic": {
+                "observedDestinations": [
+                  "s0",
+                  "s4"
+                ]
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              "nonDeterministic": {
+                "observedDestinations": [
+                  "s0",
+                  "s4"
+                ]
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s2",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s3",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s4",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              "nonDeterministic": {
+                "observedDestinations": [
+                  "s0",
+                  "s4"
+                ]
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              "nonDeterministic": {
+                "observedDestinations": [
+                  "s0",
+                  "s4"
+                ]
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              "nonDeterministic": {
+                "observedDestinations": [
+                  "s0",
+                  "s4"
+                ]
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              },
+              "nonDeterministic": {
+                "observedDestinations": [
+                  "s0",
+                  "s4"
+                ]
+              }
+            }
+          ],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 69,
+          "statesFound": 3,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [
+          {
+            "from": [
+              "s1",
+              "s2",
+              "s3"
+            ],
+            "to": "s0"
+          },
+          {
+            "from": [
+              "s6",
+              "s7"
+            ],
+            "to": "s5"
+          }
+        ],
+        "domPruneReport": [
+          {
+            "hookName": "value",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "start",
+        "props": {
+          "min": 0,
+          "max": 5
+        }
+      },
+      "shapeHash": "states[value=0,value=1,value=2,value=3,value=4,value=5]|edges[value=0::value=1::user::click:button:\"increment\",value=1::value=0::user::click:button:\"decrement\",value=1::value=2::user::click:button:\"increment\",value=2::value=1::user::click:button:\"decrement\",value=2::value=3::user::click:button:\"increment\",value=3::value=2::user::click:button:\"decrement\",value=3::value=4::user::click:button:\"increment\",value=4::value=3::user::click:button:\"decrement\",value=4::value=5::user::click:button:\"increment\",value=5::value=4::user::click:button:\"decrement\"]",
+      "result": {
+        "component": "Counter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "value": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(0)},button[aria-label=decrement;disabled=]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "value": 1
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(1)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "value": 2
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(2)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "value": 3
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(3)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s4",
+              "key": "s4",
+              "fields": {
+                "value": 4
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(4)},button[aria-label=decrement]{#(-)},button[aria-label=increment]{#(+)}}}",
+              "transient": false
+            },
+            {
+              "id": "s5",
+              "key": "s5",
+              "fields": {
+                "value": 5
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "min": 0,
+                  "max": 5
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  },
+                  {
+                    "id": "click:button:\"increment\"",
+                    "kind": "click",
+                    "label": "click button \"increment\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{output[aria-label=count]{#(5)},button[aria-label=decrement]{#(-)},button[aria-label=increment;disabled=]{#(+)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"increment\"",
+                "kind": "click",
+                "label": "click button \"increment\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"decrement\"",
+                "kind": "click",
+                "label": "click button \"decrement\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"decrement\"",
+              "kind": "click",
+              "label": "click button \"decrement\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"increment\"",
+              "kind": "click",
+              "label": "click button \"increment\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 56,
+          "statesFound": 6,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "value",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    }
+  ],
+  "distinctShapes": [
+    {
+      "shapeHash": "states[value=-1,value=0,value=1]|edges[value=-1::value=-1::user::click:button:\"decrement\",value=-1::value=-1::user::click:button:\"increment\",value=-1::value=0::user::click:button:\"increment\",value=0::value=-1::user::click:button:\"decrement\",value=0::value=1::user::click:button:\"increment\",value=1::value=0::user::click:button:\"decrement\",value=1::value=1::user::click:button:\"decrement\",value=1::value=1::user::click:button:\"increment\"]",
+      "assignments": [
+        {
+          "source": "vary-one",
+          "variedProp": "min",
+          "props": {
+            "min": -4,
+            "max": 5,
+            "start": 0
+          }
+        }
+      ],
+      "stateCount": 3,
+      "edgeCount": 23,
+      "isExampleShape": false
+    },
+    {
+      "shapeHash": "states[value=-4,value=0,value=1]|edges[value=-4::value=-4::user::click:button:\"increment\",value=-4::value=0::user::click:button:\"increment\",value=0::value=1::user::click:button:\"increment\",value=1::value=0::user::click:button:\"decrement\",value=1::value=1::user::click:button:\"increment\"]",
+      "assignments": [
+        {
+          "source": "vary-one",
+          "variedProp": "start",
+          "props": {
+            "min": 0,
+            "max": 5,
+            "start": -4
+          }
+        }
+      ],
+      "stateCount": 3,
+      "edgeCount": 17,
+      "isExampleShape": false
+    },
+    {
+      "shapeHash": "states[value=-87]|edges[value=-87::value=-87::user::click:button:\"increment\"]",
+      "assignments": [
+        {
+          "source": "random",
+          "props": {
+            "max": 93,
+            "start": -87
+          }
+        }
+      ],
+      "stateCount": 1,
+      "edgeCount": 16,
+      "isExampleShape": false
+    },
+    {
+      "shapeHash": "states[value=-98]|edges[value=-98::value=-98::user::click:button:\"increment\"]",
+      "assignments": [
+        {
+          "source": "random",
+          "props": {
+            "min": -4,
+            "max": 0,
+            "start": -98
+          }
+        }
+      ],
+      "stateCount": 1,
+      "edgeCount": 16,
+      "isExampleShape": false
+    },
+    {
+      "shapeHash": "states[value=0,value=1,value=2,value=3,value=4,value=5]|edges[value=0::value=1::user::click:button:\"increment\",value=1::value=0::user::click:button:\"decrement\",value=1::value=2::user::click:button:\"increment\",value=2::value=1::user::click:button:\"decrement\",value=2::value=3::user::click:button:\"increment\",value=3::value=2::user::click:button:\"decrement\",value=3::value=4::user::click:button:\"increment\",value=4::value=3::user::click:button:\"decrement\",value=4::value=5::user::click:button:\"increment\",value=5::value=4::user::click:button:\"decrement\"]",
+      "assignments": [
+        {
+          "source": "example",
+          "props": {
+            "min": 0,
+            "max": 5,
+            "start": 0
+          }
+        },
+        {
+          "source": "vary-one",
+          "variedProp": "max",
+          "props": {
+            "min": 0,
+            "start": 0
+          }
+        },
+        {
+          "source": "vary-one",
+          "variedProp": "min",
+          "props": {
+            "max": 5,
+            "start": 0
+          }
+        },
+        {
+          "source": "vary-one",
+          "variedProp": "start",
+          "props": {
+            "min": 0,
+            "max": 5
+          }
+        }
+      ],
+      "stateCount": 6,
+      "edgeCount": 16,
+      "isExampleShape": true
+    },
+    {
+      "shapeHash": "states[value=0,value=1,value=2,value=3,value=4,value=5]|edges[value=0::value=1::user::click:button:\"increment\",value=1::value=2::user::click:button:\"increment\",value=2::value=3::user::click:button:\"increment\",value=3::value=4::user::click:button:\"increment\",value=4::value=5::user::click:button:\"increment\"]",
+      "assignments": [
+        {
+          "source": "random",
+          "props": {
+            "min": 11
+          }
+        }
+      ],
+      "stateCount": 6,
+      "edgeCount": 10,
+      "isExampleShape": false
+    },
+    {
+      "shapeHash": "states[value=0]|edges[]",
+      "assignments": [
+        {
+          "source": "vary-one",
+          "variedProp": "max",
+          "props": {
+            "min": 0,
+            "max": -4,
+            "start": 0
+          }
+        }
+      ],
+      "stateCount": 1,
+      "edgeCount": 0,
+      "isExampleShape": false
+    },
+    {
+      "shapeHash": "states[value=66]|edges[value=66::value=66::user::click:button:\"decrement\"]",
+      "assignments": [
+        {
+          "source": "random",
+          "props": {
+            "min": 3,
+            "max": -82,
+            "start": 66
+          }
+        }
+      ],
+      "stateCount": 1,
+      "edgeCount": 16,
+      "isExampleShape": false
+    },
+    {
+      "shapeHash": "states[value=94]|edges[value=94::value=94::user::click:button:\"decrement\"]",
+      "assignments": [
+        {
+          "source": "random",
+          "props": {
+            "min": -78,
+            "max": -98,
+            "start": 94
+          }
+        }
+      ],
+      "stateCount": 1,
+      "edgeCount": 16,
+      "isExampleShape": false
+    }
+  ],
+  "responsibleProps": [
+    {
+      "prop": "max",
+      "confidence": "isolated",
+      "evidence": "varying only \"max\" (to -4, all other props held at their example values) changed the graph shape"
+    },
+    {
+      "prop": "min",
+      "confidence": "isolated",
+      "evidence": "varying only \"min\" (to -4, all other props held at their example values) changed the graph shape"
+    },
+    {
+      "prop": "start",
+      "confidence": "isolated",
+      "evidence": "varying only \"start\" (to -4, all other props held at their example values) changed the graph shape"
+    }
+  ],
+  "budget": {
+    "perAssignment": [
+      {
+        "assignment": {
+          "source": "example",
+          "props": {
+            "min": 0,
+            "max": 5,
+            "start": 0
+          }
+        },
+        "actionsUsed": 56,
+        "statesFound": 6,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "min": 3,
+            "max": -82,
+            "start": 66
+          }
+        },
+        "actionsUsed": 44,
+        "statesFound": 1,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "min": -78,
+            "max": -98,
+            "start": 94
+          }
+        },
+        "actionsUsed": 44,
+        "statesFound": 1,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "min": -4,
+            "max": 0,
+            "start": -98
+          }
+        },
+        "actionsUsed": 44,
+        "statesFound": 1,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "max": 93,
+            "start": -87
+          }
+        },
+        "actionsUsed": 44,
+        "statesFound": 1,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "min": 11
+          }
+        },
+        "actionsUsed": 30,
+        "statesFound": 6,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "max",
+          "props": {
+            "min": 0,
+            "max": -4,
+            "start": 0
+          }
+        },
+        "actionsUsed": 0,
+        "statesFound": 1,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "max",
+          "props": {
+            "min": 0,
+            "start": 0
+          }
+        },
+        "actionsUsed": 56,
+        "statesFound": 6,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "min",
+          "props": {
+            "min": -4,
+            "max": 5,
+            "start": 0
+          }
+        },
+        "actionsUsed": 71,
+        "statesFound": 3,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "min",
+          "props": {
+            "max": 5,
+            "start": 0
+          }
+        },
+        "actionsUsed": 56,
+        "statesFound": 6,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "start",
+          "props": {
+            "min": 0,
+            "max": 5,
+            "start": -4
+          }
+        },
+        "actionsUsed": 69,
+        "statesFound": 3,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "start",
+          "props": {
+            "min": 0,
+            "max": 5
+          }
+        },
+        "actionsUsed": 56,
+        "statesFound": 6,
+        "exhausted": false
+      }
+    ],
+    "aggregate": {
+      "actionsUsed": 570,
+      "statesFound": 12,
+      "anyExhausted": false
+    }
+  }
+}

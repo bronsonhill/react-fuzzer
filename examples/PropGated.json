@@ -1,0 +1,2581 @@
+{
+  "schemaVersion": 1,
+  "kind": "multi-assignment",
+  "merged": {
+    "component": "PropGated",
+    "graph": {
+      "states": [
+        {
+          "id": "gen1:s1",
+          "key": "gen1:s1",
+          "fields": {
+            "notificationsOn": false,
+            "expertModeOn": true
+          },
+          "provenance": "generated-props",
+          "witness": {
+            "props": {
+              "mode": "advanced"
+            },
+            "actions": [
+              {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              }
+            ]
+          },
+          "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+          "transient": false
+        },
+        {
+          "id": "s0",
+          "key": "s0",
+          "fields": {
+            "notificationsOn": false,
+            "expertModeOn": false
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "mode": "simple"
+            },
+            "actions": []
+          },
+          "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)}}}",
+          "transient": false
+        },
+        {
+          "id": "s1",
+          "key": "s1",
+          "fields": {
+            "notificationsOn": true,
+            "expertModeOn": false
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "mode": "simple"
+            },
+            "actions": [
+              {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            ]
+          },
+          "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)}}}",
+          "transient": false
+        },
+        {
+          "id": "s2",
+          "key": "s2",
+          "fields": {
+            "notificationsOn": true,
+            "expertModeOn": true
+          },
+          "provenance": "generated-props",
+          "witness": {
+            "props": {
+              "mode": "advanced"
+            },
+            "actions": [
+              {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              },
+              {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            ]
+          },
+          "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+          "transient": false
+        }
+      ],
+      "edges": [
+        {
+          "from": "gen1:s1",
+          "to": "s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Expert mode: On\"",
+            "kind": "click",
+            "label": "click button \"Expert mode: On\""
+          }
+        },
+        {
+          "from": "gen1:s1",
+          "to": "s2",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Notifications: Off\"",
+            "kind": "click",
+            "label": "click button \"Notifications: Off\""
+          }
+        },
+        {
+          "from": "s0",
+          "to": "gen1:s1",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Expert mode: Off\"",
+            "kind": "click",
+            "label": "click button \"Expert mode: Off\""
+          }
+        },
+        {
+          "from": "s0",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Notifications: Off\"",
+            "kind": "click",
+            "label": "click button \"Notifications: Off\""
+          }
+        },
+        {
+          "from": "s0",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Notifications: Off\"",
+            "kind": "click",
+            "label": "click button \"Notifications: Off\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s2",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Expert mode: Off\"",
+            "kind": "click",
+            "label": "click button \"Expert mode: Off\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s0",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Notifications: On\"",
+            "kind": "click",
+            "label": "click button \"Notifications: On\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Notifications: On\"",
+            "kind": "click",
+            "label": "click button \"Notifications: On\""
+          }
+        },
+        {
+          "from": "s2",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Expert mode: On\"",
+            "kind": "click",
+            "label": "click button \"Expert mode: On\""
+          }
+        },
+        {
+          "from": "s2",
+          "to": "gen1:s1",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Notifications: On\"",
+            "kind": "click",
+            "label": "click button \"Notifications: On\""
+          }
+        }
+      ]
+    },
+    "unavailableActions": [],
+    "findings": {
+      "unstable": [],
+      "nonDeterministic": [],
+      "replayDivergences": []
+    },
+    "budget": {
+      "actionsUsed": 180,
+      "statesFound": 4,
+      "exhausted": false
+    },
+    "unexploredFrontier": [],
+    "rekeyMerges": [],
+    "domPruneReport": [
+      {
+        "hookName": "expertModeOn",
+        "variedNoDomCount": 0,
+        "everCoVaried": false,
+        "pruned": false
+      },
+      {
+        "hookName": "notificationsOn",
+        "variedNoDomCount": 0,
+        "everCoVaried": true,
+        "pruned": false
+      }
+    ]
+  },
+  "runs": [
+    {
+      "assignment": {
+        "source": "example",
+        "props": {
+          "mode": "simple"
+        }
+      },
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "result": {
+        "component": "PropGated",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "simple"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "simple"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "expertModeOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "notificationsOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "mode": "advanced"
+        }
+      },
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true,expertModeOn=true|notificationsOn=false,expertModeOn=true|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=false::expertModeOn=true|notificationsOn=false::user::click:button:\"Expert mode: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\",expertModeOn=false|notificationsOn=true::expertModeOn=true|notificationsOn=true::user::click:button:\"Expert mode: Off\",expertModeOn=true|notificationsOn=false::expertModeOn=false|notificationsOn=false::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=false::expertModeOn=true|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=true|notificationsOn=true::expertModeOn=false|notificationsOn=true::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=true::expertModeOn=true|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "result": {
+        "component": "PropGated",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)},button[aria-pressed=false]{#(Expert mode:),#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Expert mode: On\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: On\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)},button[aria-pressed=false]{#(Expert mode:),#(Off)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: On\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: On\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: On\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 30,
+          "statesFound": 4,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "expertModeOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "notificationsOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "mode": "advanced"
+        }
+      },
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true,expertModeOn=true|notificationsOn=false,expertModeOn=true|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=false::expertModeOn=true|notificationsOn=false::user::click:button:\"Expert mode: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\",expertModeOn=false|notificationsOn=true::expertModeOn=true|notificationsOn=true::user::click:button:\"Expert mode: Off\",expertModeOn=true|notificationsOn=false::expertModeOn=false|notificationsOn=false::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=false::expertModeOn=true|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=true|notificationsOn=true::expertModeOn=false|notificationsOn=true::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=true::expertModeOn=true|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "result": {
+        "component": "PropGated",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)},button[aria-pressed=false]{#(Expert mode:),#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Expert mode: On\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: On\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)},button[aria-pressed=false]{#(Expert mode:),#(Off)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: On\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: On\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: On\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 30,
+          "statesFound": 4,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "expertModeOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "notificationsOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "mode": "advanced"
+        }
+      },
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true,expertModeOn=true|notificationsOn=false,expertModeOn=true|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=false::expertModeOn=true|notificationsOn=false::user::click:button:\"Expert mode: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\",expertModeOn=false|notificationsOn=true::expertModeOn=true|notificationsOn=true::user::click:button:\"Expert mode: Off\",expertModeOn=true|notificationsOn=false::expertModeOn=false|notificationsOn=false::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=false::expertModeOn=true|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=true|notificationsOn=true::expertModeOn=false|notificationsOn=true::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=true::expertModeOn=true|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "result": {
+        "component": "PropGated",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)},button[aria-pressed=false]{#(Expert mode:),#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Expert mode: On\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: On\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)},button[aria-pressed=false]{#(Expert mode:),#(Off)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: On\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: On\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: On\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 30,
+          "statesFound": 4,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "expertModeOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "notificationsOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "mode": "advanced"
+        }
+      },
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true,expertModeOn=true|notificationsOn=false,expertModeOn=true|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=false::expertModeOn=true|notificationsOn=false::user::click:button:\"Expert mode: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\",expertModeOn=false|notificationsOn=true::expertModeOn=true|notificationsOn=true::user::click:button:\"Expert mode: Off\",expertModeOn=true|notificationsOn=false::expertModeOn=false|notificationsOn=false::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=false::expertModeOn=true|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=true|notificationsOn=true::expertModeOn=false|notificationsOn=true::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=true::expertModeOn=true|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "result": {
+        "component": "PropGated",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)},button[aria-pressed=false]{#(Expert mode:),#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Expert mode: On\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: On\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)},button[aria-pressed=false]{#(Expert mode:),#(Off)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: On\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: On\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: On\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 30,
+          "statesFound": 4,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "expertModeOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "notificationsOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "mode": "simple"
+        }
+      },
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "result": {
+        "component": "PropGated",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "simple"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "simple"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "expertModeOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "notificationsOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "mode": "simple"
+        }
+      },
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "result": {
+        "component": "PropGated",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "simple"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "simple"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "expertModeOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "notificationsOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "mode",
+        "props": {
+          "mode": "advanced"
+        }
+      },
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true,expertModeOn=true|notificationsOn=false,expertModeOn=true|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=false::expertModeOn=true|notificationsOn=false::user::click:button:\"Expert mode: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\",expertModeOn=false|notificationsOn=true::expertModeOn=true|notificationsOn=true::user::click:button:\"Expert mode: Off\",expertModeOn=true|notificationsOn=false::expertModeOn=false|notificationsOn=false::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=false::expertModeOn=true|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=true|notificationsOn=true::expertModeOn=false|notificationsOn=true::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=true::expertModeOn=true|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "result": {
+        "component": "PropGated",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)},button[aria-pressed=false]{#(Expert mode:),#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)},button[aria-pressed=true]{#(Expert mode:),#(On)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "advanced"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Expert mode: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  },
+                  {
+                    "id": "click:button:\"Expert mode: On\"",
+                    "kind": "click",
+                    "label": "click button \"Expert mode: On\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)},button[aria-pressed=false]{#(Expert mode:),#(Off)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: On\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: On\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: On\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Expert mode: Off\"",
+                "kind": "click",
+                "label": "click button \"Expert mode: Off\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 30,
+          "statesFound": 4,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "expertModeOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "notificationsOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "mode",
+        "props": {
+          "mode": "simple"
+        }
+      },
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "result": {
+        "component": "PropGated",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "simple"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "simple"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "expertModeOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "notificationsOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "mode",
+        "props": {
+          "mode": "simple"
+        }
+      },
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "result": {
+        "component": "PropGated",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "notificationsOn": false,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "simple"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=false]{#(Notifications:),#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "notificationsOn": true,
+                "expertModeOn": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "mode": "simple"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Notifications: Off\"",
+                    "kind": "click",
+                    "label": "click button \"Notifications: Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{button[aria-pressed=true]{#(Notifications:),#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: Off\"",
+                "kind": "click",
+                "label": "click button \"Notifications: Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Notifications: On\"",
+                "kind": "click",
+                "label": "click button \"Notifications: On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "expertModeOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "notificationsOn",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    }
+  ],
+  "distinctShapes": [
+    {
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true,expertModeOn=true|notificationsOn=false,expertModeOn=true|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=false::expertModeOn=true|notificationsOn=false::user::click:button:\"Expert mode: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\",expertModeOn=false|notificationsOn=true::expertModeOn=true|notificationsOn=true::user::click:button:\"Expert mode: Off\",expertModeOn=true|notificationsOn=false::expertModeOn=false|notificationsOn=false::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=false::expertModeOn=true|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=true|notificationsOn=true::expertModeOn=false|notificationsOn=true::user::click:button:\"Expert mode: On\",expertModeOn=true|notificationsOn=true::expertModeOn=true|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "assignments": [
+        {
+          "source": "random",
+          "props": {
+            "mode": "advanced"
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "mode": "advanced"
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "mode": "advanced"
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "mode": "advanced"
+          }
+        },
+        {
+          "source": "vary-one",
+          "variedProp": "mode",
+          "props": {
+            "mode": "advanced"
+          }
+        }
+      ],
+      "stateCount": 4,
+      "edgeCount": 12,
+      "isExampleShape": false
+    },
+    {
+      "shapeHash": "states[expertModeOn=false|notificationsOn=false,expertModeOn=false|notificationsOn=true]|edges[expertModeOn=false|notificationsOn=false::expertModeOn=false|notificationsOn=true::user::click:button:\"Notifications: Off\",expertModeOn=false|notificationsOn=true::expertModeOn=false|notificationsOn=false::user::click:button:\"Notifications: On\"]",
+      "assignments": [
+        {
+          "source": "example",
+          "props": {
+            "mode": "simple"
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "mode": "simple"
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "mode": "simple"
+          }
+        },
+        {
+          "source": "vary-one",
+          "variedProp": "mode",
+          "props": {
+            "mode": "simple"
+          }
+        },
+        {
+          "source": "vary-one",
+          "variedProp": "mode",
+          "props": {
+            "mode": "simple"
+          }
+        }
+      ],
+      "stateCount": 2,
+      "edgeCount": 4,
+      "isExampleShape": true
+    }
+  ],
+  "responsibleProps": [
+    {
+      "prop": "mode",
+      "confidence": "isolated",
+      "evidence": "varying only \"mode\" (to \"advanced\", all other props held at their example values) changed the graph shape"
+    }
+  ],
+  "budget": {
+    "perAssignment": [
+      {
+        "assignment": {
+          "source": "example",
+          "props": {
+            "mode": "simple"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "mode": "advanced"
+          }
+        },
+        "actionsUsed": 30,
+        "statesFound": 4,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "mode": "advanced"
+          }
+        },
+        "actionsUsed": 30,
+        "statesFound": 4,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "mode": "advanced"
+          }
+        },
+        "actionsUsed": 30,
+        "statesFound": 4,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "mode": "advanced"
+          }
+        },
+        "actionsUsed": 30,
+        "statesFound": 4,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "mode": "simple"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "mode": "simple"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "mode",
+          "props": {
+            "mode": "advanced"
+          }
+        },
+        "actionsUsed": 30,
+        "statesFound": 4,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "mode",
+          "props": {
+            "mode": "simple"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "mode",
+          "props": {
+            "mode": "simple"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      }
+    ],
+    "aggregate": {
+      "actionsUsed": 180,
+      "statesFound": 4,
+      "anyExhausted": false
+    }
+  }
+}

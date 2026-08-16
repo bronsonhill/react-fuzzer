@@ -196,6 +196,8 @@ function mergeGraphs(
     replayDivergences: [...base.findings.replayDivergences],
   };
   const rekeyMerges = [...base.rekeyMerges];
+  const domPruneReport = [...base.domPruneReport];
+  const seenPruneHooks = new Set(domPruneReport.map((e) => e.hookName));
 
   extras.forEach(({ assignment, result }, runIndex) => {
     const localKeyOf = contentKeyMap(result);
@@ -247,6 +249,12 @@ function mergeGraphs(
     );
     findings.replayDivergences.push(...result.findings.replayDivergences);
     rekeyMerges.push(...result.rekeyMerges);
+    for (const entry of result.domPruneReport) {
+      if (!seenPruneHooks.has(entry.hookName)) {
+        seenPruneHooks.add(entry.hookName);
+        domPruneReport.push(entry);
+      }
+    }
   });
 
   const actionsUsed =
@@ -266,6 +274,7 @@ function mergeGraphs(
       ...extras.flatMap((r) => r.result.unexploredFrontier),
     ],
     rekeyMerges,
+    domPruneReport,
   };
 }
 

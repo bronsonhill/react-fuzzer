@@ -88,6 +88,13 @@ export interface ReplayDivergence {
   witness: ActionRef[];
 }
 
+export interface DomPruneReportEntry {
+  hookName: string;
+  variedNoDomCount: number;
+  everCoVaried: boolean;
+  pruned: boolean;
+}
+
 export interface ExplorationResult {
   component: string;
   graph: { states: StateNode[]; edges: Edge[] };
@@ -96,4 +103,12 @@ export interface ExplorationResult {
   budget: { actionsUsed: number; statesFound: number; elapsedMs: number; exhausted: boolean };
   unexploredFrontier: Array<{ state: string; action: ActionRef }>;
   rekeyMerges: Array<{ from: string[]; to: string }>;
+  /**
+   * M2.5's DOM-correlation pruner report (see src/abstraction/adaptive.ts's
+   * getDomPruneReport): hooks the abstraction excluded from state identity
+   * because they never observably co-varied with the DOM. Reported here,
+   * always, per docs/poc-plan.md's M2.5 requirement that pruning is
+   * surfaced prominently rather than applied silently.
+   */
+  domPruneReport: DomPruneReportEntry[];
 }

@@ -568,6 +568,7 @@ export async function exploreComponent(options: ExploreOptions): Promise<Explora
     budget: { actionsUsed, statesFound: states.size, elapsedMs, exhausted },
     unexploredFrontier,
     rekeyMerges,
+    domPruneReport: abstraction.getDomPruneReport(),
   };
 
   /**

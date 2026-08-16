@@ -1,0 +1,1284 @@
+{
+  "schemaVersion": 1,
+  "kind": "multi-assignment",
+  "merged": {
+    "component": "Toggle",
+    "graph": {
+      "states": [
+        {
+          "id": "s0",
+          "key": "s0",
+          "fields": {
+            "on": false
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "label": "Power"
+            },
+            "actions": []
+          },
+          "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=false]{#(Off)}}}",
+          "transient": false
+        },
+        {
+          "id": "s1",
+          "key": "s1",
+          "fields": {
+            "on": true
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "label": "Power"
+            },
+            "actions": [
+              {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            ]
+          },
+          "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=true]{#(On)}}}",
+          "transient": false
+        }
+      ],
+      "edges": [
+        {
+          "from": "s0",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Off\"",
+            "kind": "click",
+            "label": "click button \"Off\""
+          }
+        },
+        {
+          "from": "s0",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Off\"",
+            "kind": "click",
+            "label": "click button \"Off\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s0",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"On\"",
+            "kind": "click",
+            "label": "click button \"On\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"On\"",
+            "kind": "click",
+            "label": "click button \"On\""
+          }
+        }
+      ]
+    },
+    "unavailableActions": [],
+    "findings": {
+      "unstable": [],
+      "nonDeterministic": [],
+      "replayDivergences": []
+    },
+    "budget": {
+      "actionsUsed": 48,
+      "statesFound": 2,
+      "exhausted": false
+    },
+    "unexploredFrontier": [],
+    "rekeyMerges": [],
+    "domPruneReport": [
+      {
+        "hookName": "on",
+        "variedNoDomCount": 0,
+        "everCoVaried": true,
+        "pruned": false
+      }
+    ]
+  },
+  "runs": [
+    {
+      "assignment": {
+        "source": "example",
+        "props": {
+          "label": "Power"
+        }
+      },
+      "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
+      "result": {
+        "component": "Toggle",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "on": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "Power"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=false]{#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "on": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "Power"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Off\"",
+                    "kind": "click",
+                    "label": "click button \"Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=true]{#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "on",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "label": "co"
+        }
+      },
+      "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
+      "result": {
+        "component": "Toggle",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "on": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "co"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(co)},button[aria-pressed=false]{#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "on": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "co"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Off\"",
+                    "kind": "click",
+                    "label": "click button \"Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(co)},button[aria-pressed=true]{#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "on",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "label": "length"
+        }
+      },
+      "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
+      "result": {
+        "component": "Toggle",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "on": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "length"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(length)},button[aria-pressed=false]{#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "on": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "length"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Off\"",
+                    "kind": "click",
+                    "label": "click button \"Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(length)},button[aria-pressed=true]{#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "on",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "label": "ref"
+        }
+      },
+      "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
+      "result": {
+        "component": "Toggle",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "on": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "ref"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(ref)},button[aria-pressed=false]{#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "on": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "ref"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Off\"",
+                    "kind": "click",
+                    "label": "click button \"Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(ref)},button[aria-pressed=true]{#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "on",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "label": "vn[PIUjx<"
+        }
+      },
+      "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
+      "result": {
+        "component": "Toggle",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "on": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "vn[PIUjx<"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(vn[PIUjx<)},button[aria-pressed=false]{#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "on": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "vn[PIUjx<"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Off\"",
+                    "kind": "click",
+                    "label": "click button \"Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(vn[PIUjx<)},button[aria-pressed=true]{#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "on",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "label": "x"
+        }
+      },
+      "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
+      "result": {
+        "component": "Toggle",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "on": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "x"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(x)},button[aria-pressed=false]{#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "on": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "x"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Off\"",
+                    "kind": "click",
+                    "label": "click button \"Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(x)},button[aria-pressed=true]{#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "on",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "label",
+        "props": {
+          "label": "co"
+        }
+      },
+      "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
+      "result": {
+        "component": "Toggle",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "on": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "co"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(co)},button[aria-pressed=false]{#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "on": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "co"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Off\"",
+                    "kind": "click",
+                    "label": "click button \"Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(co)},button[aria-pressed=true]{#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "on",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "label",
+        "props": {
+          "label": "length"
+        }
+      },
+      "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
+      "result": {
+        "component": "Toggle",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "on": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "length"
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(length)},button[aria-pressed=false]{#(Off)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "on": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "label": "length"
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Off\"",
+                    "kind": "click",
+                    "label": "click button \"Off\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{span[]{#(length)},button[aria-pressed=true]{#(On)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Off\"",
+                "kind": "click",
+                "label": "click button \"Off\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"On\"",
+                "kind": "click",
+                "label": "click button \"On\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "on",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ]
+      }
+    }
+  ],
+  "distinctShapes": [
+    {
+      "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
+      "assignments": [
+        {
+          "source": "example",
+          "props": {
+            "label": "Power"
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "label": "co"
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "label": "length"
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "label": "ref"
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "label": "vn[PIUjx<"
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "label": "x"
+          }
+        },
+        {
+          "source": "vary-one",
+          "variedProp": "label",
+          "props": {
+            "label": "co"
+          }
+        },
+        {
+          "source": "vary-one",
+          "variedProp": "label",
+          "props": {
+            "label": "length"
+          }
+        }
+      ],
+      "stateCount": 2,
+      "edgeCount": 4,
+      "isExampleShape": true
+    }
+  ],
+  "responsibleProps": [],
+  "budget": {
+    "perAssignment": [
+      {
+        "assignment": {
+          "source": "example",
+          "props": {
+            "label": "Power"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "label": "co"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "label": "length"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "label": "ref"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "label": "vn[PIUjx<"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "label": "x"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "label",
+          "props": {
+            "label": "co"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "label",
+          "props": {
+            "label": "length"
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      }
+    ],
+    "aggregate": {
+      "actionsUsed": 48,
+      "statesFound": 2,
+      "anyExhausted": false
+    }
+  }
+}
