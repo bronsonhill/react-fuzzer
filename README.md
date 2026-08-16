@@ -252,6 +252,8 @@ across `explore`, `approve`, and `diff`. `diff` additionally takes `--baseline <
   approve/diff mechanism, including the rekey-vs-regression distinction.
 - `docs/poc-outcome.md` — the closing assessment of the whole PoC: what worked, what
   didn't, concrete limits, and what's next.
+- `docs/state-preview-proposal.md` — proposed, not built: showing a state's rendered
+  output on hover in the report. Three costed options and a recommendation.
 
 ## Status
 
