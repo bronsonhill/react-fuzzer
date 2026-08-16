@@ -119,7 +119,10 @@ a { color: var(--link); }
         <span>edge label prefixed <code>[gen]</code> = this transition was only observed under a generated-props assignment</span>
         <span>edge label prefixed <code>[unstable]</code> = settle() did not reach quiescence</span>
         <span>edge label prefixed <code>[non-det]</code> = same action from same state observed landing on different destinations</span>
+        <span>edge label prefixed <code>[collapsed]</code>, with "(via ...)" = a whole transient async chain (user action &rarr; one or more transient intermediates &rarr; settled state) drawn as one edge; see the state table for the collapsed intermediates</span>
       </div>
+      <p class="empty-note">Transient async chains are collapsed in this diagram (default). Collapsed intermediates are still listed in the state table below, marked "collapsed". </p>
+      
       
       <div class="mermaid-container"><pre class="mermaid">stateDiagram-v2
   n_s0 : s0: on=false
@@ -137,14 +140,16 @@ a { color: var(--link); }
 
     <section id="states">
       <h2>State table</h2>
+      <p class="empty-note">Every state is listed here, including transient states collapsed out of the diagram above (see the "diagram" column).</p>
       <div class="table-scroll">
         <table>
-          <thead><tr><th>key</th><th>provenance</th><th>transient</th><th>fields</th><th>witness</th></tr></thead>
+          <thead><tr><th>key</th><th>provenance</th><th>transient</th><th>diagram</th><th>fields</th><th>witness</th></tr></thead>
           <tbody>
       <tr class="row-default">
         <td><code>s0</code></td>
         <td>default-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>on=false</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;label&quot;:&quot;Power&quot;}</code></div><div class="witness-actions"><em>mount only, no actions</em></div></td>
       </tr>
@@ -152,6 +157,7 @@ a { color: var(--link); }
         <td><code>s1</code></td>
         <td>default-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>on=true</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;label&quot;:&quot;Power&quot;}</code></div><ol class="witness-actions"><li>click: click button &quot;Off&quot;</li></ol></td>
       </tr></tbody>
@@ -187,7 +193,7 @@ a { color: var(--link); }
         <tbody>
           <tr><th>actions used</th><td>48</td></tr>
           <tr><th>states found</th><td>2</td></tr>
-          <tr><th>elapsed</th><td>59ms</td></tr>
+          <tr><th>elapsed</th><td>55ms</td></tr>
           <tr><th>budget exhausted</th><td>no</td></tr>
         </tbody>
       </table>
@@ -212,7 +218,7 @@ a { color: var(--link); }
         <td>yes</td>
         <td>2</td>
         <td>4</td>
-        <td><div><code>example</code> {&quot;label&quot;:&quot;Power&quot;}</div><div><code>vary-one:label</code> {&quot;label&quot;:&quot;length&quot;}</div><div><code>vary-one:label</code> {&quot;label&quot;:&quot;co&quot;}</div><div><code>random</code> {&quot;label&quot;:&quot;length&quot;}</div><div><code>random</code> {&quot;label&quot;:&quot;co&quot;}</div><div><code>random</code> {&quot;label&quot;:&quot;x&quot;}</div><div><code>random</code> {&quot;label&quot;:&quot;ref&quot;}</div><div><code>random</code> {&quot;label&quot;:&quot;vn[PIUjx&lt;&quot;}</div></td>
+        <td><div><code>example</code> {&quot;label&quot;:&quot;Power&quot;}</div><div><code>vary-one:label</code> {&quot;label&quot;:&quot;&quot;}</div><div><code>vary-one:label</code> {}</div><div><code>random</code> {&quot;label&quot;:&quot;&quot;}</div><div><code>random</code> {}</div><div><code>random</code> {&quot;label&quot;:&quot;pTJ&quot;}</div><div><code>random</code> {&quot;label&quot;:&quot;:'\\=E&quot;}</div><div><code>random</code> {&quot;label&quot;:&quot;@9&quot;}</div></td>
       </tr></tbody>
         </table>
       </div>

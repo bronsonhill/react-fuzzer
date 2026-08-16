@@ -30,9 +30,14 @@ import { exploreMultiAssignment } from "../src/props/explore.js";
 import { propsToArbitraries } from "../src/props/propsToArbitraries.js";
 import { explorationResultToJson, multiAssignmentResultToJson } from "../src/report/json.js";
 import { renderExplorationHtml, renderMultiAssignmentHtml } from "../src/report/html.js";
+import { buildBaseline } from "../src/baseline/build.js";
+import { diffAgainstBaseline, type DiffReport } from "../src/baseline/diff.js";
+import type { Baseline } from "../src/baseline/types.js";
 import type { Budget } from "../src/budget.js";
+import type { ExplorationResult } from "../src/explore/graph.js";
 
 export interface CliConfig {
+  command?: "explore" | "approve" | "diff";
   /** Absolute path to the component's source module. */
   componentPath: string;
   /** Named export identifying the component function within componentPath. */
@@ -47,11 +52,13 @@ export interface CliConfig {
   configPath?: string;
   outJson: string;
   outHtml: string;
+  baselinePath?: string;
   sampleCount?: number;
   varyPerProp?: number;
   seed?: number;
   budget?: Partial<Budget>;
   single?: boolean;
+  collapse?: boolean;
 }
 
 interface ExampleConfigModule {
@@ -71,7 +78,8 @@ async function loadConfigModule(configPath: string | undefined): Promise<Example
   return mod.default ?? mod.config ?? {};
 }
 
-async function run(config: CliConfig): Promise<void> {
+/** Runs the configured exploration (single- or multi-assignment) and returns both the merged ExplorationResult and, for explore/approve, whatever else the caller needs to render. */
+async function runExploration(config: CliConfig): Promise<{ result: ExplorationResult; writeExplore: () => void }> {
   const componentMod = (await import(pathToFileURL(config.componentPath).href)) as Record<string, unknown>;
   const Component = componentMod[config.exportName];
   if (typeof Component !== "function") {
@@ -113,15 +121,21 @@ async function run(config: CliConfig): Promise<void> {
     settle: exampleConfig.settle as any,
   };
 
+  const collapse = config.collapse ?? true;
+
   if (single) {
     const result = await exploreComponent({ ...explorationOpts, props: exampleProps });
-    fs.mkdirSync(path.dirname(config.outJson), { recursive: true });
-    fs.mkdirSync(path.dirname(config.outHtml), { recursive: true });
-    fs.writeFileSync(config.outJson, explorationResultToJson(result));
-    fs.writeFileSync(config.outHtml, renderExplorationHtml(result));
-    // eslint-disable-next-line no-console
-    console.log(`Wrote ${config.outJson} and ${config.outHtml} (${result.graph.states.length} states, single-assignment).`);
-    return;
+    return {
+      result,
+      writeExplore: () => {
+        fs.mkdirSync(path.dirname(config.outJson), { recursive: true });
+        fs.mkdirSync(path.dirname(config.outHtml), { recursive: true });
+        fs.writeFileSync(config.outJson, explorationResultToJson(result));
+        fs.writeFileSync(config.outHtml, renderExplorationHtml(result, { collapseTransientChains: collapse }));
+        // eslint-disable-next-line no-console
+        console.log(`Wrote ${config.outJson} and ${config.outHtml} (${result.graph.states.length} states, single-assignment).`);
+      },
+    };
   }
 
   const { arbitraries } = propsToArbitraries({
@@ -139,23 +153,88 @@ async function run(config: CliConfig): Promise<void> {
     seed: config.seed,
   });
 
-  fs.mkdirSync(path.dirname(config.outJson), { recursive: true });
-  fs.mkdirSync(path.dirname(config.outHtml), { recursive: true });
-  fs.writeFileSync(config.outJson, multiAssignmentResultToJson(multi));
-  fs.writeFileSync(config.outHtml, renderMultiAssignmentHtml(multi));
-  // eslint-disable-next-line no-console
-  console.log(
-    `Wrote ${config.outJson} and ${config.outHtml} (${multi.merged.graph.states.length} merged states across ${multi.runs.length} prop assignments).`,
+  return {
+    result: multi.merged,
+    writeExplore: () => {
+      fs.mkdirSync(path.dirname(config.outJson), { recursive: true });
+      fs.mkdirSync(path.dirname(config.outHtml), { recursive: true });
+      fs.writeFileSync(config.outJson, multiAssignmentResultToJson(multi));
+      fs.writeFileSync(config.outHtml, renderMultiAssignmentHtml(multi, { collapseTransientChains: collapse }));
+      // eslint-disable-next-line no-console
+      console.log(
+        `Wrote ${config.outJson} and ${config.outHtml} (${multi.merged.graph.states.length} merged states across ${multi.runs.length} prop assignments).`,
+      );
+    },
+  };
+}
+
+function printDiffReport(report: DiffReport): void {
+  const lines: string[] = [`Diff report for ${report.component}:`];
+  const section = (title: string, items: unknown[], fmt: (i: any) => string) => {
+    lines.push(`  ${title}: ${items.length}`);
+    for (const i of items) lines.push(`    - ${fmt(i)}`);
+  };
+  section("new states", report.newStates, (s) => `${s.key}`);
+  section("lost states", report.lostStates, (s) => `${s.name ?? "?"} (${s.key})`);
+  section("abstraction churn merges (NOT regressions)", report.abstractionChurnMerges, (m) =>
+    `${m.mergedBaselineStates.map((s: any) => s.name).join(" + ")} -> ${m.recomputedKey}: ${m.reason}`,
   );
+  section("new transitions", report.newTransitions, (t) => `${t.from} --${t.action}--> ${t.to}`);
+  section("lost transitions", report.lostTransitions, (t) => `${t.from} --${t.action}--> ${t.to}`);
+  section("provenance changes", report.provenanceChanges, (p) => `${p.name} (${p.key}): ${p.from} -> ${p.to}`);
+  section("stability changes", report.stabilityChanges, (s) => `${s.from} --${s.action}--> ${s.to}: stable ${s.baselineStable} -> ${s.currentStable}`);
+  lines.push(`  hasDifferences: ${report.hasDifferences}`);
+  // eslint-disable-next-line no-console
+  console.log(lines.join("\n"));
+}
+
+async function run(config: CliConfig): Promise<void> {
+  const command = config.command ?? "explore";
+
+  if (command === "explore") {
+    const { writeExplore } = await runExploration(config);
+    writeExplore();
+    return;
+  }
+
+  if (command === "approve") {
+    const { result } = await runExploration(config);
+    const baseline = buildBaseline(result);
+    fs.mkdirSync(path.dirname(config.outJson), { recursive: true });
+    fs.writeFileSync(config.outJson, JSON.stringify(baseline, null, 2) + "\n");
+    // eslint-disable-next-line no-console
+    console.log(
+      `Approved baseline ${config.outJson}: ${baseline.states.length} states, ${baseline.transitions.length} transitions. ` +
+        `Rename states in the file to record developer approval of their identity.`,
+    );
+    return;
+  }
+
+  // diff
+  const baselinePath = config.baselinePath ?? config.outJson;
+  if (!fs.existsSync(baselinePath)) {
+    throw new Error(`explore-runner diff: no baseline found at ${baselinePath}. Run \`approve\` first.`);
+  }
+  const baseline = JSON.parse(fs.readFileSync(baselinePath, "utf8")) as Baseline;
+  const { result } = await runExploration(config);
+  const report = diffAgainstBaseline(baseline, result);
+  printDiffReport(report);
+  // Exit non-zero (via a failing assertion, which fails the vitest run
+  // src/cli.ts spawns and propagates as CLI exit code) exactly when there
+  // are real differences. Abstraction-churn-only merges are, by design
+  // (see src/baseline/diff.ts), NOT counted in hasDifferences, so a
+  // demotion-driven merge alone does not fail this diff.
+  expect(report.hasDifferences, JSON.stringify(report, null, 2)).toBe(false);
 }
 
 const rawConfig = process.env.REACT_FUZZER_CLI_CONFIG;
 
 describe("explore-runner (driven by src/cli.ts)", () => {
-  it.skipIf(!rawConfig)("runs the configured exploration and writes the JSON/HTML artefacts", async () => {
+  it.skipIf(!rawConfig)("runs the configured command (explore/approve/diff)", async () => {
     const config = JSON.parse(rawConfig as string) as CliConfig;
     await run(config);
-    expect(fs.existsSync(config.outJson)).toBe(true);
-    expect(fs.existsSync(config.outHtml)).toBe(true);
+    if ((config.command ?? "explore") !== "diff") {
+      expect(fs.existsSync(config.outJson)).toBe(true);
+    }
   });
 });

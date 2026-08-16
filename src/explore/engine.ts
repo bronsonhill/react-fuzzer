@@ -569,6 +569,8 @@ export async function exploreComponent(options: ExploreOptions): Promise<Explora
     unexploredFrontier,
     rekeyMerges,
     domPruneReport: abstraction.getDomPruneReport(),
+    demotedHooks: abstraction.getDemotedHooks(),
+    prunedHooks: abstraction.getPrunedHooks(),
   };
 
   /**

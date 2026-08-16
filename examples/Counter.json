@@ -1362,7 +1362,11 @@
         "everCoVaried": true,
         "pruned": false
       }
-    ]
+    ],
+    "demotedHooks": [
+      "value"
+    ],
+    "prunedHooks": []
   },
   "runs": [
     {
@@ -1802,7 +1806,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -2139,7 +2145,11 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [
+          "value"
+        ],
+        "prunedHooks": []
       }
     },
     {
@@ -2476,7 +2486,11 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [
+          "value"
+        ],
+        "prunedHooks": []
       }
     },
     {
@@ -2813,7 +2827,11 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [
+          "value"
+        ],
+        "prunedHooks": []
       }
     },
     {
@@ -3148,7 +3166,11 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [
+          "value"
+        ],
+        "prunedHooks": []
       }
     },
     {
@@ -3547,7 +3569,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -3618,7 +3642,9 @@
         },
         "unexploredFrontier": [],
         "rekeyMerges": [],
-        "domPruneReport": []
+        "domPruneReport": [],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -4052,7 +4078,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -4462,7 +4490,11 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [
+          "value"
+        ],
+        "prunedHooks": []
       }
     },
     {
@@ -4896,7 +4928,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -5402,7 +5436,11 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [
+          "value"
+        ],
+        "prunedHooks": []
       }
     },
     {
@@ -5836,7 +5874,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     }
   ],

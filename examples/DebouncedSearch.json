@@ -1572,7 +1572,7 @@
       "replayDivergences": []
     },
     "budget": {
-      "actionsUsed": 840,
+      "actionsUsed": 1050,
       "statesFound": 18,
       "exhausted": false
     },
@@ -1597,7 +1597,9 @@
         "everCoVaried": false,
         "pruned": false
       }
-    ]
+    ],
+    "demotedHooks": [],
+    "prunedHooks": []
   },
   "runs": [
     {
@@ -2986,14 +2988,16 @@
             "everCoVaried": false,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
       "assignment": {
         "source": "random",
         "props": {
-          "debounceMs": -41
+          "debounceMs": -4
         }
       },
       "shapeHash": "states[phase=\"error\"|results=[]|text=\"errorterm\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"idle\"|results=[]|text=\"\",phase=\"no-results\"|results=[]|text=\"emptyterm\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"searching\"|results=[]|text=\"emptyterm\",phase=\"searching\"|results=[]|text=\"errorterm\",phase=\"searching\"|results=[]|text=\"resultsterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"waiting\"|results=[]|text=\"emptyterm\",phase=\"waiting\"|results=[]|text=\"errorterm\",phase=\"waiting\"|results=[]|text=\"resultsterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"]|edges[phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"idle\"|results=[]|text=\"\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"searching\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"waiting\"|results=[]|text=\"emptyterm\"::phase=\"searching\"|results=[]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"errorterm\"::phase=\"searching\"|results=[]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"resultsterm\"::phase=\"searching\"|results=[]|text=\"resultsterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::timer]",
@@ -3012,7 +3016,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": []
               },
@@ -3030,7 +3034,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3061,7 +3065,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3110,7 +3114,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3159,7 +3163,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3207,7 +3211,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3262,7 +3266,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3317,7 +3321,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3371,7 +3375,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3432,7 +3436,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3488,7 +3492,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3514,7 +3518,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3539,7 +3543,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3571,7 +3575,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3603,7 +3607,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3634,7 +3638,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3672,7 +3676,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -3715,7 +3719,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -4375,14 +4379,16 @@
             "everCoVaried": false,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
       "assignment": {
         "source": "random",
         "props": {
-          "debounceMs": 58
+          "debounceMs": -78
         }
       },
       "shapeHash": "states[phase=\"error\"|results=[]|text=\"errorterm\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"idle\"|results=[]|text=\"\",phase=\"no-results\"|results=[]|text=\"emptyterm\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"searching\"|results=[]|text=\"emptyterm\",phase=\"searching\"|results=[]|text=\"errorterm\",phase=\"searching\"|results=[]|text=\"resultsterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"waiting\"|results=[]|text=\"emptyterm\",phase=\"waiting\"|results=[]|text=\"errorterm\",phase=\"waiting\"|results=[]|text=\"resultsterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"]|edges[phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"idle\"|results=[]|text=\"\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"searching\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"waiting\"|results=[]|text=\"emptyterm\"::phase=\"searching\"|results=[]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"errorterm\"::phase=\"searching\"|results=[]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"resultsterm\"::phase=\"searching\"|results=[]|text=\"resultsterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::timer]",
@@ -4401,7 +4407,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": []
               },
@@ -4419,7 +4425,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4450,7 +4456,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4499,7 +4505,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4548,7 +4554,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4596,7 +4602,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4651,7 +4657,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4706,7 +4712,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4760,7 +4766,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4821,7 +4827,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4877,7 +4883,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4903,7 +4909,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4928,7 +4934,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4960,7 +4966,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -4992,7 +4998,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -5023,7 +5029,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -5061,7 +5067,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -5104,7 +5110,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 58
+                  "debounceMs": -78
                 },
                 "actions": [
                   {
@@ -5764,14 +5770,16 @@
             "everCoVaried": false,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
       "assignment": {
         "source": "random",
         "props": {
-          "debounceMs": 63
+          "debounceMs": 11
         }
       },
       "shapeHash": "states[phase=\"error\"|results=[]|text=\"errorterm\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"idle\"|results=[]|text=\"\",phase=\"no-results\"|results=[]|text=\"emptyterm\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"searching\"|results=[]|text=\"emptyterm\",phase=\"searching\"|results=[]|text=\"errorterm\",phase=\"searching\"|results=[]|text=\"resultsterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"waiting\"|results=[]|text=\"emptyterm\",phase=\"waiting\"|results=[]|text=\"errorterm\",phase=\"waiting\"|results=[]|text=\"resultsterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"]|edges[phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"idle\"|results=[]|text=\"\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"searching\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"waiting\"|results=[]|text=\"emptyterm\"::phase=\"searching\"|results=[]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"errorterm\"::phase=\"searching\"|results=[]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"resultsterm\"::phase=\"searching\"|results=[]|text=\"resultsterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::timer]",
@@ -5790,7 +5798,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": []
               },
@@ -5808,7 +5816,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -5839,7 +5847,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -5888,7 +5896,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -5937,7 +5945,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -5985,7 +5993,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6040,7 +6048,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6095,7 +6103,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6149,7 +6157,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6210,7 +6218,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6266,7 +6274,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6292,7 +6300,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6317,7 +6325,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6349,7 +6357,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6381,7 +6389,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6412,7 +6420,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6450,7 +6458,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -6493,7 +6501,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": 63
+                  "debounceMs": 11
                 },
                 "actions": [
                   {
@@ -7153,7 +7161,2753 @@
             "everCoVaried": false,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "debounceMs": 3
+        }
+      },
+      "shapeHash": "states[phase=\"error\"|results=[]|text=\"errorterm\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"idle\"|results=[]|text=\"\",phase=\"no-results\"|results=[]|text=\"emptyterm\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"searching\"|results=[]|text=\"emptyterm\",phase=\"searching\"|results=[]|text=\"errorterm\",phase=\"searching\"|results=[]|text=\"resultsterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"waiting\"|results=[]|text=\"emptyterm\",phase=\"waiting\"|results=[]|text=\"errorterm\",phase=\"waiting\"|results=[]|text=\"resultsterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"]|edges[phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"idle\"|results=[]|text=\"\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"searching\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"waiting\"|results=[]|text=\"emptyterm\"::phase=\"searching\"|results=[]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"errorterm\"::phase=\"searching\"|results=[]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"resultsterm\"::phase=\"searching\"|results=[]|text=\"resultsterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::timer]",
+      "result": {
+        "component": "DebouncedSearch",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "text": "",
+                "phase": "idle",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "text": "errorterm",
+                "phase": "waiting",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s10",
+              "key": "s10",
+              "fields": {
+                "text": "errorterm",
+                "phase": "waiting",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s11",
+              "key": "s11",
+              "fields": {
+                "text": "errorterm",
+                "phase": "searching",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s12",
+              "key": "s12",
+              "fields": {
+                "text": "errorterm",
+                "phase": "error",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "transient": false
+            },
+            {
+              "id": "s13",
+              "key": "s13",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "waiting",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s14",
+              "key": "s14",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "searching",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s15",
+              "key": "s15",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "no-results",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "transient": false
+            },
+            {
+              "id": "s16",
+              "key": "s16",
+              "fields": {
+                "text": "resultsterm",
+                "phase": "waiting",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s17",
+              "key": "s17",
+              "fields": {
+                "text": "resultsterm",
+                "phase": "searching",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "text": "errorterm",
+                "phase": "searching",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "text": "errorterm",
+                "phase": "error",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "transient": false
+            },
+            {
+              "id": "s4",
+              "key": "s4",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "waiting",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s5",
+              "key": "s5",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "searching",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s6",
+              "key": "s6",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "no-results",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "transient": false
+            },
+            {
+              "id": "s7",
+              "key": "s7",
+              "fields": {
+                "text": "resultsterm",
+                "phase": "waiting",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s8",
+              "key": "s8",
+              "fields": {
+                "text": "resultsterm",
+                "phase": "searching",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s9",
+              "key": "s9",
+              "fields": {
+                "text": "resultsterm",
+                "phase": "results",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "debounceMs": 3
+                },
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s10",
+              "to": "s11",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s10",
+              "to": "s11",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s11",
+              "to": "s12",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s11",
+              "to": "s12",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s12",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s12",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s12",
+              "to": "s16",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s12",
+              "to": "s13",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s12",
+              "to": "s12",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            },
+            {
+              "from": "s13",
+              "to": "s14",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s13",
+              "to": "s14",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s14",
+              "to": "s15",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s14",
+              "to": "s15",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s15",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s15",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s15",
+              "to": "s16",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s15",
+              "to": "s15",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s15",
+              "to": "s10",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            },
+            {
+              "from": "s16",
+              "to": "s17",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s16",
+              "to": "s17",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s17",
+              "to": "s9",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s17",
+              "to": "s9",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s5",
+              "to": "s6",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s5",
+              "to": "s6",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s6",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s8",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s7",
+              "to": "s8",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s7",
+              "to": "s8",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s8",
+              "to": "s9",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s8",
+              "to": "s9",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s8",
+              "to": "s9",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s9",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s9",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s13",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s10",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 105,
+          "statesFound": 18,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "phase",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "results",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "text",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {}
+      },
+      "shapeHash": "states[phase=\"error\"|results=[]|text=\"errorterm\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"idle\"|results=[]|text=\"\",phase=\"no-results\"|results=[]|text=\"emptyterm\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"searching\"|results=[]|text=\"emptyterm\",phase=\"searching\"|results=[]|text=\"errorterm\",phase=\"searching\"|results=[]|text=\"resultsterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"waiting\"|results=[]|text=\"emptyterm\",phase=\"waiting\"|results=[]|text=\"errorterm\",phase=\"waiting\"|results=[]|text=\"resultsterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"]|edges[phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"idle\"|results=[]|text=\"\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"searching\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"waiting\"|results=[]|text=\"emptyterm\"::phase=\"searching\"|results=[]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"errorterm\"::phase=\"searching\"|results=[]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"resultsterm\"::phase=\"searching\"|results=[]|text=\"resultsterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::timer]",
+      "result": {
+        "component": "DebouncedSearch",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "text": "",
+                "phase": "idle",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "text": "errorterm",
+                "phase": "waiting",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s10",
+              "key": "s10",
+              "fields": {
+                "text": "errorterm",
+                "phase": "waiting",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s11",
+              "key": "s11",
+              "fields": {
+                "text": "errorterm",
+                "phase": "searching",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s12",
+              "key": "s12",
+              "fields": {
+                "text": "errorterm",
+                "phase": "error",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "transient": false
+            },
+            {
+              "id": "s13",
+              "key": "s13",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "waiting",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s14",
+              "key": "s14",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "searching",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s15",
+              "key": "s15",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "no-results",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "transient": false
+            },
+            {
+              "id": "s16",
+              "key": "s16",
+              "fields": {
+                "text": "resultsterm",
+                "phase": "waiting",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s17",
+              "key": "s17",
+              "fields": {
+                "text": "resultsterm",
+                "phase": "searching",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "text": "errorterm",
+                "phase": "searching",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "text": "errorterm",
+                "phase": "error",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "transient": false
+            },
+            {
+              "id": "s4",
+              "key": "s4",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "waiting",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s5",
+              "key": "s5",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "searching",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s6",
+              "key": "s6",
+              "fields": {
+                "text": "emptyterm",
+                "phase": "no-results",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "transient": false
+            },
+            {
+              "id": "s7",
+              "key": "s7",
+              "fields": {
+                "text": "resultsterm",
+                "phase": "waiting",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s8",
+              "key": "s8",
+              "fields": {
+                "text": "resultsterm",
+                "phase": "searching",
+                "results": []
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  }
+                ],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "transient": true
+            },
+            {
+              "id": "s9",
+              "key": "s9",
+              "fields": {
+                "text": "resultsterm",
+                "phase": "results",
+                "results": [
+                  {
+                    "id": "1",
+                    "label": "Result A"
+                  }
+                ]
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Search\":3",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"errorterm\"",
+                    "value": "errorterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":2",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"emptyterm\"",
+                    "value": "emptyterm"
+                  },
+                  {
+                    "id": "fill:textbox:\"Search\":1",
+                    "kind": "fill",
+                    "label": "fill \"Search\" with \"resultsterm\"",
+                    "value": "resultsterm"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s10",
+              "to": "s11",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s10",
+              "to": "s11",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s11",
+              "to": "s12",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s11",
+              "to": "s12",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s12",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s12",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s12",
+              "to": "s16",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s12",
+              "to": "s13",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s12",
+              "to": "s12",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            },
+            {
+              "from": "s13",
+              "to": "s14",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s13",
+              "to": "s14",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s14",
+              "to": "s15",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s14",
+              "to": "s15",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s15",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s15",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s15",
+              "to": "s16",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s15",
+              "to": "s15",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s15",
+              "to": "s10",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            },
+            {
+              "from": "s16",
+              "to": "s17",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s16",
+              "to": "s17",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s17",
+              "to": "s9",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s17",
+              "to": "s9",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s5",
+              "to": "s6",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s5",
+              "to": "s6",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s6",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s8",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s7",
+              "to": "s8",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s7",
+              "to": "s8",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "timer"
+            },
+            {
+              "from": "s8",
+              "to": "s9",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s8",
+              "to": "s9",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s8",
+              "to": "s9",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s9",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\"",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s9",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":1",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"resultsterm\"",
+                "value": "resultsterm"
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s13",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":2",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"emptyterm\"",
+                "value": "emptyterm"
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s10",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Search\":3",
+                "kind": "fill",
+                "label": "fill \"Search\" with \"errorterm\"",
+                "value": "errorterm"
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 105,
+          "statesFound": 18,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "phase",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "results",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "text",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -7161,7 +9915,7 @@
         "source": "vary-one",
         "variedProp": "debounceMs",
         "props": {
-          "debounceMs": -41
+          "debounceMs": -4
         }
       },
       "shapeHash": "states[phase=\"error\"|results=[]|text=\"errorterm\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"idle\"|results=[]|text=\"\",phase=\"no-results\"|results=[]|text=\"emptyterm\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"searching\"|results=[]|text=\"emptyterm\",phase=\"searching\"|results=[]|text=\"errorterm\",phase=\"searching\"|results=[]|text=\"resultsterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"waiting\"|results=[]|text=\"emptyterm\",phase=\"waiting\"|results=[]|text=\"errorterm\",phase=\"waiting\"|results=[]|text=\"resultsterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"]|edges[phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"idle\"|results=[]|text=\"\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"searching\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"waiting\"|results=[]|text=\"emptyterm\"::phase=\"searching\"|results=[]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"errorterm\"::phase=\"searching\"|results=[]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"resultsterm\"::phase=\"searching\"|results=[]|text=\"resultsterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::timer]",
@@ -7180,7 +9934,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": []
               },
@@ -7198,7 +9952,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7229,7 +9983,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7278,7 +10032,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7327,7 +10081,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7375,7 +10129,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7430,7 +10184,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7485,7 +10239,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7539,7 +10293,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7600,7 +10354,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7656,7 +10410,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7682,7 +10436,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7707,7 +10461,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7739,7 +10493,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7771,7 +10525,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7802,7 +10556,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7840,7 +10594,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -7883,7 +10637,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "debounceMs": -41
+                  "debounceMs": -4
                 },
                 "actions": [
                   {
@@ -8543,16 +11297,16 @@
             "everCoVaried": false,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
       "assignment": {
         "source": "vary-one",
         "variedProp": "debounceMs",
-        "props": {
-          "debounceMs": 58
-        }
+        "props": {}
       },
       "shapeHash": "states[phase=\"error\"|results=[]|text=\"errorterm\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"idle\"|results=[]|text=\"\",phase=\"no-results\"|results=[]|text=\"emptyterm\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"searching\"|results=[]|text=\"emptyterm\",phase=\"searching\"|results=[]|text=\"errorterm\",phase=\"searching\"|results=[]|text=\"resultsterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\",phase=\"waiting\"|results=[]|text=\"emptyterm\",phase=\"waiting\"|results=[]|text=\"errorterm\",phase=\"waiting\"|results=[]|text=\"resultsterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\",phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"]|edges[phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[]|text=\"errorterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"idle\"|results=[]|text=\"\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"idle\"|results=[]|text=\"\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[]|text=\"emptyterm\"::phase=\"waiting\"|results=[]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"idle\"|results=[]|text=\"\"::user::fill:textbox:\"Search\",phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::user::fill:textbox:\"Search\":1,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::user::fill:textbox:\"Search\":2,phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::user::fill:textbox:\"Search\":3,phase=\"searching\"|results=[]|text=\"emptyterm\"::phase=\"no-results\"|results=[]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"errorterm\"::phase=\"error\"|results=[]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"no-results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"error\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::microtask,phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"results\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::microtask,phase=\"waiting\"|results=[]|text=\"emptyterm\"::phase=\"searching\"|results=[]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"errorterm\"::phase=\"searching\"|results=[]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[]|text=\"resultsterm\"::phase=\"searching\"|results=[]|text=\"resultsterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"emptyterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"errorterm\"::auto::timer,phase=\"waiting\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::phase=\"searching\"|results=[{\"id\":\"1\",\"label\":\"Result A\"}]|text=\"resultsterm\"::auto::timer]",
       "result": {
@@ -8569,9 +11323,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
@@ -8587,9 +11339,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -8618,9 +11368,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -8667,9 +11415,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -8716,9 +11462,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -8764,9 +11508,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -8819,9 +11561,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -8874,9 +11614,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -8928,9 +11666,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -8989,9 +11725,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -9045,9 +11779,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -9071,9 +11803,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -9096,9 +11826,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -9128,9 +11856,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -9160,9 +11886,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -9191,9 +11915,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -9229,9 +11951,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -9272,9 +11992,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "debounceMs": 58
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "fill:textbox:\"Search\":3",
@@ -9933,7 +12651,9 @@
             "everCoVaried": false,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -11323,7 +14043,9 @@
             "everCoVaried": false,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -12713,7 +15435,9 @@
             "everCoVaried": false,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     }
   ],
@@ -12730,34 +15454,42 @@
         {
           "source": "random",
           "props": {
-            "debounceMs": -41
+            "debounceMs": -4
           }
         },
         {
           "source": "random",
           "props": {
-            "debounceMs": 58
+            "debounceMs": -78
           }
         },
         {
           "source": "random",
           "props": {
-            "debounceMs": 63
+            "debounceMs": 11
           }
+        },
+        {
+          "source": "random",
+          "props": {
+            "debounceMs": 3
+          }
+        },
+        {
+          "source": "random",
+          "props": {}
         },
         {
           "source": "vary-one",
           "variedProp": "debounceMs",
           "props": {
-            "debounceMs": -41
+            "debounceMs": -4
           }
         },
         {
           "source": "vary-one",
           "variedProp": "debounceMs",
-          "props": {
-            "debounceMs": 58
-          }
+          "props": {}
         },
         {
           "source": "vary-one",
@@ -12797,7 +15529,7 @@
         "assignment": {
           "source": "random",
           "props": {
-            "debounceMs": -41
+            "debounceMs": -4
           }
         },
         "actionsUsed": 105,
@@ -12808,7 +15540,7 @@
         "assignment": {
           "source": "random",
           "props": {
-            "debounceMs": 58
+            "debounceMs": -78
           }
         },
         "actionsUsed": 105,
@@ -12819,8 +15551,28 @@
         "assignment": {
           "source": "random",
           "props": {
-            "debounceMs": 63
+            "debounceMs": 11
           }
+        },
+        "actionsUsed": 105,
+        "statesFound": 18,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "debounceMs": 3
+          }
+        },
+        "actionsUsed": 105,
+        "statesFound": 18,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {}
         },
         "actionsUsed": 105,
         "statesFound": 18,
@@ -12831,7 +15583,7 @@
           "source": "vary-one",
           "variedProp": "debounceMs",
           "props": {
-            "debounceMs": -41
+            "debounceMs": -4
           }
         },
         "actionsUsed": 105,
@@ -12842,9 +15594,7 @@
         "assignment": {
           "source": "vary-one",
           "variedProp": "debounceMs",
-          "props": {
-            "debounceMs": 58
-          }
+          "props": {}
         },
         "actionsUsed": 105,
         "statesFound": 18,
@@ -12876,7 +15626,7 @@
       }
     ],
     "aggregate": {
-      "actionsUsed": 840,
+      "actionsUsed": 1050,
       "statesFound": 18,
       "anyExhausted": false
     }

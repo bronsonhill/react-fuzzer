@@ -6,8 +6,8 @@
     "graph": {
       "states": [
         {
-          "id": "gen0:s1",
-          "key": "gen0:s1",
+          "id": "gen1:s1",
+          "key": "gen1:s1",
           "fields": {
             "status": "loaded",
             "items": [
@@ -27,8 +27,8 @@
           "transient": false
         },
         {
-          "id": "gen1:s1",
-          "key": "gen1:s1",
+          "id": "gen4:s1",
+          "key": "gen4:s1",
           "fields": {
             "status": "empty",
             "items": [],
@@ -78,7 +78,7 @@
       ],
       "edges": [
         {
-          "from": "gen1:s1",
+          "from": "gen4:s1",
           "to": "s0",
           "kind": "user",
           "provenance": "generated-props",
@@ -91,7 +91,7 @@
         },
         {
           "from": "s0",
-          "to": "gen0:s1",
+          "to": "gen1:s1",
           "kind": "auto",
           "provenance": "generated-props",
           "stable": true,
@@ -99,7 +99,7 @@
         },
         {
           "from": "s0",
-          "to": "gen1:s1",
+          "to": "gen4:s1",
           "kind": "auto",
           "provenance": "generated-props",
           "stable": true,
@@ -114,10 +114,30 @@
           "driver": "microtask"
         },
         {
+          "from": "s0",
+          "to": "s1",
+          "kind": "auto",
+          "provenance": "generated-props",
+          "stable": true,
+          "driver": "microtask"
+        },
+        {
           "from": "s1",
           "to": "s0",
           "kind": "user",
           "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Retry\"",
+            "kind": "click",
+            "label": "click button \"Retry\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s0",
+          "kind": "user",
+          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"Retry\"",
@@ -230,6 +250,10 @@
         "everCoVaried": true,
         "pruned": false
       }
+    ],
+    "demotedHooks": [],
+    "prunedHooks": [
+      "attempt"
     ]
   },
   "runs": [
@@ -455,6 +479,239 @@
             "everCoVaried": true,
             "pruned": false
           }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": [
+          "attempt"
+        ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {}
+      },
+      "shapeHash": "states[attempt=0|items=[]|status=\"error\",attempt=0|items=[]|status=\"loading\"]|edges[attempt=0|items=[]|status=\"error\"::attempt=0|items=[]|status=\"loading\"::user::click:button:\"Retry\",attempt=0|items=[]|status=\"loading\"::attempt=0|items=[]|status=\"error\"::auto::microtask]",
+      "result": {
+        "component": "FetchList",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "status": "loading",
+                "items": [],
+                "attempt": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
+              "transient": true
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "status": "error",
+                "items": [],
+                "attempt": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{p[role=alert]{#(Failed to load items)},button[]{#(Retry)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 9,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [
+          {
+            "from": [
+              "s2",
+              "s4"
+            ],
+            "to": "s0"
+          },
+          {
+            "from": [
+              "s3",
+              "s5"
+            ],
+            "to": "s1"
+          }
+        ],
+        "domPruneReport": [
+          {
+            "hookName": "attempt",
+            "variedNoDomCount": 3,
+            "everCoVaried": false,
+            "pruned": true
+          },
+          {
+            "hookName": "items",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "status",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": [
+          "attempt"
         ]
       }
     },
@@ -550,7 +807,9 @@
             "everCoVaried": false,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -775,7 +1034,108 @@
             "everCoVaried": true,
             "pruned": false
           }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": [
+          "attempt"
         ]
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {}
+      },
+      "shapeHash": "states[attempt=0|items=[]|status=\"loading\",attempt=0|items=[{\"id\":\"1\",\"label\":\"One\"}]|status=\"loaded\"]|edges[attempt=0|items=[]|status=\"loading\"::attempt=0|items=[{\"id\":\"1\",\"label\":\"One\"}]|status=\"loaded\"::auto::microtask]",
+      "result": {
+        "component": "FetchList",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "status": "loading",
+                "items": [],
+                "attempt": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [],
+                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
+              },
+              "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
+              "transient": true
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "status": "loaded",
+                "items": [
+                  {
+                    "id": "1",
+                    "label": "One"
+                  }
+                ],
+                "attempt": 0
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": []
+              },
+              "domFingerprint": "div[]{ul[]{li[]{#(One)}}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            }
+          ]
+        },
+        "unavailableActions": [],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 0,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "attempt",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "items",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "status",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -1000,15 +1360,20 @@
             "everCoVaried": true,
             "pruned": false
           }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": [
+          "attempt"
         ]
       }
     },
     {
       "assignment": {
-        "source": "random",
+        "source": "vary-one",
+        "variedProp": "fetchItems",
         "props": {}
       },
-      "shapeHash": "states[attempt=0|items=[]|status=\"loading\",attempt=0|items=[{\"id\":\"1\",\"label\":\"One\"}]|status=\"loaded\"]|edges[attempt=0|items=[]|status=\"loading\"::attempt=0|items=[{\"id\":\"1\",\"label\":\"One\"}]|status=\"loaded\"::auto::microtask]",
+      "shapeHash": "states[attempt=0|items=[]|status=\"error\",attempt=0|items=[]|status=\"loading\"]|edges[attempt=0|items=[]|status=\"error\"::attempt=0|items=[]|status=\"loading\"::user::click:button:\"Retry\",attempt=0|items=[]|status=\"loading\"::attempt=0|items=[]|status=\"error\"::auto::microtask]",
       "result": {
         "component": "FetchList",
         "graph": {
@@ -1034,116 +1399,16 @@
               "id": "s1",
               "key": "s1",
               "fields": {
-                "status": "loaded",
-                "items": [
-                  {
-                    "id": "1",
-                    "label": "One"
-                  }
-                ],
-                "attempt": 0
-              },
-              "provenance": "default-props",
-              "witness": {
-                "props": {},
-                "actions": []
-              },
-              "domFingerprint": "div[]{ul[]{li[]{#(One)}}}",
-              "transient": false
-            }
-          ],
-          "edges": [
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            }
-          ]
-        },
-        "unavailableActions": [],
-        "findings": {
-          "unstable": [],
-          "nonDeterministic": [],
-          "replayDivergences": []
-        },
-        "budget": {
-          "actionsUsed": 0,
-          "statesFound": 2,
-          "exhausted": false
-        },
-        "unexploredFrontier": [],
-        "rekeyMerges": [],
-        "domPruneReport": [
-          {
-            "hookName": "attempt",
-            "variedNoDomCount": 0,
-            "everCoVaried": false,
-            "pruned": false
-          },
-          {
-            "hookName": "items",
-            "variedNoDomCount": 0,
-            "everCoVaried": false,
-            "pruned": false
-          },
-          {
-            "hookName": "status",
-            "variedNoDomCount": 0,
-            "everCoVaried": false,
-            "pruned": false
-          }
-        ]
-      }
-    },
-    {
-      "assignment": {
-        "source": "random",
-        "props": {}
-      },
-      "shapeHash": "states[attempt=0|items=[]|status=\"loading\",attempt=0|items=[{\"id\":\"1\",\"label\":\"One\"}]|status=\"loaded\"]|edges[attempt=0|items=[]|status=\"loading\"::attempt=0|items=[{\"id\":\"1\",\"label\":\"One\"}]|status=\"loaded\"::auto::microtask]",
-      "result": {
-        "component": "FetchList",
-        "graph": {
-          "states": [
-            {
-              "id": "s0",
-              "key": "s0",
-              "fields": {
-                "status": "loading",
+                "status": "error",
                 "items": [],
                 "attempt": 0
               },
               "provenance": "default-props",
               "witness": {
                 "props": {},
-                "actions": [],
-                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
-              },
-              "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
-              "transient": true
-            },
-            {
-              "id": "s1",
-              "key": "s1",
-              "fields": {
-                "status": "loaded",
-                "items": [
-                  {
-                    "id": "1",
-                    "label": "One"
-                  }
-                ],
-                "attempt": 0
-              },
-              "provenance": "default-props",
-              "witness": {
-                "props": {},
                 "actions": []
               },
-              "domFingerprint": "div[]{ul[]{li[]{#(One)}}}",
+              "domFingerprint": "div[]{div[]{p[role=alert]{#(Failed to load items)},button[]{#(Retry)}}}",
               "transient": false
             }
           ],
@@ -1155,94 +1420,7 @@
               "provenance": "default-props",
               "stable": true,
               "driver": "microtask"
-            }
-          ]
-        },
-        "unavailableActions": [],
-        "findings": {
-          "unstable": [],
-          "nonDeterministic": [],
-          "replayDivergences": []
-        },
-        "budget": {
-          "actionsUsed": 0,
-          "statesFound": 2,
-          "exhausted": false
-        },
-        "unexploredFrontier": [],
-        "rekeyMerges": [],
-        "domPruneReport": [
-          {
-            "hookName": "attempt",
-            "variedNoDomCount": 0,
-            "everCoVaried": false,
-            "pruned": false
-          },
-          {
-            "hookName": "items",
-            "variedNoDomCount": 0,
-            "everCoVaried": false,
-            "pruned": false
-          },
-          {
-            "hookName": "status",
-            "variedNoDomCount": 0,
-            "everCoVaried": false,
-            "pruned": false
-          }
-        ]
-      }
-    },
-    {
-      "assignment": {
-        "source": "random",
-        "props": {}
-      },
-      "shapeHash": "states[attempt=0|items=[]|status=\"loading\",attempt=0|items=[{\"id\":\"1\",\"label\":\"One\"}]|status=\"loaded\"]|edges[attempt=0|items=[]|status=\"loading\"::attempt=0|items=[{\"id\":\"1\",\"label\":\"One\"}]|status=\"loaded\"::auto::microtask]",
-      "result": {
-        "component": "FetchList",
-        "graph": {
-          "states": [
-            {
-              "id": "s0",
-              "key": "s0",
-              "fields": {
-                "status": "loading",
-                "items": [],
-                "attempt": 0
-              },
-              "provenance": "default-props",
-              "witness": {
-                "props": {},
-                "actions": [],
-                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
-              },
-              "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
-              "transient": true
             },
-            {
-              "id": "s1",
-              "key": "s1",
-              "fields": {
-                "status": "loaded",
-                "items": [
-                  {
-                    "id": "1",
-                    "label": "One"
-                  }
-                ],
-                "attempt": 0
-              },
-              "provenance": "default-props",
-              "witness": {
-                "props": {},
-                "actions": []
-              },
-              "domFingerprint": "div[]{ul[]{li[]{#(One)}}}",
-              "transient": false
-            }
-          ],
-          "edges": [
             {
               "from": "s0",
               "to": "s1",
@@ -1250,6 +1428,118 @@
               "provenance": "default-props",
               "stable": true,
               "driver": "microtask"
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "auto",
+              "provenance": "default-props",
+              "stable": true,
+              "driver": "microtask"
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Retry\"",
+                "kind": "click",
+                "label": "click button \"Retry\""
+              }
             }
           ]
         },
@@ -1260,18 +1550,33 @@
           "replayDivergences": []
         },
         "budget": {
-          "actionsUsed": 0,
+          "actionsUsed": 9,
           "statesFound": 2,
           "exhausted": false
         },
         "unexploredFrontier": [],
-        "rekeyMerges": [],
+        "rekeyMerges": [
+          {
+            "from": [
+              "s2",
+              "s4"
+            ],
+            "to": "s0"
+          },
+          {
+            "from": [
+              "s3",
+              "s5"
+            ],
+            "to": "s1"
+          }
+        ],
         "domPruneReport": [
           {
             "hookName": "attempt",
-            "variedNoDomCount": 0,
+            "variedNoDomCount": 3,
             "everCoVaried": false,
-            "pruned": false
+            "pruned": true
           },
           {
             "hookName": "items",
@@ -1282,9 +1587,13 @@
           {
             "hookName": "status",
             "variedNoDomCount": 0,
-            "everCoVaried": false,
+            "everCoVaried": true,
             "pruned": false
           }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": [
+          "attempt"
         ]
       }
     },
@@ -1381,459 +1690,9 @@
             "everCoVaried": false,
             "pruned": false
           }
-        ]
-      }
-    },
-    {
-      "assignment": {
-        "source": "vary-one",
-        "variedProp": "fetchItems",
-        "props": {}
-      },
-      "shapeHash": "states[attempt=0|items=[]|status=\"empty\",attempt=0|items=[]|status=\"loading\"]|edges[attempt=0|items=[]|status=\"empty\"::attempt=0|items=[]|status=\"loading\"::user::click:button:\"Retry\",attempt=0|items=[]|status=\"loading\"::attempt=0|items=[]|status=\"empty\"::auto::microtask]",
-      "result": {
-        "component": "FetchList",
-        "graph": {
-          "states": [
-            {
-              "id": "s0",
-              "key": "s0",
-              "fields": {
-                "status": "loading",
-                "items": [],
-                "attempt": 0
-              },
-              "provenance": "default-props",
-              "witness": {
-                "props": {},
-                "actions": [],
-                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
-              },
-              "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
-              "transient": true
-            },
-            {
-              "id": "s1",
-              "key": "s1",
-              "fields": {
-                "status": "empty",
-                "items": [],
-                "attempt": 0
-              },
-              "provenance": "default-props",
-              "witness": {
-                "props": {},
-                "actions": []
-              },
-              "domFingerprint": "div[]{div[]{p[]{#(No items found)},button[]{#(Retry)}}}",
-              "transient": false
-            }
-          ],
-          "edges": [
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            }
-          ]
-        },
-        "unavailableActions": [],
-        "findings": {
-          "unstable": [],
-          "nonDeterministic": [],
-          "replayDivergences": []
-        },
-        "budget": {
-          "actionsUsed": 9,
-          "statesFound": 2,
-          "exhausted": false
-        },
-        "unexploredFrontier": [],
-        "rekeyMerges": [
-          {
-            "from": [
-              "s2",
-              "s4"
-            ],
-            "to": "s0"
-          },
-          {
-            "from": [
-              "s3",
-              "s5"
-            ],
-            "to": "s1"
-          }
         ],
-        "domPruneReport": [
-          {
-            "hookName": "attempt",
-            "variedNoDomCount": 3,
-            "everCoVaried": false,
-            "pruned": true
-          },
-          {
-            "hookName": "items",
-            "variedNoDomCount": 0,
-            "everCoVaried": false,
-            "pruned": false
-          },
-          {
-            "hookName": "status",
-            "variedNoDomCount": 0,
-            "everCoVaried": true,
-            "pruned": false
-          }
-        ]
-      }
-    },
-    {
-      "assignment": {
-        "source": "vary-one",
-        "variedProp": "fetchItems",
-        "props": {}
-      },
-      "shapeHash": "states[attempt=0|items=[]|status=\"empty\",attempt=0|items=[]|status=\"loading\"]|edges[attempt=0|items=[]|status=\"empty\"::attempt=0|items=[]|status=\"loading\"::user::click:button:\"Retry\",attempt=0|items=[]|status=\"loading\"::attempt=0|items=[]|status=\"empty\"::auto::microtask]",
-      "result": {
-        "component": "FetchList",
-        "graph": {
-          "states": [
-            {
-              "id": "s0",
-              "key": "s0",
-              "fields": {
-                "status": "loading",
-                "items": [],
-                "attempt": 0
-              },
-              "provenance": "default-props",
-              "witness": {
-                "props": {},
-                "actions": [],
-                "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
-              },
-              "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
-              "transient": true
-            },
-            {
-              "id": "s1",
-              "key": "s1",
-              "fields": {
-                "status": "empty",
-                "items": [],
-                "attempt": 0
-              },
-              "provenance": "default-props",
-              "witness": {
-                "props": {},
-                "actions": []
-              },
-              "domFingerprint": "div[]{div[]{p[]{#(No items found)},button[]{#(Retry)}}}",
-              "transient": false
-            }
-          ],
-          "edges": [
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s0",
-              "to": "s1",
-              "kind": "auto",
-              "provenance": "default-props",
-              "stable": true,
-              "driver": "microtask"
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            },
-            {
-              "from": "s1",
-              "to": "s0",
-              "kind": "user",
-              "provenance": "default-props",
-              "stable": true,
-              "action": {
-                "id": "click:button:\"Retry\"",
-                "kind": "click",
-                "label": "click button \"Retry\""
-              }
-            }
-          ]
-        },
-        "unavailableActions": [],
-        "findings": {
-          "unstable": [],
-          "nonDeterministic": [],
-          "replayDivergences": []
-        },
-        "budget": {
-          "actionsUsed": 9,
-          "statesFound": 2,
-          "exhausted": false
-        },
-        "unexploredFrontier": [],
-        "rekeyMerges": [
-          {
-            "from": [
-              "s2",
-              "s4"
-            ],
-            "to": "s0"
-          },
-          {
-            "from": [
-              "s3",
-              "s5"
-            ],
-            "to": "s1"
-          }
-        ],
-        "domPruneReport": [
-          {
-            "hookName": "attempt",
-            "variedNoDomCount": 3,
-            "everCoVaried": false,
-            "pruned": true
-          },
-          {
-            "hookName": "items",
-            "variedNoDomCount": 0,
-            "everCoVaried": false,
-            "pruned": false
-          },
-          {
-            "hookName": "status",
-            "variedNoDomCount": 0,
-            "everCoVaried": true,
-            "pruned": false
-          }
-        ]
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     }
   ],
@@ -1848,16 +1707,6 @@
         {
           "source": "random",
           "props": {}
-        },
-        {
-          "source": "vary-one",
-          "variedProp": "fetchItems",
-          "props": {}
-        },
-        {
-          "source": "vary-one",
-          "variedProp": "fetchItems",
-          "props": {}
         }
       ],
       "stateCount": 2,
@@ -1870,6 +1719,15 @@
         {
           "source": "example",
           "props": {}
+        },
+        {
+          "source": "random",
+          "props": {}
+        },
+        {
+          "source": "vary-one",
+          "variedProp": "fetchItems",
+          "props": {}
         }
       ],
       "stateCount": 2,
@@ -1879,14 +1737,6 @@
     {
       "shapeHash": "states[attempt=0|items=[]|status=\"loading\",attempt=0|items=[{\"id\":\"1\",\"label\":\"One\"}]|status=\"loaded\"]|edges[attempt=0|items=[]|status=\"loading\"::attempt=0|items=[{\"id\":\"1\",\"label\":\"One\"}]|status=\"loaded\"::auto::microtask]",
       "assignments": [
-        {
-          "source": "random",
-          "props": {}
-        },
-        {
-          "source": "random",
-          "props": {}
-        },
         {
           "source": "random",
           "props": {}
@@ -1929,24 +1779,6 @@
           "source": "random",
           "props": {}
         },
-        "actionsUsed": 0,
-        "statesFound": 2,
-        "exhausted": false
-      },
-      {
-        "assignment": {
-          "source": "random",
-          "props": {}
-        },
-        "actionsUsed": 9,
-        "statesFound": 2,
-        "exhausted": false
-      },
-      {
-        "assignment": {
-          "source": "random",
-          "props": {}
-        },
         "actionsUsed": 9,
         "statesFound": 2,
         "exhausted": false
@@ -1965,7 +1797,7 @@
           "source": "random",
           "props": {}
         },
-        "actionsUsed": 0,
+        "actionsUsed": 9,
         "statesFound": 2,
         "exhausted": false
       },
@@ -1980,11 +1812,10 @@
       },
       {
         "assignment": {
-          "source": "vary-one",
-          "variedProp": "fetchItems",
+          "source": "random",
           "props": {}
         },
-        "actionsUsed": 0,
+        "actionsUsed": 9,
         "statesFound": 2,
         "exhausted": false
       },
@@ -2004,7 +1835,7 @@
           "variedProp": "fetchItems",
           "props": {}
         },
-        "actionsUsed": 9,
+        "actionsUsed": 0,
         "statesFound": 2,
         "exhausted": false
       }

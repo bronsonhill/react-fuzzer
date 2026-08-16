@@ -132,6 +132,43 @@ function domainKey(value: unknown): string {
   return `${typeof value}:${String(value)}`;
 }
 
+/**
+ * M6: computes the state key a fields object would get under an explicit
+ * demoted/pruned/ignored hook-rule set, independent of any AdaptiveAbstraction
+ * instance's history. Factored out of AdaptiveAbstraction.computeKey (which
+ * calls this with its own current rule sets) so src/baseline/diff.ts can
+ * recompute a *baseline* state's key under a *later* run's rule set without
+ * needing to replay that run's whole history through a fresh instance.
+ *
+ * This is exactly the "would these two baseline states be the same state
+ * under today's abstraction" question the baseline-diff tool needs to
+ * distinguish abstraction churn (a hook got demoted/pruned between the
+ * baseline run and this one, retroactively merging states that used to be
+ * distinct) from a genuine lost state (the component no longer reaches that
+ * state at all). See docs/m2-5-adaptive-report.md's rekey/demotion section
+ * and docs/m6-baseline-report.md for the documented limits of this approach.
+ */
+export function computeStateKeyForFields(
+  fields: Record<string, unknown>,
+  rules: { demotedHooks: Iterable<string>; prunedHooks: Iterable<string>; ignoreHooks?: Iterable<string> },
+): string {
+  const demoted = rules.demotedHooks instanceof Set ? rules.demotedHooks : new Set(rules.demotedHooks);
+  const pruned = rules.prunedHooks instanceof Set ? rules.prunedHooks : new Set(rules.prunedHooks);
+  const ignore = rules.ignoreHooks
+    ? rules.ignoreHooks instanceof Set
+      ? rules.ignoreHooks
+      : new Set(rules.ignoreHooks)
+    : new Set<string>();
+  const tokens: Record<string, CanonToken> = {};
+  for (const [name, value] of Object.entries(fields)) {
+    if (ignore.has(name) || pruned.has(name)) continue;
+    const useLiteral = isPrimitive(value) && !demoted.has(name);
+    tokens[name] = useLiteral ? literalToken(value) : canonicalise(value);
+  }
+  const sortedKeys = Object.keys(tokens).sort();
+  return sortedKeys.map((k) => `${k}=${stableStringify(tokens[k])}`).join("|");
+}
+
 function literalToken(value: unknown): CanonToken {
   if (value === null) return "null:null";
   if (value === undefined) return "undefined:undefined";
@@ -183,6 +220,11 @@ export class AdaptiveAbstraction {
 
   getDemotedHooks(): string[] {
     return [...this.demotedHooks].sort();
+  }
+
+  /** M6: hooks currently excluded from state identity by the DOM-correlation pruner (see computeStateKeyForFields, ./index.ts's baseline diff use). */
+  getPrunedHooks(): string[] {
+    return [...this.prunedHooks].sort();
   }
 
   /** Report from the most recent recompute: which hooks were evaluated for DOM-correlation pruning, with the evidence counts and the resulting decision. Always report this prominently — see class doc comment on why pruning must never be silent. */
@@ -332,15 +374,11 @@ export class AdaptiveAbstraction {
 
   private computeKey(entry: HistoryEntry): string {
     if (entry.customKey !== undefined) return entry.customKey;
-
-    const tokens: Record<string, CanonToken> = {};
-    for (const [name, value] of Object.entries(entry.fields)) {
-      if (this.ignore.has(name) || this.prunedHooks.has(name)) continue;
-      const useLiteral = isPrimitive(value) && !this.demotedHooks.has(name);
-      tokens[name] = useLiteral ? literalToken(value) : canonicalise(value);
-    }
-    const sortedKeys = Object.keys(tokens).sort();
-    return sortedKeys.map((k) => `${k}=${stableStringify(tokens[k])}`).join("|");
+    return computeStateKeyForFields(entry.fields, {
+      demotedHooks: this.demotedHooks,
+      prunedHooks: this.prunedHooks,
+      ignoreHooks: this.ignore,
+    });
   }
 
   /**

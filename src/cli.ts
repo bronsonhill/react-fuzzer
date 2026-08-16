@@ -20,6 +20,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 interface ParsedArgs {
+  command: "explore" | "approve" | "diff";
   component?: string;
   export?: string;
   config?: string;
@@ -32,28 +33,29 @@ interface ParsedArgs {
   maxStates?: number;
   maxWallClockMs?: number;
   single?: boolean;
+  expanded?: boolean;
+  baseline?: string;
   help?: boolean;
 }
 
 const HELP = `
-react-fuzzer explore -- generate a state-graph report for a React component.
+react-fuzzer -- generate, approve, and diff state-graph reports for a React component.
 
 Usage:
-  npm run explore -- --component <path/to/Component.tsx> --export <ExportName> [options]
+  npm run explore -- [explore|approve|diff] --component <path/to/Component.tsx> --export <ExportName> [options]
+
+  The subcommand defaults to "explore" if omitted (backwards compatible with
+  the M5 CLI).
 
 Required:
   --component <path>   Path to the component's source module (.tsx/.ts).
   --export <name>       Named export identifying the component function.
 
-Optional:
+Optional (all subcommands):
   --config <path>       Path to a module whose default export configures the
                          run: { exampleProps, propOverrides, fillPools,
                          invokableProps, settle, useFakeTimers, single }.
                          See README.md for the shape and an example.
-  --out-json <path>     Output path for the JSON artefact.
-                         Default: examples/<export>.json
-  --out-html <path>     Output path for the HTML report.
-                         Default: examples/<export>.html
   --sample-count <n>    Random prop assignments to sample (multi-assignment mode).
   --vary-per-prop <n>   Alternate values tried per prop, one at a time.
   --seed <n>             fast-check sampling seed, for reproducible runs.
@@ -63,13 +65,37 @@ Optional:
   --single               Skip prop generation; run once under exampleProps
                          only (default-props provenance only).
   -h, --help             Show this help.
+
+explore-only:
+  --out-json <path>     Output path for the JSON artefact. Default: examples/<export>.json
+  --out-html <path>     Output path for the HTML report. Default: examples/<export>.html
+  --expanded             Disable M6's transient-async-chain collapse in the
+                         HTML diagram (default: collapsed). The JSON artefact
+                         and state table are always full-fidelity regardless
+                         of this flag.
+
+approve-only:
+  --out-json <path>     Output path for the baseline file.
+                         Default: examples/baselines/<export>.baseline.json
+
+diff-only:
+  --baseline <path>     Path to the baseline file to diff against.
+                         Default: examples/baselines/<export>.baseline.json
+                         Exits non-zero (excluding abstraction-churn-only
+                         diffs) when differences are found -- CI-usable.
 `;
 
 function parseArgs(argv: string[]): ParsedArgs {
-  const args: ParsedArgs = {};
-  for (let i = 0; i < argv.length; i++) {
-    const a = argv[i];
-    const next = () => argv[++i];
+  let rest = argv;
+  let command: ParsedArgs["command"] = "explore";
+  if (rest[0] === "explore" || rest[0] === "approve" || rest[0] === "diff") {
+    command = rest[0];
+    rest = rest.slice(1);
+  }
+  const args: ParsedArgs = { command };
+  for (let i = 0; i < rest.length; i++) {
+    const a = rest[i];
+    const next = () => rest[++i];
     switch (a) {
       case "--component": args.component = next(); break;
       case "--export": args.export = next(); break;
@@ -83,6 +109,8 @@ function parseArgs(argv: string[]): ParsedArgs {
       case "--max-states": args.maxStates = Number(next()); break;
       case "--max-wall-clock-ms": args.maxWallClockMs = Number(next()); break;
       case "--single": args.single = true; break;
+      case "--expanded": args.expanded = true; break;
+      case "--baseline": args.baseline = next(); break;
       case "-h":
       case "--help": args.help = true; break;
       default:
@@ -103,8 +131,13 @@ function main(): number {
   const repoRoot = path.resolve(here, "..");
   const componentPath = path.resolve(process.cwd(), args.component);
   const configPath = args.config ? path.resolve(process.cwd(), args.config) : undefined;
-  const outJson = path.resolve(process.cwd(), args.outJson ?? path.join(repoRoot, "examples", `${args.export}.json`));
+  const defaultBaselinePath = path.join(repoRoot, "examples", "baselines", `${args.export}.baseline.json`);
+  const outJson = path.resolve(
+    process.cwd(),
+    args.outJson ?? (args.command === "approve" ? defaultBaselinePath : path.join(repoRoot, "examples", `${args.export}.json`)),
+  );
   const outHtml = path.resolve(process.cwd(), args.outHtml ?? path.join(repoRoot, "examples", `${args.export}.html`));
+  const baselinePath = path.resolve(process.cwd(), args.baseline ?? defaultBaselinePath);
 
   const budget =
     args.maxActions !== undefined || args.maxStates !== undefined || args.maxWallClockMs !== undefined
@@ -112,16 +145,19 @@ function main(): number {
       : undefined;
 
   const config = {
+    command: args.command,
     componentPath,
     exportName: args.export,
     configPath,
     outJson,
     outHtml,
+    baselinePath,
     sampleCount: args.sampleCount,
     varyPerProp: args.varyPerProp,
     seed: args.seed,
     budget,
     single: args.single,
+    collapse: !args.expanded,
   };
 
   const runnerPath = path.join(repoRoot, "scripts", "explore-runner.test.ts");

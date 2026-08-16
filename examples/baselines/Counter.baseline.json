@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "component": "Counter",
+  "generatedAt": "2026-08-16T00:19:52.066Z",
+  "abstractionConfig": {
+    "literalDomainLimit": 8,
+    "domCorrelationEnabled": true,
+    "domCorrelationMinObservations": 3,
+    "ignoreHooks": [],
+    "demotedHooks": [
+      "value"
+    ],
+    "prunedHooks": []
+  },
+  "states": [
+    {
+      "key": "value=\"negative\"",
+      "name": "value=-4",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "value": -4
+      }
+    },
+    {
+      "key": "value=\"negative\"",
+      "name": "value=-98",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "value": -98
+      }
+    },
+    {
+      "key": "value=\"negative\"",
+      "name": "value=-87",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "value": -87
+      }
+    },
+    {
+      "key": "value=\"negative\"",
+      "name": "value=-1",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "value": -1
+      }
+    },
+    {
+      "key": "value=\"positive\"",
+      "name": "value=94",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "value": 94
+      }
+    },
+    {
+      "key": "value=\"positive\"",
+      "name": "value=66",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "value": 66
+      }
+    },
+    {
+      "key": "value=\"positive\"",
+      "name": "value=1",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "value": 1
+      }
+    },
+    {
+      "key": "value=\"positive\"",
+      "name": "value=2",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "value": 2
+      }
+    },
+    {
+      "key": "value=\"positive\"",
+      "name": "value=3",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "value": 3
+      }
+    },
+    {
+      "key": "value=\"positive\"",
+      "name": "value=4",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "value": 4
+      }
+    },
+    {
+      "key": "value=\"positive\"",
+      "name": "value=5",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "key": "value=\"zero\"",
+      "name": "value=0",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "value": 0
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": "value=\"negative\"",
+      "to": "value=\"negative\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"negative\"",
+      "to": "value=\"negative\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"negative\"",
+      "to": "value=\"negative\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"negative\"",
+      "to": "value=\"negative\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"negative\"",
+      "to": "value=\"negative\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"negative\"",
+      "to": "value=\"zero\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"negative\"",
+      "to": "value=\"zero\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"zero\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"zero\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"positive\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"zero\"",
+      "to": "value=\"negative\"",
+      "kind": "user",
+      "actionId": "click:button:\"decrement\"",
+      "actionLabel": "click button \"decrement\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"zero\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "value=\"zero\"",
+      "to": "value=\"positive\"",
+      "kind": "user",
+      "actionId": "click:button:\"increment\"",
+      "actionLabel": "click button \"increment\"",
+      "provenance": "generated-props",
+      "stable": true
+    }
+  ]
+}

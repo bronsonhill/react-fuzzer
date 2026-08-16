@@ -115,7 +115,9 @@
         "everCoVaried": true,
         "pruned": false
       }
-    ]
+    ],
+    "demotedHooks": [],
+    "prunedHooks": []
   },
   "runs": [
     {
@@ -240,14 +242,16 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
       "assignment": {
         "source": "random",
         "props": {
-          "label": "co"
+          "label": ":'\\=E"
         }
       },
       "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
@@ -264,11 +268,11 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "label": "co"
+                  "label": ":'\\=E"
                 },
                 "actions": []
               },
-              "domFingerprint": "div[]{div[]{span[]{#(co)},button[aria-pressed=false]{#(Off)}}}",
+              "domFingerprint": "div[]{div[]{span[]{#(:'\\=E)},button[aria-pressed=false]{#(Off)}}}",
               "transient": false
             },
             {
@@ -280,7 +284,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "label": "co"
+                  "label": ":'\\=E"
                 },
                 "actions": [
                   {
@@ -290,7 +294,7 @@
                   }
                 ]
               },
-              "domFingerprint": "div[]{div[]{span[]{#(co)},button[aria-pressed=true]{#(On)}}}",
+              "domFingerprint": "div[]{div[]{span[]{#(:'\\=E)},button[aria-pressed=true]{#(On)}}}",
               "transient": false
             }
           ],
@@ -365,14 +369,16 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
       "assignment": {
         "source": "random",
         "props": {
-          "label": "length"
+          "label": ""
         }
       },
       "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
@@ -389,11 +395,11 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "label": "length"
+                  "label": ""
                 },
                 "actions": []
               },
-              "domFingerprint": "div[]{div[]{span[]{#(length)},button[aria-pressed=false]{#(Off)}}}",
+              "domFingerprint": "div[]{div[]{span[]{},button[aria-pressed=false]{#(Off)}}}",
               "transient": false
             },
             {
@@ -405,7 +411,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "label": "length"
+                  "label": ""
                 },
                 "actions": [
                   {
@@ -415,7 +421,7 @@
                   }
                 ]
               },
-              "domFingerprint": "div[]{div[]{span[]{#(length)},button[aria-pressed=true]{#(On)}}}",
+              "domFingerprint": "div[]{div[]{span[]{},button[aria-pressed=true]{#(On)}}}",
               "transient": false
             }
           ],
@@ -490,14 +496,16 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
       "assignment": {
         "source": "random",
         "props": {
-          "label": "ref"
+          "label": "@9"
         }
       },
       "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
@@ -514,11 +522,11 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "label": "ref"
+                  "label": "@9"
                 },
                 "actions": []
               },
-              "domFingerprint": "div[]{div[]{span[]{#(ref)},button[aria-pressed=false]{#(Off)}}}",
+              "domFingerprint": "div[]{div[]{span[]{#(@9)},button[aria-pressed=false]{#(Off)}}}",
               "transient": false
             },
             {
@@ -530,7 +538,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "label": "ref"
+                  "label": "@9"
                 },
                 "actions": [
                   {
@@ -540,7 +548,7 @@
                   }
                 ]
               },
-              "domFingerprint": "div[]{div[]{span[]{#(ref)},button[aria-pressed=true]{#(On)}}}",
+              "domFingerprint": "div[]{div[]{span[]{#(@9)},button[aria-pressed=true]{#(On)}}}",
               "transient": false
             }
           ],
@@ -615,14 +623,16 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
       "assignment": {
         "source": "random",
         "props": {
-          "label": "vn[PIUjx<"
+          "label": "pTJ"
         }
       },
       "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
@@ -639,11 +649,11 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "label": "vn[PIUjx<"
+                  "label": "pTJ"
                 },
                 "actions": []
               },
-              "domFingerprint": "div[]{div[]{span[]{#(vn[PIUjx<)},button[aria-pressed=false]{#(Off)}}}",
+              "domFingerprint": "div[]{div[]{span[]{#(pTJ)},button[aria-pressed=false]{#(Off)}}}",
               "transient": false
             },
             {
@@ -655,7 +665,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "label": "vn[PIUjx<"
+                  "label": "pTJ"
                 },
                 "actions": [
                   {
@@ -665,7 +675,7 @@
                   }
                 ]
               },
-              "domFingerprint": "div[]{div[]{span[]{#(vn[PIUjx<)},button[aria-pressed=true]{#(On)}}}",
+              "domFingerprint": "div[]{div[]{span[]{#(pTJ)},button[aria-pressed=true]{#(On)}}}",
               "transient": false
             }
           ],
@@ -740,15 +750,15 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
       "assignment": {
         "source": "random",
-        "props": {
-          "label": "x"
-        }
+        "props": {}
       },
       "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
       "result": {
@@ -763,12 +773,10 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "label": "x"
-                },
+                "props": {},
                 "actions": []
               },
-              "domFingerprint": "div[]{div[]{span[]{#(x)},button[aria-pressed=false]{#(Off)}}}",
+              "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=false]{#(Off)}}}",
               "transient": false
             },
             {
@@ -779,9 +787,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "label": "x"
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "click:button:\"Off\"",
@@ -790,7 +796,7 @@
                   }
                 ]
               },
-              "domFingerprint": "div[]{div[]{span[]{#(x)},button[aria-pressed=true]{#(On)}}}",
+              "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=true]{#(On)}}}",
               "transient": false
             }
           ],
@@ -865,7 +871,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -873,7 +881,7 @@
         "source": "vary-one",
         "variedProp": "label",
         "props": {
-          "label": "co"
+          "label": ""
         }
       },
       "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
@@ -890,11 +898,11 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "label": "co"
+                  "label": ""
                 },
                 "actions": []
               },
-              "domFingerprint": "div[]{div[]{span[]{#(co)},button[aria-pressed=false]{#(Off)}}}",
+              "domFingerprint": "div[]{div[]{span[]{},button[aria-pressed=false]{#(Off)}}}",
               "transient": false
             },
             {
@@ -906,7 +914,7 @@
               "provenance": "default-props",
               "witness": {
                 "props": {
-                  "label": "co"
+                  "label": ""
                 },
                 "actions": [
                   {
@@ -916,7 +924,7 @@
                   }
                 ]
               },
-              "domFingerprint": "div[]{div[]{span[]{#(co)},button[aria-pressed=true]{#(On)}}}",
+              "domFingerprint": "div[]{div[]{span[]{},button[aria-pressed=true]{#(On)}}}",
               "transient": false
             }
           ],
@@ -991,16 +999,16 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
       "assignment": {
         "source": "vary-one",
         "variedProp": "label",
-        "props": {
-          "label": "length"
-        }
+        "props": {}
       },
       "shapeHash": "states[on=false,on=true]|edges[on=false::on=true::user::click:button:\"Off\",on=true::on=false::user::click:button:\"On\"]",
       "result": {
@@ -1015,12 +1023,10 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "label": "length"
-                },
+                "props": {},
                 "actions": []
               },
-              "domFingerprint": "div[]{div[]{span[]{#(length)},button[aria-pressed=false]{#(Off)}}}",
+              "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=false]{#(Off)}}}",
               "transient": false
             },
             {
@@ -1031,9 +1037,7 @@
               },
               "provenance": "default-props",
               "witness": {
-                "props": {
-                  "label": "length"
-                },
+                "props": {},
                 "actions": [
                   {
                     "id": "click:button:\"Off\"",
@@ -1042,7 +1046,7 @@
                   }
                 ]
               },
-              "domFingerprint": "div[]{div[]{span[]{#(length)},button[aria-pressed=true]{#(On)}}}",
+              "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=true]{#(On)}}}",
               "transient": false
             }
           ],
@@ -1117,7 +1121,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     }
   ],
@@ -1134,46 +1140,42 @@
         {
           "source": "random",
           "props": {
-            "label": "co"
+            "label": ":'\\=E"
           }
         },
         {
           "source": "random",
           "props": {
-            "label": "length"
+            "label": ""
           }
         },
         {
           "source": "random",
           "props": {
-            "label": "ref"
+            "label": "@9"
           }
         },
         {
           "source": "random",
           "props": {
-            "label": "vn[PIUjx<"
+            "label": "pTJ"
           }
         },
         {
           "source": "random",
-          "props": {
-            "label": "x"
-          }
+          "props": {}
         },
         {
           "source": "vary-one",
           "variedProp": "label",
           "props": {
-            "label": "co"
+            "label": ""
           }
         },
         {
           "source": "vary-one",
           "variedProp": "label",
-          "props": {
-            "label": "length"
-          }
+          "props": {}
         }
       ],
       "stateCount": 2,
@@ -1199,7 +1201,7 @@
         "assignment": {
           "source": "random",
           "props": {
-            "label": "co"
+            "label": ":'\\=E"
           }
         },
         "actionsUsed": 6,
@@ -1210,7 +1212,7 @@
         "assignment": {
           "source": "random",
           "props": {
-            "label": "length"
+            "label": ""
           }
         },
         "actionsUsed": 6,
@@ -1221,7 +1223,7 @@
         "assignment": {
           "source": "random",
           "props": {
-            "label": "ref"
+            "label": "@9"
           }
         },
         "actionsUsed": 6,
@@ -1232,7 +1234,7 @@
         "assignment": {
           "source": "random",
           "props": {
-            "label": "vn[PIUjx<"
+            "label": "pTJ"
           }
         },
         "actionsUsed": 6,
@@ -1242,9 +1244,7 @@
       {
         "assignment": {
           "source": "random",
-          "props": {
-            "label": "x"
-          }
+          "props": {}
         },
         "actionsUsed": 6,
         "statesFound": 2,
@@ -1255,7 +1255,7 @@
           "source": "vary-one",
           "variedProp": "label",
           "props": {
-            "label": "co"
+            "label": ""
           }
         },
         "actionsUsed": 6,
@@ -1266,9 +1266,7 @@
         "assignment": {
           "source": "vary-one",
           "variedProp": "label",
-          "props": {
-            "label": "length"
-          }
+          "props": {}
         },
         "actionsUsed": 6,
         "statesFound": 2,

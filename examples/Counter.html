@@ -119,7 +119,10 @@ a { color: var(--link); }
         <span>edge label prefixed <code>[gen]</code> = this transition was only observed under a generated-props assignment</span>
         <span>edge label prefixed <code>[unstable]</code> = settle() did not reach quiescence</span>
         <span>edge label prefixed <code>[non-det]</code> = same action from same state observed landing on different destinations</span>
+        <span>edge label prefixed <code>[collapsed]</code>, with "(via ...)" = a whole transient async chain (user action &rarr; one or more transient intermediates &rarr; settled state) drawn as one edge; see the state table for the collapsed intermediates</span>
       </div>
+      <p class="empty-note">Transient async chains are collapsed in this diagram (default). Collapsed intermediates are still listed in the state table below, marked "collapsed". </p>
+      
       
       <div class="mermaid-container"><pre class="mermaid">stateDiagram-v2
   n_gen10_s0 : gen10:s0: value=94 [generated]
@@ -185,14 +188,16 @@ a { color: var(--link); }
 
     <section id="states">
       <h2>State table</h2>
+      <p class="empty-note">Every state is listed here, including transient states collapsed out of the diagram above (see the "diagram" column).</p>
       <div class="table-scroll">
         <table>
-          <thead><tr><th>key</th><th>provenance</th><th>transient</th><th>fields</th><th>witness</th></tr></thead>
+          <thead><tr><th>key</th><th>provenance</th><th>transient</th><th>diagram</th><th>fields</th><th>witness</th></tr></thead>
           <tbody>
       <tr class="row-generated">
         <td><code>gen10:s0</code></td>
         <td>generated-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=94</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;min&quot;:-78,&quot;max&quot;:-98,&quot;start&quot;:94}</code></div><div class="witness-actions"><em>mount only, no actions</em></div></td>
       </tr>
@@ -200,6 +205,7 @@ a { color: var(--link); }
         <td><code>gen4:s0</code></td>
         <td>generated-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=-4</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;min&quot;:0,&quot;max&quot;:5,&quot;start&quot;:-4}</code></div><div class="witness-actions"><em>mount only, no actions</em></div></td>
       </tr>
@@ -207,6 +213,7 @@ a { color: var(--link); }
         <td><code>gen6:s0</code></td>
         <td>generated-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=-98</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;min&quot;:-4,&quot;max&quot;:0,&quot;start&quot;:-98}</code></div><div class="witness-actions"><em>mount only, no actions</em></div></td>
       </tr>
@@ -214,6 +221,7 @@ a { color: var(--link); }
         <td><code>gen7:s0</code></td>
         <td>generated-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=-87</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;max&quot;:93,&quot;start&quot;:-87}</code></div><div class="witness-actions"><em>mount only, no actions</em></div></td>
       </tr>
@@ -221,6 +229,7 @@ a { color: var(--link); }
         <td><code>gen8:s0</code></td>
         <td>generated-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=66</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;min&quot;:3,&quot;max&quot;:-82,&quot;start&quot;:66}</code></div><div class="witness-actions"><em>mount only, no actions</em></div></td>
       </tr>
@@ -228,6 +237,7 @@ a { color: var(--link); }
         <td><code>s0</code></td>
         <td>default-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=0</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;min&quot;:0,&quot;max&quot;:5,&quot;start&quot;:0}</code></div><div class="witness-actions"><em>mount only, no actions</em></div></td>
       </tr>
@@ -235,6 +245,7 @@ a { color: var(--link); }
         <td><code>s1</code></td>
         <td>default-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=1</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;min&quot;:0,&quot;max&quot;:5,&quot;start&quot;:0}</code></div><ol class="witness-actions"><li>click: click button &quot;increment&quot;</li></ol></td>
       </tr>
@@ -242,6 +253,7 @@ a { color: var(--link); }
         <td><code>s2</code></td>
         <td>default-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=2</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;min&quot;:0,&quot;max&quot;:5,&quot;start&quot;:0}</code></div><ol class="witness-actions"><li>click: click button &quot;increment&quot;</li><li>click: click button &quot;increment&quot;</li></ol></td>
       </tr>
@@ -249,6 +261,7 @@ a { color: var(--link); }
         <td><code>s3</code></td>
         <td>default-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=3</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;min&quot;:0,&quot;max&quot;:5,&quot;start&quot;:0}</code></div><ol class="witness-actions"><li>click: click button &quot;increment&quot;</li><li>click: click button &quot;increment&quot;</li><li>click: click button &quot;increment&quot;</li></ol></td>
       </tr>
@@ -256,6 +269,7 @@ a { color: var(--link); }
         <td><code>s4</code></td>
         <td>default-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=4</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;min&quot;:0,&quot;max&quot;:5,&quot;start&quot;:0}</code></div><ol class="witness-actions"><li>click: click button &quot;increment&quot;</li><li>click: click button &quot;increment&quot;</li><li>click: click button &quot;increment&quot;</li><li>click: click button &quot;increment&quot;</li></ol></td>
       </tr>
@@ -263,6 +277,7 @@ a { color: var(--link); }
         <td><code>s5</code></td>
         <td>default-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=5</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;min&quot;:0,&quot;max&quot;:5,&quot;start&quot;:0}</code></div><ol class="witness-actions"><li>click: click button &quot;increment&quot;</li><li>click: click button &quot;increment&quot;</li><li>click: click button &quot;increment&quot;</li><li>click: click button &quot;increment&quot;</li><li>click: click button &quot;increment&quot;</li></ol></td>
       </tr>
@@ -270,6 +285,7 @@ a { color: var(--link); }
         <td><code>s6</code></td>
         <td>generated-props</td>
         <td>no</td>
+        <td>shown</td>
         <td><code>value=-1</code></td>
         <td><div class="witness-props"><strong>props:</strong> <code>{&quot;min&quot;:-4,&quot;max&quot;:5,&quot;start&quot;:0}</code></div><ol class="witness-actions"><li>click: click button &quot;decrement&quot;</li></ol></td>
       </tr></tbody>
@@ -305,7 +321,7 @@ a { color: var(--link); }
         <tbody>
           <tr><th>actions used</th><td>570</td></tr>
           <tr><th>states found</th><td>12</td></tr>
-          <tr><th>elapsed</th><td>257ms</td></tr>
+          <tr><th>elapsed</th><td>241ms</td></tr>
           <tr><th>budget exhausted</th><td>no</td></tr>
         </tbody>
       </table>

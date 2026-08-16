@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "component": "FetchList",
+  "generatedAt": "2026-08-16T00:19:54.453Z",
+  "abstractionConfig": {
+    "literalDomainLimit": 8,
+    "domCorrelationEnabled": true,
+    "domCorrelationMinObservations": 3,
+    "ignoreHooks": [],
+    "demotedHooks": [],
+    "prunedHooks": [
+      "attempt"
+    ]
+  },
+  "states": [
+    {
+      "key": "items=\"arr:empty\"|status=\"lit:empty\"",
+      "name": "attempt=0_items=_status=_empty",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "status": "empty",
+        "items": [],
+        "attempt": 0
+      }
+    },
+    {
+      "key": "items=\"arr:empty\"|status=\"lit:error\"",
+      "name": "attempt=0_items=_status=_error",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "status": "error",
+        "items": [],
+        "attempt": 0
+      }
+    },
+    {
+      "key": "items=\"arr:empty\"|status=\"lit:loading\"",
+      "name": "attempt=0_items=_status=_loading",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "status": "loading",
+        "items": [],
+        "attempt": 0
+      }
+    },
+    {
+      "key": "items=\"arr:one\"|status=\"lit:loaded\"",
+      "name": "attempt=0_items=_id_1_label_One_status=_loaded",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "status": "loaded",
+        "items": [
+          {
+            "id": "1",
+            "label": "One"
+          }
+        ],
+        "attempt": 0
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": "items=\"arr:empty\"|status=\"lit:empty\"",
+      "to": "items=\"arr:empty\"|status=\"lit:loading\"",
+      "kind": "user",
+      "actionId": "click:button:\"Retry\"",
+      "actionLabel": "click button \"Retry\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "items=\"arr:empty\"|status=\"lit:error\"",
+      "to": "items=\"arr:empty\"|status=\"lit:loading\"",
+      "kind": "user",
+      "actionId": "click:button:\"Retry\"",
+      "actionLabel": "click button \"Retry\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "items=\"arr:empty\"|status=\"lit:error\"",
+      "to": "items=\"arr:empty\"|status=\"lit:loading\"",
+      "kind": "user",
+      "actionId": "click:button:\"Retry\"",
+      "actionLabel": "click button \"Retry\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "items=\"arr:empty\"|status=\"lit:loading\"",
+      "to": "items=\"arr:empty\"|status=\"lit:empty\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "items=\"arr:empty\"|status=\"lit:loading\"",
+      "to": "items=\"arr:empty\"|status=\"lit:error\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "items=\"arr:empty\"|status=\"lit:loading\"",
+      "to": "items=\"arr:empty\"|status=\"lit:error\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "items=\"arr:empty\"|status=\"lit:loading\"",
+      "to": "items=\"arr:one\"|status=\"lit:loaded\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "generated-props",
+      "stable": true
+    }
+  ]
+}

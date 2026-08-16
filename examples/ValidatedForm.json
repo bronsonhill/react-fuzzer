@@ -2037,7 +2037,16 @@
         "reason": "disabled"
       },
       {
-        "state": "s1",
+        "state": "s0",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s0",
         "action": {
           "id": "click:button:\"Submit\"",
           "kind": "click",
@@ -2083,6 +2092,51 @@
       },
       {
         "state": "s1",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s2",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s2",
         "action": {
           "id": "click:button:\"Submit\"",
           "kind": "click",
@@ -2199,6 +2253,42 @@
         "reason": "disabled"
       },
       {
+        "state": "s3",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s3",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s5",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
         "state": "s5",
         "action": {
           "id": "click:button:\"Submit\"",
@@ -2307,7 +2397,16 @@
         "reason": "disabled"
       },
       {
-        "state": "s7",
+        "state": "s6",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s6",
         "action": {
           "id": "click:button:\"Submit\"",
           "kind": "click",
@@ -2353,6 +2452,51 @@
       },
       {
         "state": "s7",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s7",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s7",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s7",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s8",
+        "action": {
+          "id": "click:button:\"Submit\"",
+          "kind": "click",
+          "label": "click button \"Submit\""
+        },
+        "reason": "disabled"
+      },
+      {
+        "state": "s8",
         "action": {
           "id": "click:button:\"Submit\"",
           "kind": "click",
@@ -2421,7 +2565,7 @@
       "replayDivergences": []
     },
     "budget": {
-      "actionsUsed": 2205,
+      "actionsUsed": 2959,
       "statesFound": 10,
       "exhausted": false
     },
@@ -2446,7 +2590,9 @@
         "everCoVaried": true,
         "pruned": false
       }
-    ]
+    ],
+    "demotedHooks": [],
+    "prunedHooks": []
   },
   "runs": [
     {
@@ -3812,7 +3958,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -5321,7 +5469,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -6830,7 +6980,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -8339,7 +8491,3031 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {}
+      },
+      "shapeHash": "states[email=\"\"|password=\"\"|submitted=false,email=\"\"|password=\"longenough1\"|submitted=false,email=\"\"|password=\"short\"|submitted=false,email=\"ada@example.com\"|password=\"\"|submitted=false,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false,email=\"ada@example.com\"|password=\"longenough1\"|submitted=true,email=\"ada@example.com\"|password=\"short\"|submitted=false,email=\"not-an-email@\"|password=\"\"|submitted=false,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false,email=\"not-an-email@\"|password=\"short\"|submitted=false]|edges[email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\",email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\",email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\",email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\",email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=true::user::click:button:\"Submit\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"ada@example.com\"|password=\"longenough1\"|submitted=true::email=\"ada@example.com\"|password=\"longenough1\"|submitted=true::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\",email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\",email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\",email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::invokeProp:prop:\"onSubmit\"]",
+      "result": {
+        "component": "ValidatedForm",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "email": "",
+                "password": "",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": []
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "email": "",
+                "password": "longenough1",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "email": "",
+                "password": "short",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "email": "ada@example.com",
+                "password": "short",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s4",
+              "key": "s4",
+              "fields": {
+                "email": "ada@example.com",
+                "password": "longenough1",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=longenough1]{}},button[]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s5",
+              "key": "s5",
+              "fields": {
+                "email": "ada@example.com",
+                "password": "",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\"",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"\"",
+                    "value": ""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s6",
+              "key": "s6",
+              "fields": {
+                "email": "not-an-email@",
+                "password": "",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\"",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"\"",
+                    "value": ""
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":1",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"not-an-email@\"",
+                    "value": "not-an-email@"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s7",
+              "key": "s7",
+              "fields": {
+                "email": "not-an-email@",
+                "password": "longenough1",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\"",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"\"",
+                    "value": ""
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":1",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"not-an-email@\"",
+                    "value": "not-an-email@"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s8",
+              "key": "s8",
+              "fields": {
+                "email": "not-an-email@",
+                "password": "short",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\"",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"\"",
+                    "value": ""
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":1",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"not-an-email@\"",
+                    "value": "not-an-email@"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s9",
+              "key": "s9",
+              "fields": {
+                "email": "ada@example.com",
+                "password": "longenough1",
+                "submitted": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "click:button:\"Submit\"",
+                    "kind": "click",
+                    "label": "click button \"Submit\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{p[role=status]{#(Submitted)}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s9",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Submit\"",
+                "kind": "click",
+                "label": "click button \"Submit\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s9",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Submit\"",
+                "kind": "click",
+                "label": "click button \"Submit\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s9",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s9",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s2",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s3",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s6",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s7",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s8",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 377,
+          "statesFound": 10,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "email",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "password",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "submitted",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {}
+      },
+      "shapeHash": "states[email=\"\"|password=\"\"|submitted=false,email=\"\"|password=\"longenough1\"|submitted=false,email=\"\"|password=\"short\"|submitted=false,email=\"ada@example.com\"|password=\"\"|submitted=false,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false,email=\"ada@example.com\"|password=\"longenough1\"|submitted=true,email=\"ada@example.com\"|password=\"short\"|submitted=false,email=\"not-an-email@\"|password=\"\"|submitted=false,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false,email=\"not-an-email@\"|password=\"short\"|submitted=false]|edges[email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\",email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\",email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\",email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\",email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=true::user::click:button:\"Submit\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"ada@example.com\"|password=\"longenough1\"|submitted=true::email=\"ada@example.com\"|password=\"longenough1\"|submitted=true::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\",email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\",email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\",email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::invokeProp:prop:\"onSubmit\"]",
+      "result": {
+        "component": "ValidatedForm",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "email": "",
+                "password": "",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": []
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "email": "",
+                "password": "longenough1",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s2",
+              "key": "s2",
+              "fields": {
+                "email": "",
+                "password": "short",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s3",
+              "key": "s3",
+              "fields": {
+                "email": "ada@example.com",
+                "password": "short",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s4",
+              "key": "s4",
+              "fields": {
+                "email": "ada@example.com",
+                "password": "longenough1",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=longenough1]{}},button[]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s5",
+              "key": "s5",
+              "fields": {
+                "email": "ada@example.com",
+                "password": "",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\"",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"\"",
+                    "value": ""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s6",
+              "key": "s6",
+              "fields": {
+                "email": "not-an-email@",
+                "password": "",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\"",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"\"",
+                    "value": ""
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":1",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"not-an-email@\"",
+                    "value": "not-an-email@"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s7",
+              "key": "s7",
+              "fields": {
+                "email": "not-an-email@",
+                "password": "longenough1",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\"",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"\"",
+                    "value": ""
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":1",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"not-an-email@\"",
+                    "value": "not-an-email@"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s8",
+              "key": "s8",
+              "fields": {
+                "email": "not-an-email@",
+                "password": "short",
+                "submitted": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\"",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"\"",
+                    "value": ""
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":1",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"not-an-email@\"",
+                    "value": "not-an-email@"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "transient": false
+            },
+            {
+              "id": "s9",
+              "key": "s9",
+              "fields": {
+                "email": "ada@example.com",
+                "password": "longenough1",
+                "submitted": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":1",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"short\"",
+                    "value": "short"
+                  },
+                  {
+                    "id": "fill:textbox:\"Email\":2",
+                    "kind": "fill",
+                    "label": "fill \"Email\" with \"ada@example.com\"",
+                    "value": "ada@example.com"
+                  },
+                  {
+                    "id": "fill:textbox:\"Password\":2",
+                    "kind": "fill",
+                    "label": "fill \"Password\" with \"longenough1\"",
+                    "value": "longenough1"
+                  },
+                  {
+                    "id": "click:button:\"Submit\"",
+                    "kind": "click",
+                    "label": "click button \"Submit\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[]{p[role=status]{#(Submitted)}}",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s2",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s3",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s9",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Submit\"",
+                "kind": "click",
+                "label": "click button \"Submit\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s9",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Submit\"",
+                "kind": "click",
+                "label": "click button \"Submit\""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s4",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s5",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s5",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s6",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s4",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s7",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s2",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\"",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":1",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"not-an-email@\"",
+                "value": "not-an-email@"
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s3",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Email\":2",
+                "kind": "fill",
+                "label": "fill \"Email\" with \"ada@example.com\"",
+                "value": "ada@example.com"
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s6",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\"",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"\"",
+                "value": ""
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":1",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"short\"",
+                "value": "short"
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s7",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "fill:textbox:\"Password\":2",
+                "kind": "fill",
+                "label": "fill \"Password\" with \"longenough1\"",
+                "value": "longenough1"
+              }
+            },
+            {
+              "from": "s8",
+              "to": "s8",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s9",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            },
+            {
+              "from": "s9",
+              "to": "s9",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "invokeProp:prop:\"onSubmit\"",
+                "kind": "invokeProp",
+                "label": "invoke prop \"onSubmit\"",
+                "propName": "onSubmit"
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s2",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s3",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s5",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s6",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s7",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          },
+          {
+            "state": "s8",
+            "action": {
+              "id": "click:button:\"Submit\"",
+              "kind": "click",
+              "label": "click button \"Submit\""
+            },
+            "reason": "disabled"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 377,
+          "statesFound": 10,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "email",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "password",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "submitted",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -9849,7 +13025,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     },
     {
@@ -11359,7 +14537,9 @@
             "everCoVaried": true,
             "pruned": false
           }
-        ]
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
       }
     }
   ],
@@ -11367,6 +14547,14 @@
     {
       "shapeHash": "states[email=\"\"|password=\"\"|submitted=false,email=\"\"|password=\"longenough1\"|submitted=false,email=\"\"|password=\"short\"|submitted=false,email=\"ada@example.com\"|password=\"\"|submitted=false,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false,email=\"ada@example.com\"|password=\"longenough1\"|submitted=true,email=\"ada@example.com\"|password=\"short\"|submitted=false,email=\"not-an-email@\"|password=\"\"|submitted=false,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false,email=\"not-an-email@\"|password=\"short\"|submitted=false]|edges[email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\",email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"\"|password=\"\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\",email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\",email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\",email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"ada@example.com\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=true::user::click:button:\"Submit\",email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"ada@example.com\"|password=\"longenough1\"|submitted=true::email=\"ada@example.com\"|password=\"longenough1\"|submitted=true::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"ada@example.com\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\",email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"ada@example.com\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"not-an-email@\"|password=\"\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\",email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"ada@example.com\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::invokeProp:prop:\"onSubmit\",email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\",email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"ada@example.com\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":2,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"\"|submitted=false::user::fill:textbox:\"Password\",email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"longenough1\"|submitted=false::user::fill:textbox:\"Password\":2,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Email\":1,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::fill:textbox:\"Password\":1,email=\"not-an-email@\"|password=\"short\"|submitted=false::email=\"not-an-email@\"|password=\"short\"|submitted=false::user::invokeProp:prop:\"onSubmit\"]",
       "assignments": [
+        {
+          "source": "random",
+          "props": {}
+        },
+        {
+          "source": "random",
+          "props": {}
+        },
         {
           "source": "random",
           "props": {}
@@ -11454,6 +14642,24 @@
       },
       {
         "assignment": {
+          "source": "random",
+          "props": {}
+        },
+        "actionsUsed": 377,
+        "statesFound": 10,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {}
+        },
+        "actionsUsed": 377,
+        "statesFound": 10,
+        "exhausted": false
+      },
+      {
+        "assignment": {
           "source": "vary-one",
           "variedProp": "onSubmit",
           "props": {}
@@ -11474,7 +14680,7 @@
       }
     ],
     "aggregate": {
-      "actionsUsed": 2205,
+      "actionsUsed": 2959,
       "statesFound": 10,
       "anyExhausted": false
     }

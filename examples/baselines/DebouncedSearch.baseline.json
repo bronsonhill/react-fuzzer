@@ -1,0 +1,884 @@
+{
+  "schemaVersion": 1,
+  "component": "DebouncedSearch",
+  "generatedAt": "2026-08-16T00:22:13.487Z",
+  "abstractionConfig": {
+    "literalDomainLimit": 8,
+    "domCorrelationEnabled": true,
+    "domCorrelationMinObservations": 3,
+    "ignoreHooks": [],
+    "demotedHooks": [],
+    "prunedHooks": []
+  },
+  "states": [
+    {
+      "key": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "name": "phase=_error_results=_text=_errorterm",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "text": "errorterm",
+        "phase": "error",
+        "results": []
+      }
+    },
+    {
+      "key": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "name": "phase=_error_results=_id_1_label_Result_A_text=_errorterm",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "text": "errorterm",
+        "phase": "error",
+        "results": [
+          {
+            "id": "1",
+            "label": "Result A"
+          }
+        ]
+      }
+    },
+    {
+      "key": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "name": "phase=_idle_results=_text=",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "text": "",
+        "phase": "idle",
+        "results": []
+      }
+    },
+    {
+      "key": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "name": "phase=_no-results_results=_text=_emptyterm",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "text": "emptyterm",
+        "phase": "no-results",
+        "results": []
+      }
+    },
+    {
+      "key": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "name": "phase=_no-results_results=_id_1_label_Result_A_text=_emptyte",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "text": "emptyterm",
+        "phase": "no-results",
+        "results": [
+          {
+            "id": "1",
+            "label": "Result A"
+          }
+        ]
+      }
+    },
+    {
+      "key": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "name": "phase=_results_results=_id_1_label_Result_A_text=_resultster",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "text": "resultsterm",
+        "phase": "results",
+        "results": [
+          {
+            "id": "1",
+            "label": "Result A"
+          }
+        ]
+      }
+    },
+    {
+      "key": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "name": "phase=_searching_results=_text=_emptyterm",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "emptyterm",
+        "phase": "searching",
+        "results": []
+      }
+    },
+    {
+      "key": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "name": "phase=_searching_results=_text=_errorterm",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "errorterm",
+        "phase": "searching",
+        "results": []
+      }
+    },
+    {
+      "key": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "name": "phase=_searching_results=_text=_resultsterm",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "resultsterm",
+        "phase": "searching",
+        "results": []
+      }
+    },
+    {
+      "key": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "name": "phase=_searching_results=_id_1_label_Result_A_text=_emptyter",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "emptyterm",
+        "phase": "searching",
+        "results": [
+          {
+            "id": "1",
+            "label": "Result A"
+          }
+        ]
+      }
+    },
+    {
+      "key": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "name": "phase=_searching_results=_id_1_label_Result_A_text=_errorter",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "errorterm",
+        "phase": "searching",
+        "results": [
+          {
+            "id": "1",
+            "label": "Result A"
+          }
+        ]
+      }
+    },
+    {
+      "key": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "name": "phase=_searching_results=_id_1_label_Result_A_text=_resultst",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "resultsterm",
+        "phase": "searching",
+        "results": [
+          {
+            "id": "1",
+            "label": "Result A"
+          }
+        ]
+      }
+    },
+    {
+      "key": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "name": "phase=_waiting_results=_text=_emptyterm",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "emptyterm",
+        "phase": "waiting",
+        "results": []
+      }
+    },
+    {
+      "key": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "name": "phase=_waiting_results=_text=_errorterm",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "errorterm",
+        "phase": "waiting",
+        "results": []
+      }
+    },
+    {
+      "key": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "name": "phase=_waiting_results=_text=_resultsterm",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "resultsterm",
+        "phase": "waiting",
+        "results": []
+      }
+    },
+    {
+      "key": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "name": "phase=_waiting_results=_id_1_label_Result_A_text=_emptyterm",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "emptyterm",
+        "phase": "waiting",
+        "results": [
+          {
+            "id": "1",
+            "label": "Result A"
+          }
+        ]
+      }
+    },
+    {
+      "key": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "name": "phase=_waiting_results=_id_1_label_Result_A_text=_errorterm",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "errorterm",
+        "phase": "waiting",
+        "results": [
+          {
+            "id": "1",
+            "label": "Result A"
+          }
+        ]
+      }
+    },
+    {
+      "key": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "name": "phase=_waiting_results=_id_1_label_Result_A_text=_resultster",
+      "provenance": "default-props",
+      "transient": true,
+      "fields": {
+        "text": "resultsterm",
+        "phase": "waiting",
+        "results": [
+          {
+            "id": "1",
+            "label": "Result A"
+          }
+        ]
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:idle\"|results=\"arr:empty\"|text=\"lit:\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\"",
+      "actionLabel": "fill \"Search\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":1",
+      "actionLabel": "fill \"Search\" with \"resultsterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":2",
+      "actionLabel": "fill \"Search\" with \"emptyterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Search\":3",
+      "actionLabel": "fill \"Search\" with \"errorterm\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:no-results\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:error\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:no-results\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:error\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:results\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "auto",
+      "driver": "microtask",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:emptyterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:errorterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:empty\"|text=\"lit:resultsterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:emptyterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:errorterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "phase=\"lit:waiting\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "to": "phase=\"lit:searching\"|results=\"arr:one\"|text=\"lit:resultsterm\"",
+      "kind": "auto",
+      "driver": "timer",
+      "provenance": "generated-props",
+      "stable": true
+    }
+  ]
+}

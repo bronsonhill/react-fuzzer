@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "component": "Wizard",
+  "generatedAt": "2026-08-16T00:19:56.251Z",
+  "abstractionConfig": {
+    "literalDomainLimit": 8,
+    "domCorrelationEnabled": true,
+    "domCorrelationMinObservations": 3,
+    "ignoreHooks": [],
+    "demotedHooks": [],
+    "prunedHooks": []
+  },
+  "states": [
+    {
+      "key": "done=false|email=\"lit:\"|name=\"lit:\"|step=\"lit:1\"",
+      "name": "done=false_email=_name=_step=1",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "step": 1,
+        "name": "",
+        "email": "",
+        "done": false
+      }
+    },
+    {
+      "key": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "name": "done=false_email=_name=_Ada_step=1",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "step": 1,
+        "name": "Ada",
+        "email": "",
+        "done": false
+      }
+    },
+    {
+      "key": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "name": "done=false_email=_name=_Ada_step=2",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "step": 2,
+        "name": "Ada",
+        "email": "",
+        "done": false
+      }
+    },
+    {
+      "key": "done=false|email=\"lit:ada@example.com\"|name=\"lit:\"|step=\"lit:1\"",
+      "name": "done=false_email=_ada_example.com_name=_step=1",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "step": 1,
+        "name": "",
+        "email": "ada@example.com",
+        "done": false
+      }
+    },
+    {
+      "key": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "name": "done=false_email=_ada_example.com_name=_Ada_step=1",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "step": 1,
+        "name": "Ada",
+        "email": "ada@example.com",
+        "done": false
+      }
+    },
+    {
+      "key": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "name": "done=false_email=_ada_example.com_name=_Ada_step=2",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "step": 2,
+        "name": "Ada",
+        "email": "ada@example.com",
+        "done": false
+      }
+    },
+    {
+      "key": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "name": "done=false_email=_ada_example.com_name=_Ada_step=3",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "step": 3,
+        "name": "Ada",
+        "email": "ada@example.com",
+        "done": false
+      }
+    },
+    {
+      "key": "done=true|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "name": "done=true_email=_ada_example.com_name=_Ada_step=3",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "step": 3,
+        "name": "Ada",
+        "email": "ada@example.com",
+        "done": true
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\"",
+      "actionLabel": "fill \"Name\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\"",
+      "actionLabel": "fill \"Name\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\":1",
+      "actionLabel": "fill \"Name\" with \"Ada\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\":1",
+      "actionLabel": "fill \"Name\" with \"Ada\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "invokeProp:prop:\"onComplete\"",
+      "actionLabel": "invoke prop \"onComplete\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "click:button:\"Next\"",
+      "actionLabel": "click button \"Next\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "click:button:\"Next\"",
+      "actionLabel": "click button \"Next\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\"",
+      "actionLabel": "fill \"Name\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\"",
+      "actionLabel": "fill \"Name\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\":1",
+      "actionLabel": "fill \"Name\" with \"Ada\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\":1",
+      "actionLabel": "fill \"Name\" with \"Ada\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "invokeProp:prop:\"onComplete\"",
+      "actionLabel": "invoke prop \"onComplete\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "click:button:\"Back\"",
+      "actionLabel": "click button \"Back\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "click:button:\"Back\"",
+      "actionLabel": "click button \"Back\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Email\"",
+      "actionLabel": "fill \"Email\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Email\"",
+      "actionLabel": "fill \"Email\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Email\":1",
+      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Email\":1",
+      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "invokeProp:prop:\"onComplete\"",
+      "actionLabel": "invoke prop \"onComplete\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\"",
+      "actionLabel": "fill \"Name\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\"",
+      "actionLabel": "fill \"Name\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\":1",
+      "actionLabel": "fill \"Name\" with \"Ada\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\":1",
+      "actionLabel": "fill \"Name\" with \"Ada\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "invokeProp:prop:\"onComplete\"",
+      "actionLabel": "invoke prop \"onComplete\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "click:button:\"Next\"",
+      "actionLabel": "click button \"Next\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "click:button:\"Next\"",
+      "actionLabel": "click button \"Next\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\"",
+      "actionLabel": "fill \"Name\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\"",
+      "actionLabel": "fill \"Name\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\":1",
+      "actionLabel": "fill \"Name\" with \"Ada\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Name\":1",
+      "actionLabel": "fill \"Name\" with \"Ada\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "invokeProp:prop:\"onComplete\"",
+      "actionLabel": "invoke prop \"onComplete\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "click:button:\"Back\"",
+      "actionLabel": "click button \"Back\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:1\"",
+      "kind": "user",
+      "actionId": "click:button:\"Back\"",
+      "actionLabel": "click button \"Back\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "kind": "user",
+      "actionId": "click:button:\"Next\"",
+      "actionLabel": "click button \"Next\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "kind": "user",
+      "actionId": "click:button:\"Next\"",
+      "actionLabel": "click button \"Next\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Email\"",
+      "actionLabel": "fill \"Email\" with \"\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Email\"",
+      "actionLabel": "fill \"Email\" with \"\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Email\":1",
+      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "fill:textbox:\"Email\":1",
+      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "invokeProp:prop:\"onComplete\"",
+      "actionLabel": "invoke prop \"onComplete\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "click:button:\"Back\"",
+      "actionLabel": "click button \"Back\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:2\"",
+      "kind": "user",
+      "actionId": "click:button:\"Back\"",
+      "actionLabel": "click button \"Back\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "to": "done=true|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "kind": "user",
+      "actionId": "click:button:\"Finish\"",
+      "actionLabel": "click button \"Finish\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "to": "done=true|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "kind": "user",
+      "actionId": "click:button:\"Finish\"",
+      "actionLabel": "click button \"Finish\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "to": "done=false|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "kind": "user",
+      "actionId": "invokeProp:prop:\"onComplete\"",
+      "actionLabel": "invoke prop \"onComplete\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "done=true|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "to": "done=true|email=\"lit:ada@example.com\"|name=\"lit:Ada\"|step=\"lit:3\"",
+      "kind": "user",
+      "actionId": "invokeProp:prop:\"onComplete\"",
+      "actionLabel": "invoke prop \"onComplete\"",
+      "provenance": "generated-props",
+      "stable": true
+    }
+  ]
+}

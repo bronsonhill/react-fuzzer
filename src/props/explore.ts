@@ -198,6 +198,8 @@ function mergeGraphs(
   const rekeyMerges = [...base.rekeyMerges];
   const domPruneReport = [...base.domPruneReport];
   const seenPruneHooks = new Set(domPruneReport.map((e) => e.hookName));
+  const demotedHooks = new Set(base.demotedHooks);
+  const prunedHooks = new Set(base.prunedHooks);
 
   extras.forEach(({ assignment, result }, runIndex) => {
     const localKeyOf = contentKeyMap(result);
@@ -255,6 +257,8 @@ function mergeGraphs(
         domPruneReport.push(entry);
       }
     }
+    for (const h of result.demotedHooks) demotedHooks.add(h);
+    for (const h of result.prunedHooks) prunedHooks.add(h);
   });
 
   const actionsUsed =
@@ -275,6 +279,8 @@ function mergeGraphs(
     ],
     rekeyMerges,
     domPruneReport,
+    demotedHooks: [...demotedHooks].sort(),
+    prunedHooks: [...prunedHooks].sort(),
   };
 }
 

@@ -13,6 +13,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { ExplorationResult, StateNode, Edge, ActionRef } from "../explore/graph.js";
 import type { MultiAssignmentResult } from "../props/explore.js";
+import { collapseTransientChains, isCollapsedEdge, type CollapsedEdge } from "./collapse.js";
 
 const MERMAID_NODE_THRESHOLD = 30;
 
@@ -51,7 +52,11 @@ function jsonShort(v: unknown): string {
   }
 }
 
-function edgeLabel(e: Edge): string {
+function edgeLabel(e: Edge | CollapsedEdge): string {
+  if (e.kind === "collapsed") {
+    const base = e.action?.label ?? e.action?.id ?? "action";
+    return e.via.length > 0 ? `${base} (via ${e.via.join(", ")})` : base;
+  }
   if (e.kind === "user") return e.action?.label ?? e.action?.id ?? "action";
   return `auto:${e.driver ?? "?"}`;
 }
@@ -64,7 +69,10 @@ function edgeLabel(e: Edge): string {
  * classes the way flowcharts do; unstable/non-deterministic edges get a
  * `[!]`/`[?]` marker prefix in their label for the same reason.
  */
-export function buildMermaidSource(graph: { states: StateNode[]; edges: Edge[] }): { source: string; large: boolean } {
+export function buildMermaidSource(graph: {
+  states: StateNode[];
+  edges: Array<Edge | CollapsedEdge>;
+}): { source: string; large: boolean } {
   const lines: string[] = ["stateDiagram-v2"];
   const sortedStates = [...graph.states].sort((a, b) => a.key.localeCompare(b.key));
   const sortedEdges = [...graph.edges].sort((a, b) => {
@@ -72,7 +80,8 @@ export function buildMermaidSource(graph: { states: StateNode[]; edges: Edge[] }
     const bk = e2k(b);
     return ak.localeCompare(bk);
   });
-  function e2k(e: Edge): string {
+  function e2k(e: Edge | CollapsedEdge): string {
+    if (e.kind === "collapsed") return `${e.from}::${e.action.id}::${e.to}`;
     return `${e.from}::${e.kind === "user" ? e.action?.id : e.driver}::${e.to}`;
   }
 
@@ -92,8 +101,9 @@ export function buildMermaidSource(graph: { states: StateNode[]; edges: Edge[] }
     // an *edge* are shown as label prefixes instead of color/dashing.
     if (e.provenance === "generated-props") label = `[gen] ${label}`;
     if (!e.stable) label = `[unstable] ${label}`;
-    if (e.nonDeterministic) label = `[non-det] ${label}`;
-    lines.push(`  ${mermaidId(e.from)} --> ${mermaidId(e.to)} : ${label.replace(/"/g, "'").slice(0, 100)}`);
+    if (e.kind !== "collapsed" && e.nonDeterministic) label = `[non-det] ${label}`;
+    if (e.kind === "collapsed") label = `[collapsed] ${label}`;
+    lines.push(`  ${mermaidId(e.from)} --> ${mermaidId(e.to)} : ${label.replace(/"/g, "'").slice(0, 120)}`);
   }
   lines.push(`  classDef defaultProps fill:#3b6fb0,color:#fff,stroke:#1c3a5e`);
   lines.push(`  classDef generatedProps fill:#8a5cc7,color:#fff,stroke:#4c2f75,stroke-dasharray: 3 2`);
@@ -140,7 +150,7 @@ function fieldsHtml(fields: Record<string, unknown>): string {
   return keys.map((k) => `<code>${esc(k)}=${esc(safeJson(fields[k]))}</code>`).join("<br/>");
 }
 
-function stateTableRows(states: StateNode[]): string {
+function stateTableRows(states: StateNode[], collapsedStateIds: Set<string>): string {
   return [...states]
     .sort((a, b) => a.key.localeCompare(b.key))
     .map(
@@ -149,6 +159,7 @@ function stateTableRows(states: StateNode[]): string {
         <td><code>${esc(s.key)}</code></td>
         <td>${esc(s.provenance)}</td>
         <td>${s.transient ? "yes" : "no"}</td>
+        <td>${collapsedStateIds.has(s.id) ? "collapsed" : "shown"}</td>
         <td>${fieldsHtml(s.fields)}</td>
         <td>${witnessHtml(s)}</td>
       </tr>`,
@@ -402,18 +413,31 @@ a { color: var(--link); }
 export interface RenderHtmlOptions {
   /** Wall-clock elapsed time to show in the budget section (kept out of the JSON artefact, but fine to show here). */
   elapsedMs?: number;
+  /**
+   * M6 Part 1: collapse maximal transient async chains (see
+   * ./collapse.ts) into single labelled edges in the *diagram* only.
+   * Default true. The state table always lists every state (collapsed
+   * intermediates included, flagged in a "diagram" column), and the JSON
+   * artefact (src/report/json.ts) is entirely unaffected by this flag --
+   * this is presentation-layer only.
+   */
+  collapseTransientChains?: boolean;
 }
 
 function coreSections(result: ExplorationResult, opts: RenderHtmlOptions): string {
-  const { source, large } = buildMermaidSource(result.graph);
+  const doCollapse = opts.collapseTransientChains ?? true;
+  const collapsed = doCollapse ? collapseTransientChains(result.graph) : undefined;
+  const diagramGraph = collapsed ? { states: collapsed.states, edges: collapsed.edges } : result.graph;
+  const { source, large } = buildMermaidSource(diagramGraph);
   const incomplete = result.budget.exhausted;
   const stateCount = result.graph.states.length;
   const edgeCount = result.graph.edges.length;
+  const collapsedCount = collapsed?.collapsedStateIds.size ?? 0;
 
   return `
     ${incomplete ? `<div class="incomplete-banner">INCOMPLETE RUN &mdash; budget was exhausted before exploration finished (${result.unexploredFrontier.length} frontier item(s) unexplored). This graph does not necessarily cover every reachable state.</div>` : ""}
     <h1>${esc(result.component)}</h1>
-    <p class="subtitle">${stateCount} states, ${edgeCount} edges</p>
+    <p class="subtitle">${stateCount} states, ${edgeCount} edges${collapsedCount > 0 ? ` (diagram: ${stateCount - collapsedCount} nodes shown, ${collapsedCount} transient state(s) collapsed into labelled edges)` : ""}</p>
 
     <section id="diagram">
       <h2>State diagram</h2>
@@ -425,17 +449,33 @@ function coreSections(result: ExplorationResult, opts: RenderHtmlOptions): strin
         <span>edge label prefixed <code>[gen]</code> = this transition was only observed under a generated-props assignment</span>
         <span>edge label prefixed <code>[unstable]</code> = settle() did not reach quiescence</span>
         <span>edge label prefixed <code>[non-det]</code> = same action from same state observed landing on different destinations</span>
+        <span>edge label prefixed <code>[collapsed]</code>, with "(via ...)" = a whole transient async chain (user action &rarr; one or more transient intermediates &rarr; settled state) drawn as one edge; see the state table for the collapsed intermediates</span>
       </div>
-      ${large ? `<div class="large-graph-warning">This graph has ${stateCount} states, above the ${MERMAID_NODE_THRESHOLD}-node threshold for comfortable reading. It is still rendered in full below, but expect to need to zoom/scroll and to lean on the state table instead of the diagram for anything beyond a rough shape check.</div>` : ""}
+      ${
+        doCollapse
+          ? `<p class="empty-note">Transient async chains are collapsed in this diagram (default). Collapsed intermediates are still listed in the state table below, marked "collapsed". ${
+              collapsed && collapsed.branchNotes.length > 0
+                ? `${collapsed.branchNotes.length} chain(s) could not be fully collapsed because a transient state along the way had more than one outgoing edge (branching); those are left expanded -- see below.`
+                : ""
+            }</p>`
+          : `<p class="empty-note">Transient async chains are shown expanded (collapsing disabled for this report).</p>`
+      }
+      ${
+        collapsed && collapsed.branchNotes.length > 0
+          ? `<div class="large-graph-warning"><strong>Chains left expanded due to branching:</strong><ul>${collapsed.branchNotes.map((n) => `<li>${esc(n)}</li>`).join("")}</ul></div>`
+          : ""
+      }
+      ${large ? `<div class="large-graph-warning">This graph has ${diagramGraph.states.length} diagram nodes, above the ${MERMAID_NODE_THRESHOLD}-node threshold for comfortable reading. It is still rendered in full below, but expect to need to zoom/scroll and to lean on the state table instead of the diagram for anything beyond a rough shape check.</div>` : ""}
       <div class="mermaid-container"><pre class="mermaid">${esc(source)}</pre></div>
     </section>
 
     <section id="states">
       <h2>State table</h2>
+      <p class="empty-note">Every state is listed here, including transient states collapsed out of the diagram above (see the "diagram" column).</p>
       <div class="table-scroll">
         <table>
-          <thead><tr><th>key</th><th>provenance</th><th>transient</th><th>fields</th><th>witness</th></tr></thead>
-          <tbody>${stateTableRows(result.graph.states)}</tbody>
+          <thead><tr><th>key</th><th>provenance</th><th>transient</th><th>diagram</th><th>fields</th><th>witness</th></tr></thead>
+          <tbody>${stateTableRows(result.graph.states, collapsed?.collapsedStateIds ?? new Set())}</tbody>
         </table>
       </div>
     </section>

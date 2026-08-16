@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "component": "PropGated",
+  "generatedAt": "2026-08-16T00:19:53.264Z",
+  "abstractionConfig": {
+    "literalDomainLimit": 8,
+    "domCorrelationEnabled": true,
+    "domCorrelationMinObservations": 3,
+    "ignoreHooks": [],
+    "demotedHooks": [],
+    "prunedHooks": []
+  },
+  "states": [
+    {
+      "key": "expertModeOn=false|notificationsOn=false",
+      "name": "expertModeOn=false_notificationsOn=false",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "notificationsOn": false,
+        "expertModeOn": false
+      }
+    },
+    {
+      "key": "expertModeOn=false|notificationsOn=true",
+      "name": "expertModeOn=false_notificationsOn=true",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "notificationsOn": true,
+        "expertModeOn": false
+      }
+    },
+    {
+      "key": "expertModeOn=true|notificationsOn=false",
+      "name": "expertModeOn=true_notificationsOn=false",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "notificationsOn": false,
+        "expertModeOn": true
+      }
+    },
+    {
+      "key": "expertModeOn=true|notificationsOn=true",
+      "name": "expertModeOn=true_notificationsOn=true",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "notificationsOn": true,
+        "expertModeOn": true
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": "expertModeOn=false|notificationsOn=false",
+      "to": "expertModeOn=true|notificationsOn=false",
+      "kind": "user",
+      "actionId": "click:button:\"Expert mode: Off\"",
+      "actionLabel": "click button \"Expert mode: Off\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "expertModeOn=false|notificationsOn=false",
+      "to": "expertModeOn=false|notificationsOn=true",
+      "kind": "user",
+      "actionId": "click:button:\"Notifications: Off\"",
+      "actionLabel": "click button \"Notifications: Off\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "expertModeOn=false|notificationsOn=false",
+      "to": "expertModeOn=false|notificationsOn=true",
+      "kind": "user",
+      "actionId": "click:button:\"Notifications: Off\"",
+      "actionLabel": "click button \"Notifications: Off\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "expertModeOn=false|notificationsOn=true",
+      "to": "expertModeOn=true|notificationsOn=true",
+      "kind": "user",
+      "actionId": "click:button:\"Expert mode: Off\"",
+      "actionLabel": "click button \"Expert mode: Off\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "expertModeOn=false|notificationsOn=true",
+      "to": "expertModeOn=false|notificationsOn=false",
+      "kind": "user",
+      "actionId": "click:button:\"Notifications: On\"",
+      "actionLabel": "click button \"Notifications: On\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "expertModeOn=false|notificationsOn=true",
+      "to": "expertModeOn=false|notificationsOn=false",
+      "kind": "user",
+      "actionId": "click:button:\"Notifications: On\"",
+      "actionLabel": "click button \"Notifications: On\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "expertModeOn=true|notificationsOn=false",
+      "to": "expertModeOn=false|notificationsOn=false",
+      "kind": "user",
+      "actionId": "click:button:\"Expert mode: On\"",
+      "actionLabel": "click button \"Expert mode: On\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "expertModeOn=true|notificationsOn=false",
+      "to": "expertModeOn=true|notificationsOn=true",
+      "kind": "user",
+      "actionId": "click:button:\"Notifications: Off\"",
+      "actionLabel": "click button \"Notifications: Off\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "expertModeOn=true|notificationsOn=true",
+      "to": "expertModeOn=false|notificationsOn=true",
+      "kind": "user",
+      "actionId": "click:button:\"Expert mode: On\"",
+      "actionLabel": "click button \"Expert mode: On\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "expertModeOn=true|notificationsOn=true",
+      "to": "expertModeOn=true|notificationsOn=false",
+      "kind": "user",
+      "actionId": "click:button:\"Notifications: On\"",
+      "actionLabel": "click button \"Notifications: On\"",
+      "provenance": "generated-props",
+      "stable": true
+    }
+  ]
+}

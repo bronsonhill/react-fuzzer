@@ -74,6 +74,8 @@ function serializeResult(result: ExplorationResult): Record<string, unknown> {
       .sort((a, b) => `${a.state}::${a.action.id}`.localeCompare(`${b.state}::${b.action.id}`)),
     rekeyMerges: [...result.rekeyMerges].sort((a, b) => a.to.localeCompare(b.to)),
     domPruneReport: [...result.domPruneReport].sort((a, b) => a.hookName.localeCompare(b.hookName)) as DomPruneReportEntry[],
+    demotedHooks: [...result.demotedHooks].sort(),
+    prunedHooks: [...result.prunedHooks].sort(),
   };
 }
 

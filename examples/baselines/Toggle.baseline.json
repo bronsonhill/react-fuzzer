@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "component": "Toggle",
+  "generatedAt": "2026-08-16T00:19:50.696Z",
+  "abstractionConfig": {
+    "literalDomainLimit": 8,
+    "domCorrelationEnabled": true,
+    "domCorrelationMinObservations": 3,
+    "ignoreHooks": [],
+    "demotedHooks": [],
+    "prunedHooks": []
+  },
+  "states": [
+    {
+      "key": "on=false",
+      "name": "on=false",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "on": false
+      }
+    },
+    {
+      "key": "on=true",
+      "name": "on=true",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "on": true
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": "on=false",
+      "to": "on=true",
+      "kind": "user",
+      "actionId": "click:button:\"Off\"",
+      "actionLabel": "click button \"Off\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "on=false",
+      "to": "on=true",
+      "kind": "user",
+      "actionId": "click:button:\"Off\"",
+      "actionLabel": "click button \"Off\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "on=true",
+      "to": "on=false",
+      "kind": "user",
+      "actionId": "click:button:\"On\"",
+      "actionLabel": "click button \"On\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "on=true",
+      "to": "on=false",
+      "kind": "user",
+      "actionId": "click:button:\"On\"",
+      "actionLabel": "click button \"On\"",
+      "provenance": "generated-props",
+      "stable": true
+    }
+  ]
+}

@@ -111,4 +111,15 @@ export interface ExplorationResult {
    * surfaced prominently rather than applied silently.
    */
   domPruneReport: DomPruneReportEntry[];
+  /**
+   * M6: the final demoted-hook and pruned-hook sets this run's
+   * AdaptiveAbstraction settled on (see src/abstraction/adaptive.ts's
+   * getDemotedHooks/getPrunedHooks). Exposed so src/baseline/diff.ts can
+   * recompute a baseline state's key under *this* run's abstraction rules
+   * (via computeStateKeyForFields) to distinguish a demotion-driven merge
+   * of previously-distinct baseline states (abstraction churn) from a
+   * genuine lost state.
+   */
+  demotedHooks: string[];
+  prunedHooks: string[];
 }
