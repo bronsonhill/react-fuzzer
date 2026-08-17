@@ -1,6 +1,9 @@
 # Proposal: previewing a state's rendered output in the report
 
-Status: proposed, not built. Written for whoever picks this up next.
+Status: Option 1 is built (`src/abstraction/domSnapshot.ts` captures the markup,
+`StateNode.html` carries it, `src/report/html.ts` renders the hover card). Options 2
+and 3 are not, and the reasoning against them below still stands. Kept as written,
+with a postscript at the end on what the build turned up.
 
 ## The ask
 
@@ -121,3 +124,27 @@ Option 3 costs the most and goes blind exactly where a reviewer most wants to lo
 6. State the CSS limitation in the README next to the existing applicability boundary.
    Someone should be able to tell before installing that previews arrive unstyled unless
    they supply a stylesheet.
+
+## Postscript: what the build turned up
+
+Half a day was roughly right. Two things the estimate missed:
+
+`container.innerHTML` is not enough. `value` and `checked` on a controlled input are
+DOM properties, not attributes, so a serialiser that only walks attributes previews
+every filled field as empty — for a fuzzer whose main action kind is `fill`, the
+preview would have lied about exactly the thing under test. `captureMarkup` reflects
+those properties back into attributes. `examples/DebouncedSearch.html`'s transient
+states show their in-flight input text because of it.
+
+The proposal said to reuse `domFingerprint`'s normalisation pass. That turned out to be
+the wrong shape: the fingerprint deliberately throws away class names, inline styles
+and `data-*` attributes, which are precisely what a supplied stylesheet needs to key
+off. `domSnapshot.ts` keeps everything and drops only React's own attributes
+(`data-reactroot`, `__react*`), whose per-render suffixes would otherwise break the
+byte-identical-JSON guarantee. Attributes are emitted in sorted order for the same
+reason.
+
+The diagram-node binding matches mermaid's generated element ids by whole segment
+(`n_s0` must not match `n_s01`). That path is the one piece verified by reading rather
+than running: the report was exercised under jsdom with the mermaid bundle stripped out,
+since mermaid needs a real browser to render at all.

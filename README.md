@@ -93,6 +93,7 @@ npm run explore -- \
 | `--out-json`, `--out-html` | Output paths. Default to `examples/<export>.json` / `.html`. |
 | `--sample-count`, `--vary-per-prop`, `--seed` | Prop-generation controls, forwarded to `exploreMultiAssignment`. |
 | `--max-actions`, `--max-states`, `--max-wall-clock-ms` | Budget overrides. |
+| `--preview-css <path>` | Stylesheet inlined into each state preview in the HTML report. Without it previews are unstyled — see the applicability boundary above. |
 | `--single` | Skip prop generation; run once under `exampleProps` only (only `default-props` provenance). |
 | `--expanded` | (M6) Disable the default-on transient-async-chain collapse in the HTML diagram; the state table and JSON artefact are always full-fidelity regardless of this flag. See `docs/m6-baseline-report.md`. |
 
@@ -165,6 +166,15 @@ This section is deliberately concrete, not a gesture at limitations.
 - **No browser-based exploration, no layout/visual/CSS state.** jsdom has no layout
   engine; anything expressed only in computed style or actual rendered position is
   invisible to this tool, by design (see docs/poc-plan.md's non-goals).
+- **State previews arrive unstyled unless you supply a stylesheet.** Hovering a state
+  in the report shows the markup that state actually rendered, captured during
+  exploration. jsdom never loads your application's CSS, so what you get is structure,
+  text, and form values: class names are all there, the rules behind them are not.
+  Point `--preview-css` (or the config module's `previewStylesheet`) at plain CSS or a
+  compiled Tailwind build to get styling back. CSS-in-JS that injects rules at runtime
+  cannot be recovered this way. For "is this the state I meant?" the unstyled version
+  usually answers the question — a disabled button and an empty error slot read fine
+  without styling.
 
 If your component is a pure function of props, or its interesting state lives in
 Context/Redux/a module singleton rather than its own hooks, this tool will tell you
@@ -252,12 +262,13 @@ across `explore`, `approve`, and `diff`. `diff` additionally takes `--baseline <
   approve/diff mechanism, including the rekey-vs-regression distinction.
 - `docs/poc-outcome.md` — the closing assessment of the whole PoC: what worked, what
   didn't, concrete limits, and what's next.
-- `docs/state-preview-proposal.md` — proposed, not built: showing a state's rendered
-  output on hover in the report. Three costed options and a recommendation.
+- `docs/state-preview-proposal.md` — the three costed options for previewing a state's
+  rendered output. Option 1 (stored markup) is the one that got built; the other two
+  and the reasoning against them are still worth reading before revisiting this.
 
 ## Status
 
-137 tests passing, 1 correctly skipped outside a real `npm run explore` invocation (the
+144 tests passing, 1 correctly skipped outside a real `npm run explore` invocation (the
 CLI driver test). `npm run typecheck` passes with strict TypeScript throughout. All six
 milestones (M0–M6) are implemented and tested; see `docs/poc-outcome.md` for the honest
 assessment of what that evidence does and doesn't support.

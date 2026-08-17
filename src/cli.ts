@@ -34,6 +34,7 @@ interface ParsedArgs {
   maxWallClockMs?: number;
   single?: boolean;
   expanded?: boolean;
+  previewCss?: string;
   baseline?: string;
   help?: boolean;
 }
@@ -73,6 +74,11 @@ explore-only:
                          HTML diagram (default: collapsed). The JSON artefact
                          and state table are always full-fidelity regardless
                          of this flag.
+  --preview-css <path>  Stylesheet to inline into each state preview in the
+                         HTML report. Exploration runs under jsdom, which
+                         loads no CSS, so previews are unstyled unless this
+                         (or the config module's previewStylesheet) points at
+                         the component's compiled CSS.
 
 approve-only:
   --out-json <path>     Output path for the baseline file.
@@ -110,6 +116,7 @@ function parseArgs(argv: string[]): ParsedArgs {
       case "--max-wall-clock-ms": args.maxWallClockMs = Number(next()); break;
       case "--single": args.single = true; break;
       case "--expanded": args.expanded = true; break;
+      case "--preview-css": args.previewCss = next(); break;
       case "--baseline": args.baseline = next(); break;
       case "-h":
       case "--help": args.help = true; break;
@@ -158,6 +165,7 @@ function main(): number {
     budget,
     single: args.single,
     collapse: !args.expanded,
+    previewCssPath: args.previewCss ? path.resolve(process.cwd(), args.previewCss) : undefined,
   };
 
   const runnerPath = path.join(repoRoot, "scripts", "explore-runner.test.ts");

@@ -21,6 +21,7 @@
             "actions": []
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+          "html": "<div><label>Search<input value/></label><p>Type to search</p></div>",
           "transient": false
         },
         {
@@ -47,6 +48,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+          "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
           "transient": true
         },
         {
@@ -96,6 +98,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+          "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
           "transient": true
         },
         {
@@ -145,6 +148,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+          "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
           "transient": true
         },
         {
@@ -193,6 +197,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+          "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
           "transient": false
         },
         {
@@ -248,6 +253,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+          "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
           "transient": true
         },
         {
@@ -303,6 +309,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+          "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
           "transient": true
         },
         {
@@ -357,6 +364,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+          "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
           "transient": false
         },
         {
@@ -418,6 +426,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+          "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
           "transient": true
         },
         {
@@ -479,6 +488,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+          "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
           "transient": true
         },
         {
@@ -505,6 +515,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+          "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
           "transient": true
         },
         {
@@ -530,6 +541,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+          "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
           "transient": false
         },
         {
@@ -562,6 +574,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+          "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
           "transient": true
         },
         {
@@ -594,6 +607,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+          "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
           "transient": true
         },
         {
@@ -625,6 +639,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+          "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
           "transient": false
         },
         {
@@ -663,6 +678,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+          "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
           "transient": true
         },
         {
@@ -701,6 +717,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+          "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
           "transient": true
         },
         {
@@ -743,6 +760,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+          "html": "<div><label>Search<input value=\"resultsterm\"/></label><ul><li>Result A</li></ul></div>",
           "transient": false
         }
       ],
@@ -1630,6 +1648,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "html": "<div><label>Search<input value/></label><p>Type to search</p></div>",
               "transient": false
             },
             {
@@ -1656,6 +1675,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -1705,6 +1725,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -1754,6 +1775,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -1802,6 +1824,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -1857,6 +1880,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -1912,6 +1936,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -1966,6 +1991,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -2027,6 +2053,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -2088,6 +2115,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -2114,6 +2142,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -2139,6 +2168,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -2171,6 +2201,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -2203,6 +2234,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -2234,6 +2266,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -2272,6 +2305,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -2310,6 +2344,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -2352,6 +2387,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><ul><li>Result A</li></ul></div>",
               "transient": false
             }
           ],
@@ -3021,6 +3057,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "html": "<div><label>Search<input value/></label><p>Type to search</p></div>",
               "transient": false
             },
             {
@@ -3047,6 +3084,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -3096,6 +3134,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -3145,6 +3184,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -3193,6 +3233,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -3248,6 +3289,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -3303,6 +3345,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -3357,6 +3400,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -3418,6 +3462,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -3479,6 +3524,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -3505,6 +3551,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -3530,6 +3577,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -3562,6 +3610,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -3594,6 +3643,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -3625,6 +3675,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -3663,6 +3714,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -3701,6 +3753,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -3743,6 +3796,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><ul><li>Result A</li></ul></div>",
               "transient": false
             }
           ],
@@ -4412,6 +4466,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "html": "<div><label>Search<input value/></label><p>Type to search</p></div>",
               "transient": false
             },
             {
@@ -4438,6 +4493,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -4487,6 +4543,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -4536,6 +4593,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -4584,6 +4642,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -4639,6 +4698,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -4694,6 +4754,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -4748,6 +4809,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -4809,6 +4871,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -4870,6 +4933,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -4896,6 +4960,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -4921,6 +4986,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -4953,6 +5019,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -4985,6 +5052,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -5016,6 +5084,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -5054,6 +5123,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -5092,6 +5162,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -5134,6 +5205,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><ul><li>Result A</li></ul></div>",
               "transient": false
             }
           ],
@@ -5803,6 +5875,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "html": "<div><label>Search<input value/></label><p>Type to search</p></div>",
               "transient": false
             },
             {
@@ -5829,6 +5902,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -5878,6 +5952,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -5927,6 +6002,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -5975,6 +6051,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -6030,6 +6107,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -6085,6 +6163,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -6139,6 +6218,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -6200,6 +6280,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -6261,6 +6342,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -6287,6 +6369,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -6312,6 +6395,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -6344,6 +6428,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -6376,6 +6461,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -6407,6 +6493,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -6445,6 +6532,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -6483,6 +6571,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -6525,6 +6614,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><ul><li>Result A</li></ul></div>",
               "transient": false
             }
           ],
@@ -7194,6 +7284,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "html": "<div><label>Search<input value/></label><p>Type to search</p></div>",
               "transient": false
             },
             {
@@ -7220,6 +7311,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -7269,6 +7361,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -7318,6 +7411,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -7366,6 +7460,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -7421,6 +7516,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -7476,6 +7572,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -7530,6 +7627,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -7591,6 +7689,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -7652,6 +7751,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -7678,6 +7778,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -7703,6 +7804,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -7735,6 +7837,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -7767,6 +7870,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -7798,6 +7902,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -7836,6 +7941,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -7874,6 +7980,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -7916,6 +8023,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><ul><li>Result A</li></ul></div>",
               "transient": false
             }
           ],
@@ -8581,6 +8689,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "html": "<div><label>Search<input value/></label><p>Type to search</p></div>",
               "transient": false
             },
             {
@@ -8605,6 +8714,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -8652,6 +8762,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -8699,6 +8810,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -8745,6 +8857,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -8798,6 +8911,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -8851,6 +8965,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -8903,6 +9018,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -8962,6 +9078,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -9021,6 +9138,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -9045,6 +9163,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -9068,6 +9187,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -9098,6 +9218,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -9128,6 +9249,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -9157,6 +9279,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -9193,6 +9316,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -9229,6 +9353,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -9269,6 +9394,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><ul><li>Result A</li></ul></div>",
               "transient": false
             }
           ],
@@ -9939,6 +10065,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "html": "<div><label>Search<input value/></label><p>Type to search</p></div>",
               "transient": false
             },
             {
@@ -9965,6 +10092,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -10014,6 +10142,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -10063,6 +10192,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -10111,6 +10241,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -10166,6 +10297,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -10221,6 +10353,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -10275,6 +10408,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -10336,6 +10470,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -10397,6 +10532,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -10423,6 +10559,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -10448,6 +10585,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -10480,6 +10618,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -10512,6 +10651,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -10543,6 +10683,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -10581,6 +10722,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -10619,6 +10761,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -10661,6 +10804,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><ul><li>Result A</li></ul></div>",
               "transient": false
             }
           ],
@@ -11327,6 +11471,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "html": "<div><label>Search<input value/></label><p>Type to search</p></div>",
               "transient": false
             },
             {
@@ -11351,6 +11496,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -11398,6 +11544,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -11445,6 +11592,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -11491,6 +11639,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -11544,6 +11693,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -11597,6 +11747,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -11649,6 +11800,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -11708,6 +11860,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -11767,6 +11920,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -11791,6 +11945,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -11814,6 +11969,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -11844,6 +12000,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -11874,6 +12031,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -11903,6 +12061,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -11939,6 +12098,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -11975,6 +12135,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -12015,6 +12176,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><ul><li>Result A</li></ul></div>",
               "transient": false
             }
           ],
@@ -12685,6 +12847,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "html": "<div><label>Search<input value/></label><p>Type to search</p></div>",
               "transient": false
             },
             {
@@ -12711,6 +12874,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -12760,6 +12924,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -12809,6 +12974,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -12857,6 +13023,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -12912,6 +13079,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -12967,6 +13135,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -13021,6 +13190,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -13082,6 +13252,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -13143,6 +13314,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -13169,6 +13341,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -13194,6 +13367,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -13226,6 +13400,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -13258,6 +13433,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -13289,6 +13465,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -13327,6 +13504,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -13365,6 +13543,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -13407,6 +13586,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><ul><li>Result A</li></ul></div>",
               "transient": false
             }
           ],
@@ -14077,6 +14257,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=]{}},p[]{#(Type to search)}}}",
+              "html": "<div><label>Search<input value/></label><p>Type to search</p></div>",
               "transient": false
             },
             {
@@ -14103,6 +14284,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -14152,6 +14334,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -14201,6 +14384,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -14249,6 +14433,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -14304,6 +14489,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -14359,6 +14545,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -14413,6 +14600,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -14474,6 +14662,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -14535,6 +14724,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -14561,6 +14751,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -14586,6 +14777,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=errorterm]{}},p[role=alert]{#(Search failed)}}}",
+              "html": "<div><label>Search<input value=\"errorterm\"/></label><p role=\"alert\">Search failed</p></div>",
               "transient": false
             },
             {
@@ -14618,6 +14810,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -14650,6 +14843,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -14681,6 +14875,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=emptyterm]{}},p[]{#(No results)}}}",
+              "html": "<div><label>Search<input value=\"emptyterm\"/></label><p>No results</p></div>",
               "transient": false
             },
             {
@@ -14719,6 +14914,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[]{#(...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p>...</p></div>",
               "transient": true
             },
             {
@@ -14757,6 +14953,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},p[role=status]{#(Searching...)}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><p role=\"status\">Searching...</p></div>",
               "transient": true
             },
             {
@@ -14799,6 +14996,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{label[]{#(Search),input[value=resultsterm]{}},ul[]{li[]{#(Result A)}}}}",
+              "html": "<div><label>Search<input value=\"resultsterm\"/></label><ul><li>Result A</li></ul></div>",
               "transient": false
             }
           ],

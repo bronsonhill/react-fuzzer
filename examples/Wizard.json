@@ -20,6 +20,7 @@
             "actions": []
           },
           "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+          "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
           "transient": false
         },
         {
@@ -44,6 +45,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+          "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
           "transient": false
         },
         {
@@ -73,6 +75,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=]{}},div[]{button[]{#(Back)},button[disabled=]{#(Next)}}}}",
+          "html": "<div><p>Step 2 of 3</p><label>Email<input value/></label><div><button type=\"button\">Back</button><button disabled type=\"button\">Next</button></div></div>",
           "transient": false
         },
         {
@@ -108,6 +111,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=ada@example.com]{}},div[]{button[]{#(Back)},button[]{#(Next)}}}}",
+          "html": "<div><p>Step 2 of 3</p><label>Email<input value=\"ada@example.com\"/></label><div><button type=\"button\">Back</button><button type=\"button\">Next</button></div></div>",
           "transient": false
         },
         {
@@ -148,6 +152,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{p[]{#(Step),#(3),#(of 3)},p[]{#(Review:),#(Ada),#(/),#(ada@example.com)},div[]{button[]{#(Back)},button[]{#(Finish)}}}}",
+          "html": "<div><p>Step 3 of 3</p><p>Review: Ada / ada@example.com</p><div><button type=\"button\">Back</button><button type=\"button\">Finish</button></div></div>",
           "transient": false
         },
         {
@@ -193,6 +198,7 @@
             ]
           },
           "domFingerprint": "div[]{p[role=status]{#(Wizard complete)}}",
+          "html": "<p role=\"status\">Wizard complete</p>",
           "transient": false
         },
         {
@@ -233,6 +239,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+          "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
           "transient": false
         },
         {
@@ -279,6 +286,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+          "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
           "transient": false
         }
       ],
@@ -1154,6 +1162,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -1178,6 +1187,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -1207,6 +1217,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=]{}},div[]{button[]{#(Back)},button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value/></label><div><button type=\"button\">Back</button><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -1242,6 +1253,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=ada@example.com]{}},div[]{button[]{#(Back)},button[]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value=\"ada@example.com\"/></label><div><button type=\"button\">Back</button><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -1282,6 +1294,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(3),#(of 3)},p[]{#(Review:),#(Ada),#(/),#(ada@example.com)},div[]{button[]{#(Back)},button[]{#(Finish)}}}}",
+              "html": "<div><p>Step 3 of 3</p><p>Review: Ada / ada@example.com</p><div><button type=\"button\">Back</button><button type=\"button\">Finish</button></div></div>",
               "transient": false
             },
             {
@@ -1327,6 +1340,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Wizard complete)}}",
+              "html": "<p role=\"status\">Wizard complete</p>",
               "transient": false
             },
             {
@@ -1367,6 +1381,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -1413,6 +1428,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             }
           ],
@@ -1841,6 +1857,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -1865,6 +1882,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -1894,6 +1912,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=]{}},div[]{button[]{#(Back)},button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value/></label><div><button type=\"button\">Back</button><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -1929,6 +1948,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=ada@example.com]{}},div[]{button[]{#(Back)},button[]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value=\"ada@example.com\"/></label><div><button type=\"button\">Back</button><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -1969,6 +1989,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(3),#(of 3)},p[]{#(Review:),#(Ada),#(/),#(ada@example.com)},div[]{button[]{#(Back)},button[]{#(Finish)}}}}",
+              "html": "<div><p>Step 3 of 3</p><p>Review: Ada / ada@example.com</p><div><button type=\"button\">Back</button><button type=\"button\">Finish</button></div></div>",
               "transient": false
             },
             {
@@ -2014,6 +2035,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Wizard complete)}}",
+              "html": "<p role=\"status\">Wizard complete</p>",
               "transient": false
             },
             {
@@ -2054,6 +2076,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -2100,6 +2123,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             }
           ],
@@ -2645,6 +2669,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -2669,6 +2694,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -2698,6 +2724,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=]{}},div[]{button[]{#(Back)},button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value/></label><div><button type=\"button\">Back</button><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -2733,6 +2760,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=ada@example.com]{}},div[]{button[]{#(Back)},button[]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value=\"ada@example.com\"/></label><div><button type=\"button\">Back</button><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -2773,6 +2801,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(3),#(of 3)},p[]{#(Review:),#(Ada),#(/),#(ada@example.com)},div[]{button[]{#(Back)},button[]{#(Finish)}}}}",
+              "html": "<div><p>Step 3 of 3</p><p>Review: Ada / ada@example.com</p><div><button type=\"button\">Back</button><button type=\"button\">Finish</button></div></div>",
               "transient": false
             },
             {
@@ -2818,6 +2847,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Wizard complete)}}",
+              "html": "<p role=\"status\">Wizard complete</p>",
               "transient": false
             },
             {
@@ -2858,6 +2888,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -2904,6 +2935,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             }
           ],
@@ -3449,6 +3481,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -3473,6 +3506,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -3502,6 +3536,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=]{}},div[]{button[]{#(Back)},button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value/></label><div><button type=\"button\">Back</button><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -3537,6 +3572,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=ada@example.com]{}},div[]{button[]{#(Back)},button[]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value=\"ada@example.com\"/></label><div><button type=\"button\">Back</button><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -3577,6 +3613,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(3),#(of 3)},p[]{#(Review:),#(Ada),#(/),#(ada@example.com)},div[]{button[]{#(Back)},button[]{#(Finish)}}}}",
+              "html": "<div><p>Step 3 of 3</p><p>Review: Ada / ada@example.com</p><div><button type=\"button\">Back</button><button type=\"button\">Finish</button></div></div>",
               "transient": false
             },
             {
@@ -3622,6 +3659,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Wizard complete)}}",
+              "html": "<p role=\"status\">Wizard complete</p>",
               "transient": false
             },
             {
@@ -3662,6 +3700,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -3708,6 +3747,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             }
           ],
@@ -4253,6 +4293,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -4277,6 +4318,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -4306,6 +4348,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=]{}},div[]{button[]{#(Back)},button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value/></label><div><button type=\"button\">Back</button><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -4341,6 +4384,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=ada@example.com]{}},div[]{button[]{#(Back)},button[]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value=\"ada@example.com\"/></label><div><button type=\"button\">Back</button><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -4381,6 +4425,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(3),#(of 3)},p[]{#(Review:),#(Ada),#(/),#(ada@example.com)},div[]{button[]{#(Back)},button[]{#(Finish)}}}}",
+              "html": "<div><p>Step 3 of 3</p><p>Review: Ada / ada@example.com</p><div><button type=\"button\">Back</button><button type=\"button\">Finish</button></div></div>",
               "transient": false
             },
             {
@@ -4426,6 +4471,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Wizard complete)}}",
+              "html": "<p role=\"status\">Wizard complete</p>",
               "transient": false
             },
             {
@@ -4466,6 +4512,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -4512,6 +4559,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             }
           ],
@@ -5057,6 +5105,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -5081,6 +5130,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -5110,6 +5160,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=]{}},div[]{button[]{#(Back)},button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value/></label><div><button type=\"button\">Back</button><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -5145,6 +5196,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=ada@example.com]{}},div[]{button[]{#(Back)},button[]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value=\"ada@example.com\"/></label><div><button type=\"button\">Back</button><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -5185,6 +5237,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(3),#(of 3)},p[]{#(Review:),#(Ada),#(/),#(ada@example.com)},div[]{button[]{#(Back)},button[]{#(Finish)}}}}",
+              "html": "<div><p>Step 3 of 3</p><p>Review: Ada / ada@example.com</p><div><button type=\"button\">Back</button><button type=\"button\">Finish</button></div></div>",
               "transient": false
             },
             {
@@ -5230,6 +5283,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Wizard complete)}}",
+              "html": "<p role=\"status\">Wizard complete</p>",
               "transient": false
             },
             {
@@ -5270,6 +5324,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -5316,6 +5371,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             }
           ],
@@ -5862,6 +5918,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -5886,6 +5943,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -5915,6 +5973,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=]{}},div[]{button[]{#(Back)},button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value/></label><div><button type=\"button\">Back</button><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -5950,6 +6009,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=ada@example.com]{}},div[]{button[]{#(Back)},button[]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value=\"ada@example.com\"/></label><div><button type=\"button\">Back</button><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -5990,6 +6050,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(3),#(of 3)},p[]{#(Review:),#(Ada),#(/),#(ada@example.com)},div[]{button[]{#(Back)},button[]{#(Finish)}}}}",
+              "html": "<div><p>Step 3 of 3</p><p>Review: Ada / ada@example.com</p><div><button type=\"button\">Back</button><button type=\"button\">Finish</button></div></div>",
               "transient": false
             },
             {
@@ -6035,6 +6096,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Wizard complete)}}",
+              "html": "<p role=\"status\">Wizard complete</p>",
               "transient": false
             },
             {
@@ -6075,6 +6137,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -6121,6 +6184,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             }
           ],
@@ -6667,6 +6731,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -6691,6 +6756,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -6720,6 +6786,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=]{}},div[]{button[]{#(Back)},button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value/></label><div><button type=\"button\">Back</button><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -6755,6 +6822,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(2),#(of 3)},label[]{#(Email),input[value=ada@example.com]{}},div[]{button[]{#(Back)},button[]{#(Next)}}}}",
+              "html": "<div><p>Step 2 of 3</p><label>Email<input value=\"ada@example.com\"/></label><div><button type=\"button\">Back</button><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -6795,6 +6863,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(3),#(of 3)},p[]{#(Review:),#(Ada),#(/),#(ada@example.com)},div[]{button[]{#(Back)},button[]{#(Finish)}}}}",
+              "html": "<div><p>Step 3 of 3</p><p>Review: Ada / ada@example.com</p><div><button type=\"button\">Back</button><button type=\"button\">Finish</button></div></div>",
               "transient": false
             },
             {
@@ -6840,6 +6909,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Wizard complete)}}",
+              "html": "<p role=\"status\">Wizard complete</p>",
               "transient": false
             },
             {
@@ -6880,6 +6950,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=Ada]{}},div[]{button[]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value=\"Ada\"/></label><div><button type=\"button\">Next</button></div></div>",
               "transient": false
             },
             {
@@ -6926,6 +6997,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{p[]{#(Step),#(1),#(of 3)},label[]{#(Name),input[value=]{}},div[]{button[disabled=]{#(Next)}}}}",
+              "html": "<div><p>Step 1 of 3</p><label>Name<input value/></label><div><button disabled type=\"button\">Next</button></div></div>",
               "transient": false
             }
           ],

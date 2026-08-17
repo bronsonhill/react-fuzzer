@@ -24,6 +24,7 @@
             "actions": []
           },
           "domFingerprint": "div[]{ul[]{li[]{#(One)}}}",
+          "html": "<ul><li>One</li></ul>",
           "transient": false
         },
         {
@@ -40,6 +41,7 @@
             "actions": []
           },
           "domFingerprint": "div[]{div[]{p[]{#(No items found)},button[]{#(Retry)}}}",
+          "html": "<div><p>No items found</p><button type=\"button\">Retry</button></div>",
           "transient": false
         },
         {
@@ -57,6 +59,7 @@
             "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
           },
           "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
+          "html": "<p role=\"status\">Loading...</p>",
           "transient": true
         },
         {
@@ -73,6 +76,7 @@
             "actions": []
           },
           "domFingerprint": "div[]{div[]{p[role=alert]{#(Failed to load items)},button[]{#(Retry)}}}",
+          "html": "<div><p role=\"alert\">Failed to load items</p><button type=\"button\">Retry</button></div>",
           "transient": false
         }
       ],
@@ -282,6 +286,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
+              "html": "<p role=\"status\">Loading...</p>",
               "transient": true
             },
             {
@@ -298,6 +303,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[role=alert]{#(Failed to load items)},button[]{#(Retry)}}}",
+              "html": "<div><p role=\"alert\">Failed to load items</p><button type=\"button\">Retry</button></div>",
               "transient": false
             }
           ],
@@ -511,6 +517,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
+              "html": "<p role=\"status\">Loading...</p>",
               "transient": true
             },
             {
@@ -527,6 +534,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[role=alert]{#(Failed to load items)},button[]{#(Retry)}}}",
+              "html": "<div><p role=\"alert\">Failed to load items</p><button type=\"button\">Retry</button></div>",
               "transient": false
             }
           ],
@@ -740,6 +748,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
+              "html": "<p role=\"status\">Loading...</p>",
               "transient": true
             },
             {
@@ -761,6 +770,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{ul[]{li[]{#(One)}}}",
+              "html": "<ul><li>One</li></ul>",
               "transient": false
             }
           ],
@@ -837,6 +847,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
+              "html": "<p role=\"status\">Loading...</p>",
               "transient": true
             },
             {
@@ -853,6 +864,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[]{#(No items found)},button[]{#(Retry)}}}",
+              "html": "<div><p>No items found</p><button type=\"button\">Retry</button></div>",
               "transient": false
             }
           ],
@@ -1066,6 +1078,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
+              "html": "<p role=\"status\">Loading...</p>",
               "transient": true
             },
             {
@@ -1087,6 +1100,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{ul[]{li[]{#(One)}}}",
+              "html": "<ul><li>One</li></ul>",
               "transient": false
             }
           ],
@@ -1163,6 +1177,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
+              "html": "<p role=\"status\">Loading...</p>",
               "transient": true
             },
             {
@@ -1179,6 +1194,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[]{#(No items found)},button[]{#(Retry)}}}",
+              "html": "<div><p>No items found</p><button type=\"button\">Retry</button></div>",
               "transient": false
             }
           ],
@@ -1393,6 +1409,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
+              "html": "<p role=\"status\">Loading...</p>",
               "transient": true
             },
             {
@@ -1409,6 +1426,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{p[role=alert]{#(Failed to load items)},button[]{#(Retry)}}}",
+              "html": "<div><p role=\"alert\">Failed to load items</p><button type=\"button\">Retry</button></div>",
               "transient": false
             }
           ],
@@ -1623,6 +1641,7 @@
                 "note": "reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay"
               },
               "domFingerprint": "div[]{p[role=status]{#(Loading...)}}",
+              "html": "<p role=\"status\">Loading...</p>",
               "transient": true
             },
             {
@@ -1644,6 +1663,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{ul[]{li[]{#(One)}}}",
+              "html": "<ul><li>One</li></ul>",
               "transient": false
             }
           ],
