@@ -19,6 +19,7 @@
             "actions": []
           },
           "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=false]{#(Off)}}}",
+          "html": "<div><span>Power</span><button aria-pressed=\"false\" type=\"button\">Off</button></div>",
           "transient": false
         },
         {
@@ -41,6 +42,7 @@
             ]
           },
           "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=true]{#(On)}}}",
+          "html": "<div><span>Power</span><button aria-pressed=\"true\" type=\"button\">On</button></div>",
           "transient": false
         }
       ],
@@ -146,6 +148,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=false]{#(Off)}}}",
+              "html": "<div><span>Power</span><button aria-pressed=\"false\" type=\"button\">Off</button></div>",
               "transient": false
             },
             {
@@ -168,6 +171,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=true]{#(On)}}}",
+              "html": "<div><span>Power</span><button aria-pressed=\"true\" type=\"button\">On</button></div>",
               "transient": false
             }
           ],
@@ -273,6 +277,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{span[]{#(:'\\=E)},button[aria-pressed=false]{#(Off)}}}",
+              "html": "<div><span>:'\\=E</span><button aria-pressed=\"false\" type=\"button\">Off</button></div>",
               "transient": false
             },
             {
@@ -295,6 +300,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{span[]{#(:'\\=E)},button[aria-pressed=true]{#(On)}}}",
+              "html": "<div><span>:'\\=E</span><button aria-pressed=\"true\" type=\"button\">On</button></div>",
               "transient": false
             }
           ],
@@ -400,6 +406,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{span[]{},button[aria-pressed=false]{#(Off)}}}",
+              "html": "<div><span></span><button aria-pressed=\"false\" type=\"button\">Off</button></div>",
               "transient": false
             },
             {
@@ -422,6 +429,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{span[]{},button[aria-pressed=true]{#(On)}}}",
+              "html": "<div><span></span><button aria-pressed=\"true\" type=\"button\">On</button></div>",
               "transient": false
             }
           ],
@@ -527,6 +535,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{span[]{#(@9)},button[aria-pressed=false]{#(Off)}}}",
+              "html": "<div><span>@9</span><button aria-pressed=\"false\" type=\"button\">Off</button></div>",
               "transient": false
             },
             {
@@ -549,6 +558,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{span[]{#(@9)},button[aria-pressed=true]{#(On)}}}",
+              "html": "<div><span>@9</span><button aria-pressed=\"true\" type=\"button\">On</button></div>",
               "transient": false
             }
           ],
@@ -654,6 +664,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{span[]{#(pTJ)},button[aria-pressed=false]{#(Off)}}}",
+              "html": "<div><span>pTJ</span><button aria-pressed=\"false\" type=\"button\">Off</button></div>",
               "transient": false
             },
             {
@@ -676,6 +687,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{span[]{#(pTJ)},button[aria-pressed=true]{#(On)}}}",
+              "html": "<div><span>pTJ</span><button aria-pressed=\"true\" type=\"button\">On</button></div>",
               "transient": false
             }
           ],
@@ -777,6 +789,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=false]{#(Off)}}}",
+              "html": "<div><span>Power</span><button aria-pressed=\"false\" type=\"button\">Off</button></div>",
               "transient": false
             },
             {
@@ -797,6 +810,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=true]{#(On)}}}",
+              "html": "<div><span>Power</span><button aria-pressed=\"true\" type=\"button\">On</button></div>",
               "transient": false
             }
           ],
@@ -903,6 +917,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{span[]{},button[aria-pressed=false]{#(Off)}}}",
+              "html": "<div><span></span><button aria-pressed=\"false\" type=\"button\">Off</button></div>",
               "transient": false
             },
             {
@@ -925,6 +940,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{span[]{},button[aria-pressed=true]{#(On)}}}",
+              "html": "<div><span></span><button aria-pressed=\"true\" type=\"button\">On</button></div>",
               "transient": false
             }
           ],
@@ -1027,6 +1043,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=false]{#(Off)}}}",
+              "html": "<div><span>Power</span><button aria-pressed=\"false\" type=\"button\">Off</button></div>",
               "transient": false
             },
             {
@@ -1047,6 +1064,7 @@
                 ]
               },
               "domFingerprint": "div[]{div[]{span[]{#(Power)},button[aria-pressed=true]{#(On)}}}",
+              "html": "<div><span>Power</span><button aria-pressed=\"true\" type=\"button\">On</button></div>",
               "transient": false
             }
           ],

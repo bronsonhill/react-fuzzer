@@ -12,6 +12,7 @@ import type { ComponentSnapshot } from "../fiber/index.js";
 import { AdaptiveAbstraction, type AdaptiveOptions, type StateId } from "../abstraction/adaptive.js";
 import { IDENTITY_KINDS, resolveHookNames } from "../abstraction/index.js";
 import { computeDomFingerprint } from "../abstraction/domFingerprint.js";
+import { captureMarkup } from "../abstraction/domSnapshot.js";
 import { discoverActions, type DiscoverActionsOptions, type DiscoveredAction } from "./actions.js";
 import type { ActionRef, Edge, ExplorationResult, ReplayDivergence, StateNode } from "./graph.js";
 import { DEFAULT_BUDGET, type Budget } from "../budget.js";
@@ -291,6 +292,8 @@ export async function exploreComponent(options: ExploreOptions): Promise<Explora
     id: StateId;
     fields: Record<string, unknown>;
     domFingerprint: string | undefined;
+    /** Markup at this exact commit, for the report's state preview. See src/abstraction/domSnapshot.ts. */
+    html: string;
     driver: CommitDriver;
   }
 
@@ -312,9 +315,12 @@ export async function exploreComponent(options: ExploreOptions): Promise<Explora
       onCommit: (commit: ObservedCommit) => {
         const comp = commit.snapshot.components.find((c) => c.componentName === options.componentName);
         const domFingerprint = computeDomFingerprint(container);
+        // Captured here for the same reason the fingerprint is: this is the
+        // only point at which the DOM still shows *this* commit.
+        const html = captureMarkup(container);
         if (comp) {
           const id = abstraction.observe({ snapshot: comp, props: options.props, domFingerprint, sessionId: thisSessionId });
-          steps.push({ id, fields: extractFields(comp, options.sourcePath, options.componentName), domFingerprint, driver: commit.driver });
+          steps.push({ id, fields: extractFields(comp, options.sourcePath, options.componentName), domFingerprint, html, driver: commit.driver });
         } else {
           const id = abstraction.observe({
             snapshot: { componentName: options.componentName, path: options.componentName, hooks: [] },
@@ -322,7 +328,7 @@ export async function exploreComponent(options: ExploreOptions): Promise<Explora
             domFingerprint,
             sessionId: thisSessionId,
           });
-          steps.push({ id, fields: {}, domFingerprint, driver: commit.driver });
+          steps.push({ id, fields: {}, domFingerprint, html, driver: commit.driver });
         }
       },
     });
@@ -396,6 +402,7 @@ export async function exploreComponent(options: ExploreOptions): Promise<Explora
                 }),
           },
           domFingerprint: step.domFingerprint,
+          html: step.html,
           transient: !isFinal,
         };
         states.set(stepId, node);

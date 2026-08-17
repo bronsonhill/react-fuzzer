@@ -59,6 +59,8 @@ export interface CliConfig {
   budget?: Partial<Budget>;
   single?: boolean;
   collapse?: boolean;
+  /** Absolute path to a stylesheet inlined into each state preview in the HTML report. */
+  previewCssPath?: string;
 }
 
 interface ExampleConfigModule {
@@ -70,6 +72,8 @@ interface ExampleConfigModule {
   settle?: Record<string, unknown>;
   single?: boolean;
   useFakeTimers?: boolean;
+  /** Path (absolute, or relative to cwd) to a stylesheet to inline into the HTML report's state previews. */
+  previewStylesheet?: string;
 }
 
 async function loadConfigModule(configPath: string | undefined): Promise<ExampleConfigModule> {
@@ -123,6 +127,13 @@ async function runExploration(config: CliConfig): Promise<{ result: ExplorationR
 
   const collapse = config.collapse ?? true;
 
+  // Previews are captured markup rendered under jsdom, which loads no CSS.
+  // A stylesheet here (CLI flag, else config module) is inlined into each
+  // preview iframe so class names get their rules back; without one,
+  // previews are structurally accurate and visually plain.
+  const previewCssPath = config.previewCssPath ?? (exampleConfig.previewStylesheet ? path.resolve(process.cwd(), exampleConfig.previewStylesheet) : undefined);
+  const previewStylesheet = previewCssPath ? fs.readFileSync(previewCssPath, "utf8") : undefined;
+
   if (single) {
     const result = await exploreComponent({ ...explorationOpts, props: exampleProps });
     return {
@@ -131,7 +142,7 @@ async function runExploration(config: CliConfig): Promise<{ result: ExplorationR
         fs.mkdirSync(path.dirname(config.outJson), { recursive: true });
         fs.mkdirSync(path.dirname(config.outHtml), { recursive: true });
         fs.writeFileSync(config.outJson, explorationResultToJson(result));
-        fs.writeFileSync(config.outHtml, renderExplorationHtml(result, { collapseTransientChains: collapse }));
+        fs.writeFileSync(config.outHtml, renderExplorationHtml(result, { collapseTransientChains: collapse, previewStylesheet }));
         // eslint-disable-next-line no-console
         console.log(`Wrote ${config.outJson} and ${config.outHtml} (${result.graph.states.length} states, single-assignment).`);
       },
@@ -159,7 +170,7 @@ async function runExploration(config: CliConfig): Promise<{ result: ExplorationR
       fs.mkdirSync(path.dirname(config.outJson), { recursive: true });
       fs.mkdirSync(path.dirname(config.outHtml), { recursive: true });
       fs.writeFileSync(config.outJson, multiAssignmentResultToJson(multi));
-      fs.writeFileSync(config.outHtml, renderMultiAssignmentHtml(multi, { collapseTransientChains: collapse }));
+      fs.writeFileSync(config.outHtml, renderMultiAssignmentHtml(multi, { collapseTransientChains: collapse, previewStylesheet }));
       // eslint-disable-next-line no-console
       console.log(
         `Wrote ${config.outJson} and ${config.outHtml} (${multi.merged.graph.states.length} merged states across ${multi.runs.length} prop assignments).`,

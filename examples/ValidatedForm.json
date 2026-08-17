@@ -19,6 +19,7 @@
             "actions": []
           },
           "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+          "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
           "transient": false
         },
         {
@@ -42,6 +43,7 @@
             ]
           },
           "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+          "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
           "transient": false
         },
         {
@@ -71,6 +73,7 @@
             ]
           },
           "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+          "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
           "transient": false
         },
         {
@@ -106,6 +109,7 @@
             ]
           },
           "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+          "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
           "transient": false
         },
         {
@@ -147,6 +151,7 @@
             ]
           },
           "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=longenough1]{}},button[]{#(Submit)}}}",
+          "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button type=\"submit\">Submit</button></form>",
           "transient": false
         },
         {
@@ -194,6 +199,7 @@
             ]
           },
           "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+          "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
           "transient": false
         },
         {
@@ -247,6 +253,7 @@
             ]
           },
           "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+          "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
           "transient": false
         },
         {
@@ -306,6 +313,7 @@
             ]
           },
           "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+          "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
           "transient": false
         },
         {
@@ -371,6 +379,7 @@
             ]
           },
           "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+          "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
           "transient": false
         },
         {
@@ -417,6 +426,7 @@
             ]
           },
           "domFingerprint": "div[]{p[role=status]{#(Submitted)}}",
+          "html": "<p role=\"status\">Submitted</p>",
           "transient": false
         }
       ],
@@ -2619,6 +2629,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -2642,6 +2653,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -2671,6 +2683,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -2706,6 +2719,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -2747,6 +2761,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=longenough1]{}},button[]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -2794,6 +2809,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -2847,6 +2863,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -2906,6 +2923,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -2971,6 +2989,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -3017,6 +3036,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Submitted)}}",
+              "html": "<p role=\"status\">Submitted</p>",
               "transient": false
             }
           ],
@@ -3987,6 +4007,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -4010,6 +4031,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -4039,6 +4061,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -4074,6 +4097,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -4115,6 +4139,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=longenough1]{}},button[]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -4162,6 +4187,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -4215,6 +4241,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -4274,6 +4301,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -4339,6 +4367,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -4385,6 +4414,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Submitted)}}",
+              "html": "<p role=\"status\">Submitted</p>",
               "transient": false
             }
           ],
@@ -5498,6 +5528,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -5521,6 +5552,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -5550,6 +5582,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -5585,6 +5618,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -5626,6 +5660,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=longenough1]{}},button[]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -5673,6 +5708,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -5726,6 +5762,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -5785,6 +5822,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -5850,6 +5888,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -5896,6 +5935,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Submitted)}}",
+              "html": "<p role=\"status\">Submitted</p>",
               "transient": false
             }
           ],
@@ -7009,6 +7049,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -7032,6 +7073,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -7061,6 +7103,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -7096,6 +7139,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -7137,6 +7181,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=longenough1]{}},button[]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -7184,6 +7229,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -7237,6 +7283,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -7296,6 +7343,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -7361,6 +7409,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -7407,6 +7456,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Submitted)}}",
+              "html": "<p role=\"status\">Submitted</p>",
               "transient": false
             }
           ],
@@ -8520,6 +8570,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -8543,6 +8594,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -8572,6 +8624,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -8607,6 +8660,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -8648,6 +8702,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=longenough1]{}},button[]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -8695,6 +8750,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -8748,6 +8804,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -8807,6 +8864,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -8872,6 +8930,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -8918,6 +8977,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Submitted)}}",
+              "html": "<p role=\"status\">Submitted</p>",
               "transient": false
             }
           ],
@@ -10031,6 +10091,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -10054,6 +10115,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -10083,6 +10145,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -10118,6 +10181,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -10159,6 +10223,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=longenough1]{}},button[]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -10206,6 +10271,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -10259,6 +10325,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -10318,6 +10385,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -10383,6 +10451,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -10429,6 +10498,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Submitted)}}",
+              "html": "<p role=\"status\">Submitted</p>",
               "transient": false
             }
           ],
@@ -11543,6 +11613,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -11566,6 +11637,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -11595,6 +11667,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -11630,6 +11703,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -11671,6 +11745,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=longenough1]{}},button[]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -11718,6 +11793,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -11771,6 +11847,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -11830,6 +11907,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -11895,6 +11973,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -11941,6 +12020,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Submitted)}}",
+              "html": "<p role=\"status\">Submitted</p>",
               "transient": false
             }
           ],
@@ -13055,6 +13135,7 @@
                 "actions": []
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -13078,6 +13159,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -13107,6 +13189,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -13142,6 +13225,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -13183,6 +13267,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=longenough1]{}},button[]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value=\"longenough1\"/></label><button type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -13230,6 +13315,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=ada@example.com]{}},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"ada@example.com\"/></label><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -13283,6 +13369,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -13342,6 +13429,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=longenough1]{}},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"longenough1\"/></label><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -13407,6 +13495,7 @@
                 ]
               },
               "domFingerprint": "div[]{form[]{label[]{#(Email),input[value=not-an-email@]{}},span[role=alert]{#(Invalid email)},label[]{#(Password),input[value=short]{}},span[role=alert]{#(Password too short)},button[disabled=]{#(Submit)}}}",
+              "html": "<form><label>Email<input value=\"not-an-email@\"/></label><span role=\"alert\">Invalid email</span><label>Password<input type=\"password\" value=\"short\"/></label><span role=\"alert\">Password too short</span><button disabled type=\"submit\">Submit</button></form>",
               "transient": false
             },
             {
@@ -13453,6 +13542,7 @@
                 ]
               },
               "domFingerprint": "div[]{p[role=status]{#(Submitted)}}",
+              "html": "<p role=\"status\">Submitted</p>",
               "transient": false
             }
           ],

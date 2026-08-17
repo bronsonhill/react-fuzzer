@@ -156,7 +156,7 @@ function stateTableRows(states: StateNode[], collapsedStateIds: Set<string>): st
     .map(
       (s) => `
       <tr class="${s.provenance === "generated-props" ? "row-generated" : "row-default"}">
-        <td><code>${esc(s.key)}</code></td>
+        <td><code${s.html !== undefined ? ` class="previewable" data-preview="${esc(s.id)}" tabindex="0"` : ""}>${esc(s.key)}</code></td>
         <td>${esc(s.provenance)}</td>
         <td>${s.transient ? "yes" : "no"}</td>
         <td>${collapsedStateIds.has(s.id) ? "collapsed" : "shown"}</td>
@@ -408,7 +408,131 @@ tr.row-pruned { background: color-mix(in srgb, var(--row-pruned) 55%, var(--bg))
 .witness-note { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
 footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); padding-top: 1rem; }
 a { color: var(--link); }
+code.previewable { cursor: help; border-bottom: 1px dotted var(--accent); }
+code.previewable:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.mermaid g[data-previewable] { cursor: help; }
+#preview-card {
+  position: fixed; z-index: 50; display: none;
+  width: 24rem; max-width: calc(100vw - 1rem);
+  background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.28); overflow: hidden;
+}
+#preview-card .preview-head {
+  font-size: 0.8rem; color: var(--muted); padding: 0.35rem 0.6rem;
+  border-bottom: 1px solid var(--border); background: var(--card-bg);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+#preview-card iframe { display: block; width: 100%; height: 15rem; border: 0; background: var(--bg); }
 `;
+
+/**
+ * Base styles injected into every preview iframe, before any user-supplied
+ * stylesheet so the latter can override them. `color-scheme` plus the
+ * Canvas/CanvasText system colours make the preview follow the reader's
+ * theme without the report's own palette leaking in (which is the whole
+ * reason this is an iframe and not a div).
+ */
+const PREVIEW_BASE_CSS = `
+:root { color-scheme: light dark; }
+html, body { margin: 0; }
+body { padding: 8px; background: Canvas; color: CanvasText; font: 13px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+img { max-width: 100%; }
+`;
+
+/** JSON for embedding in a <script> body: `<` escaped so nothing can close the tag early. */
+function jsonForScript(v: unknown): string {
+  return JSON.stringify(v)
+    .replace(/</g, "\\u003c")
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
+}
+
+/**
+ * The state-preview payload and hover-card behaviour. Previews are stored
+ * markup captured during exploration (src/abstraction/domSnapshot.ts), not
+ * a live re-render -- see StateNode.html for why that distinction matters
+ * for transient states.
+ */
+function previewScript(states: StateNode[], previewStylesheet: string | undefined): string {
+  const previews: Record<string, { key: string; html: string; transient: boolean }> = {};
+  for (const s of [...states].sort((a, b) => a.key.localeCompare(b.key))) {
+    if (s.html === undefined) continue;
+    previews[s.id] = { key: s.key, html: s.html, transient: s.transient === true };
+  }
+  const css = PREVIEW_BASE_CSS + (previewStylesheet ?? "");
+
+  return `
+const PREVIEWS = ${jsonForScript(previews)};
+const PREVIEW_CSS = ${jsonForScript(css)};
+const card = document.getElementById("preview-card");
+const head = card.querySelector(".preview-head");
+const frame = card.querySelector("iframe");
+let current = null;
+
+function srcdocFor(id) {
+  const p = PREVIEWS[id];
+  return "<!doctype html><meta charset=\\"utf-8\\"><style>" + PREVIEW_CSS + "</style>" + p.html;
+}
+
+function show(id, anchor) {
+  const p = PREVIEWS[id];
+  if (!p || current === id) return;
+  current = id;
+  head.textContent = p.key + (p.transient ? " (transient \\u2014 snapshot taken mid-flight)" : "");
+  frame.srcdoc = srcdocFor(id);
+  card.style.display = "block";
+  const r = anchor.getBoundingClientRect();
+  const w = card.offsetWidth;
+  const h = card.offsetHeight;
+  // Clamp inside the viewport: the card is position:fixed, so it can never
+  // widen the page body (which must not scroll horizontally).
+  let left = Math.min(r.left, window.innerWidth - w - 8);
+  if (left < 8) left = 8;
+  let top = r.bottom + 8;
+  if (top + h > window.innerHeight - 8) top = Math.max(8, r.top - h - 8);
+  card.style.left = left + "px";
+  card.style.top = top + "px";
+}
+
+function hide() {
+  current = null;
+  card.style.display = "none";
+}
+
+function bind(el, id) {
+  el.addEventListener("mouseenter", () => show(id, el));
+  el.addEventListener("mouseleave", hide);
+  el.addEventListener("focus", () => show(id, el));
+  el.addEventListener("blur", hide);
+}
+
+for (const el of document.querySelectorAll("code.previewable")) {
+  bind(el, el.getAttribute("data-preview"));
+}
+
+/**
+ * Mermaid rewrites node ids (e.g. "state-n_s0-3"), so diagram nodes are
+ * matched by looking for the generated id as a whole segment rather than by
+ * exact equality -- "n_s0" must not match "n_s01".
+ */
+function bindDiagram() {
+  const nodes = document.querySelectorAll(".mermaid g[id]");
+  for (const [id, p] of Object.entries(PREVIEWS)) {
+    const mid = "n_" + id.replace(/[^a-zA-Z0-9_]/g, "_");
+    for (const node of nodes) {
+      const parts = node.id.split(/[^a-zA-Z0-9_]+/);
+      if (parts.indexOf(mid) !== -1) {
+        node.setAttribute("data-previewable", "");
+        bind(node, id);
+        break;
+      }
+    }
+  }
+}
+`;
+}
+
+const PREVIEW_CARD_HTML = `<div id="preview-card" aria-hidden="true"><div class="preview-head"></div><iframe sandbox="" title="rendered output for this state"></iframe></div>`;
 
 export interface RenderHtmlOptions {
   /** Wall-clock elapsed time to show in the budget section (kept out of the JSON artefact, but fine to show here). */
@@ -422,6 +546,15 @@ export interface RenderHtmlOptions {
    * this is presentation-layer only.
    */
   collapseTransientChains?: boolean;
+  /**
+   * CSS to inline into every state preview's iframe. Exploration runs under
+   * jsdom, which never loads the application's stylesheet, so captured
+   * markup is structurally accurate but unstyled: class names survive, the
+   * rules behind them do not. Pass the component's compiled CSS here (plain
+   * CSS or a built Tailwind file) to get styled previews. Runtime-injected
+   * CSS-in-JS cannot be recovered this way.
+   */
+  previewStylesheet?: string;
 }
 
 function coreSections(result: ExplorationResult, opts: RenderHtmlOptions): string {
@@ -471,7 +604,7 @@ function coreSections(result: ExplorationResult, opts: RenderHtmlOptions): strin
 
     <section id="states">
       <h2>State table</h2>
-      <p class="empty-note">Every state is listed here, including transient states collapsed out of the diagram above (see the "diagram" column).</p>
+      <p class="empty-note">Every state is listed here, including transient states collapsed out of the diagram above (see the "diagram" column). Hover (or tab to) a state key &mdash; or a node in the diagram &mdash; to preview the markup that state actually rendered.</p>
       <div class="table-scroll">
         <table>
           <thead><tr><th>key</th><th>provenance</th><th>transient</th><th>diagram</th><th>fields</th><th>witness</th></tr></thead>
@@ -498,8 +631,12 @@ export function renderExplorationHtml(result: ExplorationResult, opts: RenderHtm
 <body>
 ${coreSections(result, opts)}
 <footer>Generated by react-fuzzer. Schema: single-assignment.</footer>
+${PREVIEW_CARD_HTML}
 <script>${mermaidSrc}</script>
-<script>mermaid.initialize({ startOnLoad: true, securityLevel: "strict" });</script>
+<script>${previewScript(result.graph.states, opts.previewStylesheet)}
+mermaid.initialize({ startOnLoad: false, securityLevel: "strict" });
+mermaid.run().then(bindDiagram);
+</script>
 </body>
 </html>`;
 }
@@ -519,8 +656,12 @@ export function renderMultiAssignmentHtml(multi: MultiAssignmentResult, opts: Re
 ${coreSections(result, opts)}
 ${propAnalysisHtml(multi)}
 <footer>Generated by react-fuzzer. Schema: multi-assignment (${multi.runs.length} prop assignments).</footer>
+${PREVIEW_CARD_HTML}
 <script>${mermaidSrc}</script>
-<script>mermaid.initialize({ startOnLoad: true, securityLevel: "strict" });</script>
+<script>${previewScript(result.graph.states, opts.previewStylesheet)}
+mermaid.initialize({ startOnLoad: false, securityLevel: "strict" });
+mermaid.run().then(bindDiagram);
+</script>
 </body>
 </html>`;
 }

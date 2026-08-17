@@ -48,6 +48,24 @@ export interface StateNode {
   };
   domFingerprint?: string;
   /**
+   * The markup this component rendered at the commit where this state was
+   * first observed, captured by src/abstraction/domSnapshot.ts inside
+   * settle()'s onCommit -- the only moment it is available, since by the
+   * time settle() returns the DOM reflects the final commit only.
+   *
+   * Stored so the HTML report can preview a state without re-running
+   * anything. It is a snapshot, not a live render, which is what makes it
+   * work for transient states: replaying a transient state's witness and
+   * settling runs straight past it (see `witness.note`), so those states
+   * can never be re-rendered on demand.
+   *
+   * Structure and text are accurate; styling is not. jsdom never loads the
+   * application's stylesheet, so class names are present but the rules
+   * behind them are not -- supply one via the report's `previewStylesheet`
+   * option to get them back.
+   */
+  html?: string;
+  /**
    * True for a state observed only as an intermediate commit en route to
    * quiescence — never (yet) observed as the point where settle() actually
    * stopped. Exploration does not try user actions from a transient state
