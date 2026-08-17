@@ -446,35 +446,9 @@
         },
         {
           "from": "s0",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\"",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s0",
           "to": "s6",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":1",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"not-an-email@\"",
-            "value": "not-an-email@"
-          }
-        },
-        {
-          "from": "s0",
-          "to": "s6",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\":1",
@@ -498,35 +472,9 @@
         },
         {
           "from": "s0",
-          "to": "s5",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":2",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"ada@example.com\"",
-            "value": "ada@example.com"
-          }
-        },
-        {
-          "from": "s0",
           "to": "s0",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\"",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s0",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\"",
@@ -550,35 +498,9 @@
         },
         {
           "from": "s0",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":1",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"short\"",
-            "value": "short"
-          }
-        },
-        {
-          "from": "s0",
           "to": "s1",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":2",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"longenough1\"",
-            "value": "longenough1"
-          }
-        },
-        {
-          "from": "s0",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\":2",
@@ -605,19 +527,6 @@
           "to": "s1",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\"",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s1",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\"",
@@ -641,35 +550,9 @@
         },
         {
           "from": "s1",
-          "to": "s7",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":1",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"not-an-email@\"",
-            "value": "not-an-email@"
-          }
-        },
-        {
-          "from": "s1",
           "to": "s4",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":2",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"ada@example.com\"",
-            "value": "ada@example.com"
-          }
-        },
-        {
-          "from": "s1",
-          "to": "s4",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\":2",
@@ -693,19 +576,6 @@
         },
         {
           "from": "s1",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\"",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s1",
           "to": "s2",
           "kind": "user",
           "provenance": "default-props",
@@ -719,35 +589,9 @@
         },
         {
           "from": "s1",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":1",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"short\"",
-            "value": "short"
-          }
-        },
-        {
-          "from": "s1",
           "to": "s1",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":2",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"longenough1\"",
-            "value": "longenough1"
-          }
-        },
-        {
-          "from": "s1",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\":2",
@@ -784,35 +628,9 @@
         },
         {
           "from": "s2",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\"",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s2",
           "to": "s8",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":1",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"not-an-email@\"",
-            "value": "not-an-email@"
-          }
-        },
-        {
-          "from": "s2",
-          "to": "s8",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\":1",
@@ -836,35 +654,9 @@
         },
         {
           "from": "s2",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":2",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"ada@example.com\"",
-            "value": "ada@example.com"
-          }
-        },
-        {
-          "from": "s2",
           "to": "s0",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\"",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s2",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\"",
@@ -888,35 +680,9 @@
         },
         {
           "from": "s2",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":1",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"short\"",
-            "value": "short"
-          }
-        },
-        {
-          "from": "s2",
           "to": "s1",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":2",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"longenough1\"",
-            "value": "longenough1"
-          }
-        },
-        {
-          "from": "s2",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\":2",
@@ -953,35 +719,9 @@
         },
         {
           "from": "s3",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\"",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s3",
           "to": "s8",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":1",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"not-an-email@\"",
-            "value": "not-an-email@"
-          }
-        },
-        {
-          "from": "s3",
-          "to": "s8",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\":1",
@@ -1005,35 +745,9 @@
         },
         {
           "from": "s3",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":2",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"ada@example.com\"",
-            "value": "ada@example.com"
-          }
-        },
-        {
-          "from": "s3",
           "to": "s5",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\"",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s3",
-          "to": "s5",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\"",
@@ -1057,35 +771,9 @@
         },
         {
           "from": "s3",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":1",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"short\"",
-            "value": "short"
-          }
-        },
-        {
-          "from": "s3",
           "to": "s4",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":2",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"longenough1\"",
-            "value": "longenough1"
-          }
-        },
-        {
-          "from": "s3",
-          "to": "s4",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\":2",
@@ -1121,34 +809,9 @@
         },
         {
           "from": "s4",
-          "to": "s9",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Submit\"",
-            "kind": "click",
-            "label": "click button \"Submit\""
-          }
-        },
-        {
-          "from": "s4",
           "to": "s1",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\"",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s4",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\"",
@@ -1172,35 +835,9 @@
         },
         {
           "from": "s4",
-          "to": "s7",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":1",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"not-an-email@\"",
-            "value": "not-an-email@"
-          }
-        },
-        {
-          "from": "s4",
           "to": "s4",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":2",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"ada@example.com\"",
-            "value": "ada@example.com"
-          }
-        },
-        {
-          "from": "s4",
-          "to": "s4",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\":2",
@@ -1224,19 +861,6 @@
         },
         {
           "from": "s4",
-          "to": "s5",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\"",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s4",
           "to": "s3",
           "kind": "user",
           "provenance": "default-props",
@@ -1250,35 +874,9 @@
         },
         {
           "from": "s4",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":1",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"short\"",
-            "value": "short"
-          }
-        },
-        {
-          "from": "s4",
           "to": "s4",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":2",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"longenough1\"",
-            "value": "longenough1"
-          }
-        },
-        {
-          "from": "s4",
-          "to": "s4",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\":2",
@@ -1315,35 +913,9 @@
         },
         {
           "from": "s5",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\"",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s5",
           "to": "s6",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":1",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"not-an-email@\"",
-            "value": "not-an-email@"
-          }
-        },
-        {
-          "from": "s5",
-          "to": "s6",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\":1",
@@ -1369,33 +941,7 @@
           "from": "s5",
           "to": "s5",
           "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":2",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"ada@example.com\"",
-            "value": "ada@example.com"
-          }
-        },
-        {
-          "from": "s5",
-          "to": "s5",
-          "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\"",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s5",
-          "to": "s5",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\"",
@@ -1419,35 +965,9 @@
         },
         {
           "from": "s5",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":1",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"short\"",
-            "value": "short"
-          }
-        },
-        {
-          "from": "s5",
           "to": "s4",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":2",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"longenough1\"",
-            "value": "longenough1"
-          }
-        },
-        {
-          "from": "s5",
-          "to": "s4",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\":2",
@@ -1484,35 +1004,9 @@
         },
         {
           "from": "s6",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\"",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s6",
           "to": "s6",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":1",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"not-an-email@\"",
-            "value": "not-an-email@"
-          }
-        },
-        {
-          "from": "s6",
-          "to": "s6",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\":1",
@@ -1536,35 +1030,9 @@
         },
         {
           "from": "s6",
-          "to": "s5",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":2",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"ada@example.com\"",
-            "value": "ada@example.com"
-          }
-        },
-        {
-          "from": "s6",
           "to": "s6",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\"",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s6",
-          "to": "s6",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\"",
@@ -1588,35 +1056,9 @@
         },
         {
           "from": "s6",
-          "to": "s8",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":1",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"short\"",
-            "value": "short"
-          }
-        },
-        {
-          "from": "s6",
           "to": "s7",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":2",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"longenough1\"",
-            "value": "longenough1"
-          }
-        },
-        {
-          "from": "s6",
-          "to": "s7",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\":2",
@@ -1653,35 +1095,9 @@
         },
         {
           "from": "s7",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\"",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s7",
           "to": "s7",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":1",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"not-an-email@\"",
-            "value": "not-an-email@"
-          }
-        },
-        {
-          "from": "s7",
-          "to": "s7",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\":1",
@@ -1705,35 +1121,9 @@
         },
         {
           "from": "s7",
-          "to": "s4",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":2",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"ada@example.com\"",
-            "value": "ada@example.com"
-          }
-        },
-        {
-          "from": "s7",
           "to": "s6",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\"",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s7",
-          "to": "s6",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\"",
@@ -1757,35 +1147,9 @@
         },
         {
           "from": "s7",
-          "to": "s8",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":1",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"short\"",
-            "value": "short"
-          }
-        },
-        {
-          "from": "s7",
           "to": "s7",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":2",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"longenough1\"",
-            "value": "longenough1"
-          }
-        },
-        {
-          "from": "s7",
-          "to": "s7",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\":2",
@@ -1822,35 +1186,9 @@
         },
         {
           "from": "s8",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\"",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s8",
           "to": "s8",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":1",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"not-an-email@\"",
-            "value": "not-an-email@"
-          }
-        },
-        {
-          "from": "s8",
-          "to": "s8",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\":1",
@@ -1874,35 +1212,9 @@
         },
         {
           "from": "s8",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":2",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"ada@example.com\"",
-            "value": "ada@example.com"
-          }
-        },
-        {
-          "from": "s8",
           "to": "s6",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\"",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s8",
-          "to": "s6",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\"",
@@ -1926,35 +1238,9 @@
         },
         {
           "from": "s8",
-          "to": "s8",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":1",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"short\"",
-            "value": "short"
-          }
-        },
-        {
-          "from": "s8",
           "to": "s7",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Password\":2",
-            "kind": "fill",
-            "label": "fill \"Password\" with \"longenough1\"",
-            "value": "longenough1"
-          }
-        },
-        {
-          "from": "s8",
-          "to": "s7",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Password\":2",

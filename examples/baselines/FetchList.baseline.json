@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "component": "FetchList",
-  "generatedAt": "2026-08-17T07:29:15.035Z",
+  "generatedAt": "2026-08-17T07:55:19.309Z",
   "abstractionConfig": {
     "literalDomainLimit": 8,
     "domCorrelationEnabled": true,
@@ -83,15 +83,6 @@
       "stable": true
     },
     {
-      "from": "items=\"arr:empty\"|status=\"lit:error\"",
-      "to": "items=\"arr:empty\"|status=\"lit:loading\"",
-      "kind": "user",
-      "actionId": "click:button:\"Retry\"",
-      "actionLabel": "click button \"Retry\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
       "from": "items=\"arr:empty\"|status=\"lit:loading\"",
       "to": "items=\"arr:empty\"|status=\"lit:empty\"",
       "kind": "auto",
@@ -105,14 +96,6 @@
       "kind": "auto",
       "driver": "microtask",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "items=\"arr:empty\"|status=\"lit:loading\"",
-      "to": "items=\"arr:empty\"|status=\"lit:error\"",
-      "kind": "auto",
-      "driver": "microtask",
-      "provenance": "generated-props",
       "stable": true
     },
     {

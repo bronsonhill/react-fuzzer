@@ -279,18 +279,6 @@
         },
         {
           "from": "s0",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Reset\"",
-            "kind": "click",
-            "label": "click button \"Reset\""
-          }
-        },
-        {
-          "from": "s0",
           "to": "gen5:s1",
           "kind": "user",
           "provenance": "generated-props",
@@ -314,34 +302,10 @@
           }
         },
         {
-          "from": "s0",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "toggle:switch:\"Enable notifications\"",
-            "kind": "toggle",
-            "label": "toggle switch \"Enable notifications\""
-          }
-        },
-        {
           "from": "s1",
           "to": "s0",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Reset\"",
-            "kind": "click",
-            "label": "click button \"Reset\""
-          }
-        },
-        {
-          "from": "s1",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"Reset\"",
@@ -375,33 +339,9 @@
         },
         {
           "from": "s1",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "toggle:checkbox:\"Weekly digest\"",
-            "kind": "toggle",
-            "label": "toggle checkbox \"Weekly digest\""
-          }
-        },
-        {
-          "from": "s1",
           "to": "s0",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "toggle:switch:\"Enable notifications\"",
-            "kind": "toggle",
-            "label": "toggle switch \"Enable notifications\""
-          }
-        },
-        {
-          "from": "s1",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "toggle:switch:\"Enable notifications\"",
@@ -414,18 +354,6 @@
           "to": "s0",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Reset\"",
-            "kind": "click",
-            "label": "click button \"Reset\""
-          }
-        },
-        {
-          "from": "s2",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"Reset\"",
@@ -459,33 +387,9 @@
         },
         {
           "from": "s2",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "toggle:checkbox:\"Weekly digest\"",
-            "kind": "toggle",
-            "label": "toggle checkbox \"Weekly digest\""
-          }
-        },
-        {
-          "from": "s2",
           "to": "s0",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "toggle:switch:\"Enable notifications\"",
-            "kind": "toggle",
-            "label": "toggle switch \"Enable notifications\""
-          }
-        },
-        {
-          "from": "s2",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "toggle:switch:\"Enable notifications\"",

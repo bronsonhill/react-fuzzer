@@ -118,30 +118,10 @@
           "driver": "microtask"
         },
         {
-          "from": "s0",
-          "to": "s1",
-          "kind": "auto",
-          "provenance": "generated-props",
-          "stable": true,
-          "driver": "microtask"
-        },
-        {
           "from": "s1",
           "to": "s0",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Retry\"",
-            "kind": "click",
-            "label": "click button \"Retry\""
-          }
-        },
-        {
-          "from": "s1",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"Retry\"",

@@ -143,7 +143,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
 
     
     <h1>MuiNotificationSettings</h1>
-    <p class="subtitle">6 states, 30 edges</p>
+    <p class="subtitle">6 states, 22 edges</p>
 
     <section id="diagram">
       <h2>State diagram</h2>
@@ -181,24 +181,16 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
   n_gen5_s2 --&gt; n_s5 : [gen] toggle checkbox 'Weekly digest'
   n_gen5_s2 --&gt; n_gen5_s1 : [gen] toggle switch 'Enable notifications'
   n_s0 --&gt; n_s0 : click button 'Reset'
-  n_s0 --&gt; n_s0 : [gen] click button 'Reset'
   n_s0 --&gt; n_gen5_s1 : [gen] toggle checkbox 'SMS alerts'
   n_s0 --&gt; n_s1 : toggle switch 'Enable notifications'
-  n_s0 --&gt; n_s1 : [gen] toggle switch 'Enable notifications'
   n_s1 --&gt; n_s0 : click button 'Reset'
-  n_s1 --&gt; n_s0 : [gen] click button 'Reset'
   n_s1 --&gt; n_gen5_s2 : [gen] toggle checkbox 'SMS alerts'
   n_s1 --&gt; n_s2 : toggle checkbox 'Weekly digest'
-  n_s1 --&gt; n_s2 : [gen] toggle checkbox 'Weekly digest'
   n_s1 --&gt; n_s0 : toggle switch 'Enable notifications'
-  n_s1 --&gt; n_s0 : [gen] toggle switch 'Enable notifications'
   n_s2 --&gt; n_s0 : click button 'Reset'
-  n_s2 --&gt; n_s0 : [gen] click button 'Reset'
   n_s2 --&gt; n_s5 : [gen] toggle checkbox 'SMS alerts'
   n_s2 --&gt; n_s1 : toggle checkbox 'Weekly digest'
-  n_s2 --&gt; n_s1 : [gen] toggle checkbox 'Weekly digest'
   n_s2 --&gt; n_s0 : toggle switch 'Enable notifications'
-  n_s2 --&gt; n_s0 : [gen] toggle switch 'Enable notifications'
   n_s5 --&gt; n_s0 : [gen] click button 'Reset'
   n_s5 --&gt; n_s2 : [gen] toggle checkbox 'SMS alerts'
   n_s5 --&gt; n_gen5_s2 : [gen] toggle checkbox 'Weekly digest'
@@ -295,7 +287,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
         <tbody>
           <tr><th>actions used</th><td>342</td></tr>
           <tr><th>states found</th><td>6</td></tr>
-          <tr><th>elapsed</th><td>612ms</td></tr>
+          <tr><th>elapsed</th><td>599ms</td></tr>
           <tr><th>budget exhausted</th><td>no</td></tr>
         </tbody>
       </table>

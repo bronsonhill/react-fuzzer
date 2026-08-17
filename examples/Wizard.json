@@ -306,35 +306,9 @@
         },
         {
           "from": "s0",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Name\"",
-            "kind": "fill",
-            "label": "fill \"Name\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s0",
           "to": "s1",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Name\":1",
-            "kind": "fill",
-            "label": "fill \"Name\" with \"Ada\"",
-            "value": "Ada"
-          }
-        },
-        {
-          "from": "s0",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Name\":1",
@@ -370,18 +344,6 @@
         },
         {
           "from": "s1",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Next\"",
-            "kind": "click",
-            "label": "click button \"Next\""
-          }
-        },
-        {
-          "from": "s1",
           "to": "s0",
           "kind": "user",
           "provenance": "default-props",
@@ -395,35 +357,9 @@
         },
         {
           "from": "s1",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Name\"",
-            "kind": "fill",
-            "label": "fill \"Name\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s1",
           "to": "s1",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Name\":1",
-            "kind": "fill",
-            "label": "fill \"Name\" with \"Ada\"",
-            "value": "Ada"
-          }
-        },
-        {
-          "from": "s1",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Name\":1",
@@ -459,18 +395,6 @@
         },
         {
           "from": "s2",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Back\"",
-            "kind": "click",
-            "label": "click button \"Back\""
-          }
-        },
-        {
-          "from": "s2",
           "to": "s2",
           "kind": "user",
           "provenance": "default-props",
@@ -484,35 +408,9 @@
         },
         {
           "from": "s2",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\"",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s2",
           "to": "s3",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":1",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"ada@example.com\"",
-            "value": "ada@example.com"
-          }
-        },
-        {
-          "from": "s2",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\":1",
@@ -548,33 +446,9 @@
         },
         {
           "from": "s3",
-          "to": "s6",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Back\"",
-            "kind": "click",
-            "label": "click button \"Back\""
-          }
-        },
-        {
-          "from": "s3",
           "to": "s4",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Next\"",
-            "kind": "click",
-            "label": "click button \"Next\""
-          }
-        },
-        {
-          "from": "s3",
-          "to": "s4",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"Next\"",
@@ -597,35 +471,9 @@
         },
         {
           "from": "s3",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\"",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s3",
           "to": "s3",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Email\":1",
-            "kind": "fill",
-            "label": "fill \"Email\" with \"ada@example.com\"",
-            "value": "ada@example.com"
-          }
-        },
-        {
-          "from": "s3",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Email\":1",
@@ -661,33 +509,9 @@
         },
         {
           "from": "s4",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Back\"",
-            "kind": "click",
-            "label": "click button \"Back\""
-          }
-        },
-        {
-          "from": "s4",
           "to": "s5",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Finish\"",
-            "kind": "click",
-            "label": "click button \"Finish\""
-          }
-        },
-        {
-          "from": "s4",
-          "to": "s5",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"Finish\"",
@@ -735,18 +559,6 @@
         },
         {
           "from": "s6",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Next\"",
-            "kind": "click",
-            "label": "click button \"Next\""
-          }
-        },
-        {
-          "from": "s6",
           "to": "s7",
           "kind": "user",
           "provenance": "default-props",
@@ -760,35 +572,9 @@
         },
         {
           "from": "s6",
-          "to": "s7",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Name\"",
-            "kind": "fill",
-            "label": "fill \"Name\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s6",
           "to": "s6",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Name\":1",
-            "kind": "fill",
-            "label": "fill \"Name\" with \"Ada\"",
-            "value": "Ada"
-          }
-        },
-        {
-          "from": "s6",
-          "to": "s6",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Name\":1",
@@ -825,35 +611,9 @@
         },
         {
           "from": "s7",
-          "to": "s7",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Name\"",
-            "kind": "fill",
-            "label": "fill \"Name\" with \"\"",
-            "value": ""
-          }
-        },
-        {
-          "from": "s7",
           "to": "s6",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "fill:textbox:\"Name\":1",
-            "kind": "fill",
-            "label": "fill \"Name\" with \"Ada\"",
-            "value": "Ada"
-          }
-        },
-        {
-          "from": "s7",
-          "to": "s6",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "fill:textbox:\"Name\":1",

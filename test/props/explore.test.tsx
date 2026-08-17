@@ -15,6 +15,7 @@ import { fileURLToPath } from "node:url";
 import { exploreMultiAssignment } from "../../src/props/explore.js";
 import { propsToArbitraries } from "../../src/props/propsToArbitraries.js";
 
+import { Wizard } from "../../benchmarks/wizard/Wizard.js";
 import { PropGated } from "../../benchmarks/prop-gated/PropGated.js";
 import { FetchList, type Item } from "../../benchmarks/fetch-list/FetchList.js";
 
@@ -130,5 +131,52 @@ describe("M4 exit criterion: FetchList", () => {
     // Replay must not diverge: this is the whole point of using a pure,
     // call-count-independent fetchItems per assignment.
     expect(result.merged.findings.replayDivergences.length).toBe(0);
+  });
+});
+
+/**
+ * Regression cover for a merge bug found while reading Wizard.html: base
+ * edges were indexed by content key while extra runs' edges were indexed by
+ * canonical id, two key spaces that can never collide, so the dedupe never
+ * fired and every base edge was re-added a second time as generated-props.
+ *
+ * Wizard is the sharpest case for it. Its only prop is `onComplete`, which
+ * gates nothing in the internal machine, so the *only* honest difference a
+ * generated assignment makes is that a function-valued onComplete becomes
+ * discoverable as an invokeProp action -- 8 self-loops, one per state, and
+ * not one new state.
+ */
+describe("merge: edges are deduplicated across assignments by content, not by run-local id", () => {
+  it("Wizard's merged graph contains each edge exactly once, and only the onComplete invokeProp self-loops are generated-props", async () => {
+    const result = await exploreMultiAssignment({
+      componentName: "Wizard",
+      render: (props) => <Wizard {...(props as any)} />,
+      sourcePath: bench("wizard/Wizard.tsx"),
+      exampleProps: { onComplete: undefined },
+      arbitraries: { onComplete: fc.constant(() => {}) },
+      sampleCount: 2,
+      varyPerProp: 1,
+      seed: 2,
+      fillPools: (field: { name: string }) => {
+        if (/name/i.test(field.name)) return ["", "Ada"];
+        if (/email/i.test(field.name)) return ["", "ada@example.com"];
+        return undefined;
+      },
+    });
+
+    const edges = result.merged.graph.edges;
+    const keyOf = (e: (typeof edges)[number]) =>
+      `${e.from}::${e.to}::${e.kind}::${e.kind === "user" ? e.action?.id : e.driver}`;
+    expect(new Set(edges.map(keyOf)).size).toBe(edges.length);
+
+    const generated = edges.filter((e) => e.provenance === "generated-props");
+    expect(generated.length).toBeGreaterThan(0);
+    for (const e of generated) {
+      expect(e.action?.kind).toBe("invokeProp");
+      expect(e.from).toBe(e.to);
+    }
+
+    // onComplete changes no hook value, so no state is generated-only.
+    expect(result.merged.graph.states.every((s) => s.provenance === "default-props")).toBe(true);
   });
 });

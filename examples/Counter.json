@@ -417,34 +417,10 @@
           }
         },
         {
-          "from": "s0",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"increment\"",
-            "kind": "click",
-            "label": "click button \"increment\""
-          }
-        },
-        {
           "from": "s1",
           "to": "s0",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"decrement\"",
-            "kind": "click",
-            "label": "click button \"decrement\""
-          }
-        },
-        {
-          "from": "s1",
-          "to": "s0",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"decrement\"",
@@ -489,34 +465,10 @@
           }
         },
         {
-          "from": "s1",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"increment\"",
-            "kind": "click",
-            "label": "click button \"increment\""
-          }
-        },
-        {
           "from": "s2",
           "to": "s1",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"decrement\"",
-            "kind": "click",
-            "label": "click button \"decrement\""
-          }
-        },
-        {
-          "from": "s2",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"decrement\"",
@@ -537,34 +489,10 @@
           }
         },
         {
-          "from": "s2",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"increment\"",
-            "kind": "click",
-            "label": "click button \"increment\""
-          }
-        },
-        {
           "from": "s3",
           "to": "s2",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"decrement\"",
-            "kind": "click",
-            "label": "click button \"decrement\""
-          }
-        },
-        {
-          "from": "s3",
-          "to": "s2",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"decrement\"",
@@ -585,34 +513,10 @@
           }
         },
         {
-          "from": "s3",
-          "to": "s4",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"increment\"",
-            "kind": "click",
-            "label": "click button \"increment\""
-          }
-        },
-        {
           "from": "s4",
           "to": "s3",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"decrement\"",
-            "kind": "click",
-            "label": "click button \"decrement\""
-          }
-        },
-        {
-          "from": "s4",
-          "to": "s3",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"decrement\"",
@@ -633,34 +537,10 @@
           }
         },
         {
-          "from": "s4",
-          "to": "s5",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"increment\"",
-            "kind": "click",
-            "label": "click button \"increment\""
-          }
-        },
-        {
           "from": "s5",
           "to": "s4",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"decrement\"",
-            "kind": "click",
-            "label": "click button \"decrement\""
-          }
-        },
-        {
-          "from": "s5",
-          "to": "s4",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"decrement\"",

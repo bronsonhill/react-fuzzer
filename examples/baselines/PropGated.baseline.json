@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "component": "PropGated",
-  "generatedAt": "2026-08-17T07:29:22.064Z",
+  "generatedAt": "2026-08-17T07:55:26.040Z",
   "abstractionConfig": {
     "literalDomainLimit": 8,
     "domCorrelationEnabled": true,
@@ -72,15 +72,6 @@
       "stable": true
     },
     {
-      "from": "expertModeOn=false|notificationsOn=false",
-      "to": "expertModeOn=false|notificationsOn=true",
-      "kind": "user",
-      "actionId": "click:button:\"Notifications: Off\"",
-      "actionLabel": "click button \"Notifications: Off\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
       "from": "expertModeOn=false|notificationsOn=true",
       "to": "expertModeOn=true|notificationsOn=true",
       "kind": "user",
@@ -96,15 +87,6 @@
       "actionId": "click:button:\"Notifications: On\"",
       "actionLabel": "click button \"Notifications: On\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "expertModeOn=false|notificationsOn=true",
-      "to": "expertModeOn=false|notificationsOn=false",
-      "kind": "user",
-      "actionId": "click:button:\"Notifications: On\"",
-      "actionLabel": "click button \"Notifications: On\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {

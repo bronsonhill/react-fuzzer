@@ -74,34 +74,10 @@
           }
         },
         {
-          "from": "s0",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Clear all\"",
-            "kind": "click",
-            "label": "click button \"Clear all\""
-          }
-        },
-        {
           "from": "s1",
           "to": "s1",
           "kind": "user",
           "provenance": "default-props",
-          "stable": true,
-          "action": {
-            "id": "click:button:\"Clear all\"",
-            "kind": "click",
-            "label": "click button \"Clear all\""
-          }
-        },
-        {
-          "from": "s1",
-          "to": "s1",
-          "kind": "user",
-          "provenance": "generated-props",
           "stable": true,
           "action": {
             "id": "click:button:\"Clear all\"",

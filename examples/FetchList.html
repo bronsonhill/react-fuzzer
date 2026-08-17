@@ -143,7 +143,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
 
     
     <h1>FetchList</h1>
-    <p class="subtitle">4 states, 7 edges</p>
+    <p class="subtitle">4 states, 5 edges</p>
 
     <section id="diagram">
       <h2>State diagram</h2>
@@ -157,8 +157,8 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
         <span>edge label prefixed <code>[non-det]</code> = same action from same state observed landing on different destinations</span>
         <span>edge label prefixed <code>[collapsed]</code>, with "(via ...)" = a whole transient async chain (user action &rarr; one or more transient intermediates &rarr; settled state) drawn as one edge; see the state table for the collapsed intermediates</span>
       </div>
-      <p class="empty-note">Transient async chains are collapsed in this diagram (default). Collapsed intermediates are still listed in the state table below, marked "collapsed". 3 chain(s) could not be fully collapsed because a transient state along the way had more than one outgoing edge (branching); those are left expanded -- see below.</p>
-      <div class="large-graph-warning"><strong>Chains left expanded due to branching:</strong><ul><li>Chain starting gen4:s1 --click button &quot;Retry&quot;--&gt; s0 was left expanded: transient state s0 has more than one outgoing edge, so the chain cannot be collapsed past that branch point.</li><li>Chain starting s1 --click button &quot;Retry&quot;--&gt; s0 was left expanded: transient state s0 has more than one outgoing edge, so the chain cannot be collapsed past that branch point.</li><li>Chain starting s1 --click button &quot;Retry&quot;--&gt; s0 was left expanded: transient state s0 has more than one outgoing edge, so the chain cannot be collapsed past that branch point.</li></ul></div>
+      <p class="empty-note">Transient async chains are collapsed in this diagram (default). Collapsed intermediates are still listed in the state table below, marked "collapsed". 2 chain(s) could not be fully collapsed because a transient state along the way had more than one outgoing edge (branching); those are left expanded -- see below.</p>
+      <div class="large-graph-warning"><strong>Chains left expanded due to branching:</strong><ul><li>Chain starting gen4:s1 --click button &quot;Retry&quot;--&gt; s0 was left expanded: transient state s0 has more than one outgoing edge, so the chain cannot be collapsed past that branch point.</li><li>Chain starting s1 --click button &quot;Retry&quot;--&gt; s0 was left expanded: transient state s0 has more than one outgoing edge, so the chain cannot be collapsed past that branch point.</li></ul></div>
       
       <div class="mermaid-container"><pre class="mermaid">stateDiagram-v2
   n_gen1_s1 : gen1:s1: status='loaded', items=[{'id':'1','label':'O..., attempt=0 [generated]
@@ -173,9 +173,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
   n_s0 --&gt; n_gen1_s1 : [gen] auto:microtask
   n_s0 --&gt; n_gen4_s1 : [gen] auto:microtask
   n_s0 --&gt; n_s1 : auto:microtask
-  n_s0 --&gt; n_s1 : [gen] auto:microtask
   n_s1 --&gt; n_s0 : click button 'Retry'
-  n_s1 --&gt; n_s0 : [gen] click button 'Retry'
   classDef defaultProps fill:#3b6fb0,color:#fff,stroke:#1c3a5e
   classDef generatedProps fill:#8a5cc7,color:#fff,stroke:#4c2f75,stroke-dasharray: 3 2
   classDef transientState stroke-dasharray: 2 2,opacity:0.75</pre></div>
@@ -252,7 +250,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
         <tbody>
           <tr><th>actions used</th><td>45</td></tr>
           <tr><th>states found</th><td>4</td></tr>
-          <tr><th>elapsed</th><td>97ms</td></tr>
+          <tr><th>elapsed</th><td>102ms</td></tr>
           <tr><th>budget exhausted</th><td>no</td></tr>
         </tbody>
       </table>

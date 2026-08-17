@@ -66,7 +66,7 @@ jsdom rather than a real browser and why there's an explicit budget (`src/budget
 
 ```
 npm install
-npm test          # 158 passing, 1 skipped — see "Known constraints" below
+npm test          # 159 passing, 1 skipped — see "Known constraints" below
 npm run typecheck
 npm run explore -- [explore|approve|diff] --component <path> --export <ExportName> [options]
 ```
@@ -114,7 +114,7 @@ this repo already relies on (`test/setup.ts`). This is honest rather than a work
 
 `scripts/explore-runner.test.ts`'s own test is `it.skipIf`'d to a no-op whenever the
 config environment variable isn't set — which is every ordinary `npm test` run. That is
-the one skipped test in the `158 passed | 1 skipped` total: it is not a failing or slow
+the one skipped test in the `159 passed | 1 skipped` total: it is not a failing or slow
 test being hidden, it is the CLI's driver test correctly doing nothing when nothing
 asked it to run an exploration.
 
@@ -205,7 +205,7 @@ directly in a browser — they are single self-contained files, no server needed
   identified.
 - `examples/FetchList.html` — loading/error/empty/loaded, one transient state.
 - `examples/Wizard.html` — 8 states, dense diagram; table-first review recommended.
-- `examples/ValidatedForm.html` — 10 states, 120 edges; diagram is not usable for
+- `examples/ValidatedForm.html` — 10 states, 65 edges; diagram is not usable for
   transition-level review, table only. See the applicability boundary above on why 10
   states here isn't proof the abstraction problem is solved in general.
 - `examples/Counter.html` — 12 merged states across generated prop assignments,

@@ -228,7 +228,15 @@ function mergeGraphs(
     for (const e of result.graph.edges) {
       const from = localToCanonical.get(e.from) ?? e.from;
       const to = localToCanonical.get(e.to) ?? e.to;
-      const key = `${from}::${to}::${e.kind}::${e.kind === "user" ? e.action?.id : e.driver}`;
+      // Keyed by content, exactly as the base run's edges were: building
+      // the key from canonical *ids* here instead would put it in a
+      // different key space from every base entry, so the dedupe below
+      // could never fire and every base edge would be re-added a second
+      // time as generated-props (which is what happened until this was
+      // fixed -- Wizard's merged graph carried 46 edges under 27 distinct
+      // keys, 19 of them duplicated, and the report's diagram labelled
+      // edges [gen] that the example props reach perfectly well).
+      const key = edgeContentKey(e, localKeyOf);
       if (edges.has(key)) continue;
       edges.set(key, { ...e, from, to, provenance: "generated-props" });
     }

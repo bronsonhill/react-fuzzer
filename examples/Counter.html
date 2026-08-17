@@ -143,7 +143,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
 
     
     <h1>Counter</h1>
-    <p class="subtitle">12 states, 32 edges</p>
+    <p class="subtitle">12 states, 22 edges</p>
 
     <section id="diagram">
       <h2>State diagram</h2>
@@ -193,27 +193,17 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
   n_gen8_s0 --&gt; n_gen8_s0 : [gen] click button 'decrement'
   n_s0 --&gt; n_s6 : [gen] click button 'decrement'
   n_s0 --&gt; n_s1 : click button 'increment'
-  n_s0 --&gt; n_s1 : [gen] click button 'increment'
   n_s1 --&gt; n_s0 : click button 'decrement'
-  n_s1 --&gt; n_s0 : [gen] click button 'decrement'
   n_s1 --&gt; n_s1 : [gen] click button 'decrement'
   n_s1 --&gt; n_s1 : [gen] click button 'increment'
   n_s1 --&gt; n_s2 : click button 'increment'
-  n_s1 --&gt; n_s2 : [gen] click button 'increment'
   n_s2 --&gt; n_s1 : click button 'decrement'
-  n_s2 --&gt; n_s1 : [gen] click button 'decrement'
   n_s2 --&gt; n_s3 : click button 'increment'
-  n_s2 --&gt; n_s3 : [gen] click button 'increment'
   n_s3 --&gt; n_s2 : click button 'decrement'
-  n_s3 --&gt; n_s2 : [gen] click button 'decrement'
   n_s3 --&gt; n_s4 : click button 'increment'
-  n_s3 --&gt; n_s4 : [gen] click button 'increment'
   n_s4 --&gt; n_s3 : click button 'decrement'
-  n_s4 --&gt; n_s3 : [gen] click button 'decrement'
   n_s4 --&gt; n_s5 : click button 'increment'
-  n_s4 --&gt; n_s5 : [gen] click button 'increment'
   n_s5 --&gt; n_s4 : click button 'decrement'
-  n_s5 --&gt; n_s4 : [gen] click button 'decrement'
   n_s6 --&gt; n_s6 : [gen] click button 'decrement'
   n_s6 --&gt; n_s0 : [gen] click button 'increment'
   n_s6 --&gt; n_s6 : [gen] click button 'increment'
@@ -357,7 +347,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
         <tbody>
           <tr><th>actions used</th><td>570</td></tr>
           <tr><th>states found</th><td>12</td></tr>
-          <tr><th>elapsed</th><td>256ms</td></tr>
+          <tr><th>elapsed</th><td>293ms</td></tr>
           <tr><th>budget exhausted</th><td>no</td></tr>
         </tbody>
       </table>

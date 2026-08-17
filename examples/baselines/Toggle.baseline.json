@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "component": "Toggle",
-  "generatedAt": "2026-08-17T07:29:01.744Z",
+  "generatedAt": "2026-08-17T07:55:06.417Z",
   "abstractionConfig": {
     "literalDomainLimit": 8,
     "domCorrelationEnabled": true,
@@ -41,30 +41,12 @@
       "stable": true
     },
     {
-      "from": "on=false",
-      "to": "on=true",
-      "kind": "user",
-      "actionId": "click:button:\"Off\"",
-      "actionLabel": "click button \"Off\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
       "from": "on=true",
       "to": "on=false",
       "kind": "user",
       "actionId": "click:button:\"On\"",
       "actionLabel": "click button \"On\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "on=true",
-      "to": "on=false",
-      "kind": "user",
-      "actionId": "click:button:\"On\"",
-      "actionLabel": "click button \"On\"",
-      "provenance": "generated-props",
       "stable": true
     }
   ]

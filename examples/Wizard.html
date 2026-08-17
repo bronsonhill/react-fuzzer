@@ -143,7 +143,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
 
     
     <h1>Wizard</h1>
-    <p class="subtitle">8 states, 46 edges</p>
+    <p class="subtitle">8 states, 27 edges</p>
 
     <section id="diagram">
       <h2>State diagram</h2>
@@ -178,50 +178,31 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
   class n_s6 defaultProps
   class n_s7 defaultProps
   n_s0 --&gt; n_s0 : fill 'Name' with ''
-  n_s0 --&gt; n_s0 : [gen] fill 'Name' with ''
   n_s0 --&gt; n_s1 : fill 'Name' with 'Ada'
-  n_s0 --&gt; n_s1 : [gen] fill 'Name' with 'Ada'
   n_s0 --&gt; n_s0 : [gen] invoke prop 'onComplete'
   n_s1 --&gt; n_s2 : click button 'Next'
-  n_s1 --&gt; n_s2 : [gen] click button 'Next'
   n_s1 --&gt; n_s0 : fill 'Name' with ''
-  n_s1 --&gt; n_s0 : [gen] fill 'Name' with ''
   n_s1 --&gt; n_s1 : fill 'Name' with 'Ada'
-  n_s1 --&gt; n_s1 : [gen] fill 'Name' with 'Ada'
   n_s1 --&gt; n_s1 : [gen] invoke prop 'onComplete'
   n_s2 --&gt; n_s1 : click button 'Back'
-  n_s2 --&gt; n_s1 : [gen] click button 'Back'
   n_s2 --&gt; n_s2 : fill 'Email' with ''
-  n_s2 --&gt; n_s2 : [gen] fill 'Email' with ''
   n_s2 --&gt; n_s3 : fill 'Email' with 'ada@example.com'
-  n_s2 --&gt; n_s3 : [gen] fill 'Email' with 'ada@example.com'
   n_s2 --&gt; n_s2 : [gen] invoke prop 'onComplete'
   n_s3 --&gt; n_s6 : click button 'Back'
-  n_s3 --&gt; n_s6 : [gen] click button 'Back'
   n_s3 --&gt; n_s4 : click button 'Next'
-  n_s3 --&gt; n_s4 : [gen] click button 'Next'
   n_s3 --&gt; n_s2 : fill 'Email' with ''
-  n_s3 --&gt; n_s2 : [gen] fill 'Email' with ''
   n_s3 --&gt; n_s3 : fill 'Email' with 'ada@example.com'
-  n_s3 --&gt; n_s3 : [gen] fill 'Email' with 'ada@example.com'
   n_s3 --&gt; n_s3 : [gen] invoke prop 'onComplete'
   n_s4 --&gt; n_s3 : click button 'Back'
-  n_s4 --&gt; n_s3 : [gen] click button 'Back'
   n_s4 --&gt; n_s5 : click button 'Finish'
-  n_s4 --&gt; n_s5 : [gen] click button 'Finish'
   n_s4 --&gt; n_s4 : [gen] invoke prop 'onComplete'
   n_s5 --&gt; n_s5 : [gen] invoke prop 'onComplete'
   n_s6 --&gt; n_s3 : click button 'Next'
-  n_s6 --&gt; n_s3 : [gen] click button 'Next'
   n_s6 --&gt; n_s7 : fill 'Name' with ''
-  n_s6 --&gt; n_s7 : [gen] fill 'Name' with ''
   n_s6 --&gt; n_s6 : fill 'Name' with 'Ada'
-  n_s6 --&gt; n_s6 : [gen] fill 'Name' with 'Ada'
   n_s6 --&gt; n_s6 : [gen] invoke prop 'onComplete'
   n_s7 --&gt; n_s7 : fill 'Name' with ''
-  n_s7 --&gt; n_s7 : [gen] fill 'Name' with ''
   n_s7 --&gt; n_s6 : fill 'Name' with 'Ada'
-  n_s7 --&gt; n_s6 : [gen] fill 'Name' with 'Ada'
   n_s7 --&gt; n_s7 : [gen] invoke prop 'onComplete'
   classDef defaultProps fill:#3b6fb0,color:#fff,stroke:#1c3a5e
   classDef generatedProps fill:#8a5cc7,color:#fff,stroke:#4c2f75,stroke-dasharray: 3 2
@@ -331,7 +312,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
         <tbody>
           <tr><th>actions used</th><td>1034</td></tr>
           <tr><th>states found</th><td>8</td></tr>
-          <tr><th>elapsed</th><td>760ms</td></tr>
+          <tr><th>elapsed</th><td>720ms</td></tr>
           <tr><th>budget exhausted</th><td>no</td></tr>
         </tbody>
       </table>

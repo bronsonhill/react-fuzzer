@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "component": "ValidatedForm",
-  "generatedAt": "2026-08-17T07:29:12.424Z",
+  "generatedAt": "2026-08-17T07:55:16.756Z",
   "abstractionConfig": {
     "literalDomainLimit": 8,
     "domCorrelationEnabled": true,
@@ -134,29 +134,11 @@
     },
     {
       "from": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\"",
-      "actionLabel": "fill \"Email\" with \"\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Email\":1",
       "actionLabel": "fill \"Email\" with \"not-an-email@\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":1",
-      "actionLabel": "fill \"Email\" with \"not-an-email@\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -170,29 +152,11 @@
     },
     {
       "from": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":2",
-      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:\"|submitted=false",
       "to": "email=\"lit:\"|password=\"lit:\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\"",
       "actionLabel": "fill \"Password\" with \"\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\"",
-      "actionLabel": "fill \"Password\" with \"\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -206,29 +170,11 @@
     },
     {
       "from": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":1",
-      "actionLabel": "fill \"Password\" with \"short\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:\"|submitted=false",
       "to": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\":2",
       "actionLabel": "fill \"Password\" with \"longenough1\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":2",
-      "actionLabel": "fill \"Password\" with \"longenough1\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -247,15 +193,6 @@
       "actionId": "fill:textbox:\"Email\"",
       "actionLabel": "fill \"Email\" with \"\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\"",
-      "actionLabel": "fill \"Email\" with \"\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -269,29 +206,11 @@
     },
     {
       "from": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":1",
-      "actionLabel": "fill \"Email\" with \"not-an-email@\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
       "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Email\":2",
       "actionLabel": "fill \"Email\" with \"ada@example.com\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":2",
-      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -305,15 +224,6 @@
     },
     {
       "from": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\"",
-      "actionLabel": "fill \"Password\" with \"\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
       "to": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\":1",
@@ -323,29 +233,11 @@
     },
     {
       "from": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":1",
-      "actionLabel": "fill \"Password\" with \"short\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
       "to": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\":2",
       "actionLabel": "fill \"Password\" with \"longenough1\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":2",
-      "actionLabel": "fill \"Password\" with \"longenough1\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -368,29 +260,11 @@
     },
     {
       "from": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\"",
-      "actionLabel": "fill \"Email\" with \"\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Email\":1",
       "actionLabel": "fill \"Email\" with \"not-an-email@\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":1",
-      "actionLabel": "fill \"Email\" with \"not-an-email@\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -404,29 +278,11 @@
     },
     {
       "from": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":2",
-      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
       "to": "email=\"lit:\"|password=\"lit:\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\"",
       "actionLabel": "fill \"Password\" with \"\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\"",
-      "actionLabel": "fill \"Password\" with \"\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -440,29 +296,11 @@
     },
     {
       "from": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":1",
-      "actionLabel": "fill \"Password\" with \"short\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
       "to": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\":2",
       "actionLabel": "fill \"Password\" with \"longenough1\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":2",
-      "actionLabel": "fill \"Password\" with \"longenough1\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -485,29 +323,11 @@
     },
     {
       "from": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\"",
-      "actionLabel": "fill \"Email\" with \"\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Email\":1",
       "actionLabel": "fill \"Email\" with \"not-an-email@\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":1",
-      "actionLabel": "fill \"Email\" with \"not-an-email@\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -523,27 +343,9 @@
       "from": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
       "to": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
       "kind": "user",
-      "actionId": "fill:textbox:\"Email\":2",
-      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
       "actionId": "fill:textbox:\"Password\"",
       "actionLabel": "fill \"Password\" with \"\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\"",
-      "actionLabel": "fill \"Password\" with \"\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -557,29 +359,11 @@
     },
     {
       "from": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":1",
-      "actionLabel": "fill \"Password\" with \"short\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
       "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\":2",
       "actionLabel": "fill \"Password\" with \"longenough1\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":2",
-      "actionLabel": "fill \"Password\" with \"longenough1\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -602,29 +386,11 @@
     },
     {
       "from": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=true",
-      "kind": "user",
-      "actionId": "click:button:\"Submit\"",
-      "actionLabel": "click button \"Submit\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
       "to": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Email\"",
       "actionLabel": "fill \"Email\" with \"\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\"",
-      "actionLabel": "fill \"Email\" with \"\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -638,29 +404,11 @@
     },
     {
       "from": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":1",
-      "actionLabel": "fill \"Email\" with \"not-an-email@\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
       "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Email\":2",
       "actionLabel": "fill \"Email\" with \"ada@example.com\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":2",
-      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -674,15 +422,6 @@
     },
     {
       "from": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\"",
-      "actionLabel": "fill \"Password\" with \"\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
       "to": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\":1",
@@ -692,29 +431,11 @@
     },
     {
       "from": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":1",
-      "actionLabel": "fill \"Password\" with \"short\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
       "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\":2",
       "actionLabel": "fill \"Password\" with \"longenough1\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":2",
-      "actionLabel": "fill \"Password\" with \"longenough1\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -746,29 +467,11 @@
     },
     {
       "from": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\"",
-      "actionLabel": "fill \"Email\" with \"\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Email\":1",
       "actionLabel": "fill \"Email\" with \"not-an-email@\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":1",
-      "actionLabel": "fill \"Email\" with \"not-an-email@\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -782,29 +485,11 @@
     },
     {
       "from": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":2",
-      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
       "to": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\"",
       "actionLabel": "fill \"Password\" with \"\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\"",
-      "actionLabel": "fill \"Password\" with \"\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -818,29 +503,11 @@
     },
     {
       "from": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":1",
-      "actionLabel": "fill \"Password\" with \"short\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
       "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\":2",
       "actionLabel": "fill \"Password\" with \"longenough1\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":2",
-      "actionLabel": "fill \"Password\" with \"longenough1\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -863,29 +530,11 @@
     },
     {
       "from": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\"",
-      "actionLabel": "fill \"Email\" with \"\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Email\":1",
       "actionLabel": "fill \"Email\" with \"not-an-email@\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":1",
-      "actionLabel": "fill \"Email\" with \"not-an-email@\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -899,29 +548,11 @@
     },
     {
       "from": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":2",
-      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\"",
       "actionLabel": "fill \"Password\" with \"\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\"",
-      "actionLabel": "fill \"Password\" with \"\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -935,29 +566,11 @@
     },
     {
       "from": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":1",
-      "actionLabel": "fill \"Password\" with \"short\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\":2",
       "actionLabel": "fill \"Password\" with \"longenough1\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":2",
-      "actionLabel": "fill \"Password\" with \"longenough1\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -980,29 +593,11 @@
     },
     {
       "from": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\"",
-      "actionLabel": "fill \"Email\" with \"\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Email\":1",
       "actionLabel": "fill \"Email\" with \"not-an-email@\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":1",
-      "actionLabel": "fill \"Email\" with \"not-an-email@\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -1016,29 +611,11 @@
     },
     {
       "from": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":2",
-      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\"",
       "actionLabel": "fill \"Password\" with \"\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\"",
-      "actionLabel": "fill \"Password\" with \"\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -1052,29 +629,11 @@
     },
     {
       "from": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":1",
-      "actionLabel": "fill \"Password\" with \"short\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\":2",
       "actionLabel": "fill \"Password\" with \"longenough1\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":2",
-      "actionLabel": "fill \"Password\" with \"longenough1\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -1097,29 +656,11 @@
     },
     {
       "from": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\"",
-      "actionLabel": "fill \"Email\" with \"\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Email\":1",
       "actionLabel": "fill \"Email\" with \"not-an-email@\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":1",
-      "actionLabel": "fill \"Email\" with \"not-an-email@\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -1133,29 +674,11 @@
     },
     {
       "from": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:ada@example.com\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Email\":2",
-      "actionLabel": "fill \"Email\" with \"ada@example.com\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\"",
       "actionLabel": "fill \"Password\" with \"\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\"",
-      "actionLabel": "fill \"Password\" with \"\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {
@@ -1169,29 +692,11 @@
     },
     {
       "from": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":1",
-      "actionLabel": "fill \"Password\" with \"short\"",
-      "provenance": "generated-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
       "to": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
       "kind": "user",
       "actionId": "fill:textbox:\"Password\":2",
       "actionLabel": "fill \"Password\" with \"longenough1\"",
       "provenance": "default-props",
-      "stable": true
-    },
-    {
-      "from": "email=\"lit:not-an-email@\"|password=\"lit:short\"|submitted=false",
-      "to": "email=\"lit:not-an-email@\"|password=\"lit:longenough1\"|submitted=false",
-      "kind": "user",
-      "actionId": "fill:textbox:\"Password\":2",
-      "actionLabel": "fill \"Password\" with \"longenough1\"",
-      "provenance": "generated-props",
       "stable": true
     },
     {

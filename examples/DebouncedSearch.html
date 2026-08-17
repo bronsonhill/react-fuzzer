@@ -143,7 +143,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
 
     
     <h1>DebouncedSearch</h1>
-    <p class="subtitle">18 states, 72 edges (diagram: 6 nodes shown, 12 transient state(s) collapsed into labelled edges)</p>
+    <p class="subtitle">18 states, 36 edges (diagram: 6 nodes shown, 12 transient state(s) collapsed into labelled edges)</p>
 
     <section id="diagram">
       <h2>State diagram</h2>
@@ -174,53 +174,29 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
   class n_s6 defaultProps
   class n_s9 defaultProps
   n_s0 --&gt; n_s0 : fill 'Search' with ''
-  n_s0 --&gt; n_s0 : [gen] fill 'Search' with ''
-  n_s0 --&gt; n_s9 : [collapsed] [gen] fill 'Search' with 'resultsterm' (via s7, s8)
-  n_s0 --&gt; n_s9 : [collapsed] [gen] fill 'Search' with 'resultsterm' (via s7, s8)
-  n_s0 --&gt; n_s6 : [collapsed] [gen] fill 'Search' with 'emptyterm' (via s4, s5)
-  n_s0 --&gt; n_s6 : [collapsed] [gen] fill 'Search' with 'emptyterm' (via s4, s5)
-  n_s0 --&gt; n_s3 : [collapsed] [gen] fill 'Search' with 'errorterm' (via s1, s2)
-  n_s0 --&gt; n_s3 : [collapsed] [gen] fill 'Search' with 'errorterm' (via s1, s2)
+  n_s0 --&gt; n_s9 : [collapsed] fill 'Search' with 'resultsterm' (via s7, s8)
+  n_s0 --&gt; n_s6 : [collapsed] fill 'Search' with 'emptyterm' (via s4, s5)
+  n_s0 --&gt; n_s3 : [collapsed] fill 'Search' with 'errorterm' (via s1, s2)
   n_s12 --&gt; n_s0 : fill 'Search' with ''
-  n_s12 --&gt; n_s0 : [gen] fill 'Search' with ''
-  n_s12 --&gt; n_s9 : [collapsed] [gen] fill 'Search' with 'resultsterm' (via s16, s17)
-  n_s12 --&gt; n_s9 : [collapsed] [gen] fill 'Search' with 'resultsterm' (via s16, s17)
-  n_s12 --&gt; n_s15 : [collapsed] [gen] fill 'Search' with 'emptyterm' (via s13, s14)
-  n_s12 --&gt; n_s15 : [collapsed] [gen] fill 'Search' with 'emptyterm' (via s13, s14)
+  n_s12 --&gt; n_s9 : [collapsed] fill 'Search' with 'resultsterm' (via s16, s17)
+  n_s12 --&gt; n_s15 : [collapsed] fill 'Search' with 'emptyterm' (via s13, s14)
   n_s12 --&gt; n_s12 : fill 'Search' with 'errorterm'
-  n_s12 --&gt; n_s12 : [gen] fill 'Search' with 'errorterm'
   n_s15 --&gt; n_s0 : fill 'Search' with ''
-  n_s15 --&gt; n_s0 : [gen] fill 'Search' with ''
-  n_s15 --&gt; n_s9 : [collapsed] [gen] fill 'Search' with 'resultsterm' (via s16, s17)
-  n_s15 --&gt; n_s9 : [collapsed] [gen] fill 'Search' with 'resultsterm' (via s16, s17)
+  n_s15 --&gt; n_s9 : [collapsed] fill 'Search' with 'resultsterm' (via s16, s17)
   n_s15 --&gt; n_s15 : fill 'Search' with 'emptyterm'
-  n_s15 --&gt; n_s15 : [gen] fill 'Search' with 'emptyterm'
-  n_s15 --&gt; n_s12 : [collapsed] [gen] fill 'Search' with 'errorterm' (via s10, s11)
-  n_s15 --&gt; n_s12 : [collapsed] [gen] fill 'Search' with 'errorterm' (via s10, s11)
+  n_s15 --&gt; n_s12 : [collapsed] fill 'Search' with 'errorterm' (via s10, s11)
   n_s3 --&gt; n_s0 : fill 'Search' with ''
-  n_s3 --&gt; n_s0 : [gen] fill 'Search' with ''
-  n_s3 --&gt; n_s9 : [collapsed] [gen] fill 'Search' with 'resultsterm' (via s7, s8)
-  n_s3 --&gt; n_s9 : [collapsed] [gen] fill 'Search' with 'resultsterm' (via s7, s8)
-  n_s3 --&gt; n_s6 : [collapsed] [gen] fill 'Search' with 'emptyterm' (via s4, s5)
-  n_s3 --&gt; n_s6 : [collapsed] [gen] fill 'Search' with 'emptyterm' (via s4, s5)
+  n_s3 --&gt; n_s9 : [collapsed] fill 'Search' with 'resultsterm' (via s7, s8)
+  n_s3 --&gt; n_s6 : [collapsed] fill 'Search' with 'emptyterm' (via s4, s5)
   n_s3 --&gt; n_s3 : fill 'Search' with 'errorterm'
-  n_s3 --&gt; n_s3 : [gen] fill 'Search' with 'errorterm'
   n_s6 --&gt; n_s0 : fill 'Search' with ''
-  n_s6 --&gt; n_s0 : [gen] fill 'Search' with ''
-  n_s6 --&gt; n_s9 : [collapsed] [gen] fill 'Search' with 'resultsterm' (via s7, s8)
-  n_s6 --&gt; n_s9 : [collapsed] [gen] fill 'Search' with 'resultsterm' (via s7, s8)
+  n_s6 --&gt; n_s9 : [collapsed] fill 'Search' with 'resultsterm' (via s7, s8)
   n_s6 --&gt; n_s6 : fill 'Search' with 'emptyterm'
-  n_s6 --&gt; n_s6 : [gen] fill 'Search' with 'emptyterm'
-  n_s6 --&gt; n_s3 : [collapsed] [gen] fill 'Search' with 'errorterm' (via s1, s2)
-  n_s6 --&gt; n_s3 : [collapsed] [gen] fill 'Search' with 'errorterm' (via s1, s2)
+  n_s6 --&gt; n_s3 : [collapsed] fill 'Search' with 'errorterm' (via s1, s2)
   n_s9 --&gt; n_s0 : fill 'Search' with ''
-  n_s9 --&gt; n_s0 : [gen] fill 'Search' with ''
   n_s9 --&gt; n_s9 : fill 'Search' with 'resultsterm'
-  n_s9 --&gt; n_s9 : [gen] fill 'Search' with 'resultsterm'
-  n_s9 --&gt; n_s15 : [collapsed] [gen] fill 'Search' with 'emptyterm' (via s13, s14)
-  n_s9 --&gt; n_s15 : [collapsed] [gen] fill 'Search' with 'emptyterm' (via s13, s14)
-  n_s9 --&gt; n_s12 : [collapsed] [gen] fill 'Search' with 'errorterm' (via s10, s11)
-  n_s9 --&gt; n_s12 : [collapsed] [gen] fill 'Search' with 'errorterm' (via s10, s11)
+  n_s9 --&gt; n_s15 : [collapsed] fill 'Search' with 'emptyterm' (via s13, s14)
+  n_s9 --&gt; n_s12 : [collapsed] fill 'Search' with 'errorterm' (via s10, s11)
   classDef defaultProps fill:#3b6fb0,color:#fff,stroke:#1c3a5e
   classDef generatedProps fill:#8a5cc7,color:#fff,stroke:#4c2f75,stroke-dasharray: 3 2
   classDef transientState stroke-dasharray: 2 2,opacity:0.75</pre></div>
@@ -409,7 +385,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
         <tbody>
           <tr><th>actions used</th><td>1050</td></tr>
           <tr><th>states found</th><td>18</td></tr>
-          <tr><th>elapsed</th><td>958ms</td></tr>
+          <tr><th>elapsed</th><td>928ms</td></tr>
           <tr><th>budget exhausted</th><td>no</td></tr>
         </tbody>
       </table>

@@ -143,7 +143,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
 
     
     <h1>PropGated</h1>
-    <p class="subtitle">4 states, 10 edges</p>
+    <p class="subtitle">4 states, 8 edges</p>
 
     <section id="diagram">
       <h2>State diagram</h2>
@@ -173,10 +173,8 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
   n_gen5_s1 --&gt; n_s2 : [gen] click button 'Notifications: Off'
   n_s0 --&gt; n_gen5_s1 : [gen] click button 'Expert mode: Off'
   n_s0 --&gt; n_s1 : click button 'Notifications: Off'
-  n_s0 --&gt; n_s1 : [gen] click button 'Notifications: Off'
   n_s1 --&gt; n_s2 : [gen] click button 'Expert mode: Off'
   n_s1 --&gt; n_s0 : click button 'Notifications: On'
-  n_s1 --&gt; n_s0 : [gen] click button 'Notifications: On'
   n_s2 --&gt; n_s1 : [gen] click button 'Expert mode: On'
   n_s2 --&gt; n_gen5_s1 : [gen] click button 'Notifications: On'
   classDef defaultProps fill:#3b6fb0,color:#fff,stroke:#1c3a5e
@@ -255,7 +253,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
         <tbody>
           <tr><th>actions used</th><td>96</td></tr>
           <tr><th>states found</th><td>4</td></tr>
-          <tr><th>elapsed</th><td>87ms</td></tr>
+          <tr><th>elapsed</th><td>89ms</td></tr>
           <tr><th>budget exhausted</th><td>no</td></tr>
         </tbody>
       </table>
