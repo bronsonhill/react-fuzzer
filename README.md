@@ -275,6 +275,9 @@ across `explore`, `approve`, and `diff`. `diff` additionally takes `--baseline <
 ## Milestone documentation
 
 - `docs/poc-plan.md` — the design plan (read this first).
+- `docs/how-exploration-works.md` — end-to-end walkthrough of one run (props sampled,
+  actions discovered, states identified, edges emitted, graphs merged), worked against
+  `MuiNotificationSettings` with the real numbers from its generated report.
 - `docs/m2-abstraction-report.md`, `docs/m2-5-adaptive-report.md` — state abstraction,
   static then adaptive.
 - `docs/m3-exploration-report.md`, `docs/m3-5-refinement-report.md` — the DFS engine and
