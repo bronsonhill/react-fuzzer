@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "component": "PropGated",
-  "generatedAt": "2026-08-16T00:19:53.264Z",
+  "generatedAt": "2026-08-17T07:29:22.064Z",
   "abstractionConfig": {
     "literalDomainLimit": 8,
     "domCorrelationEnabled": true,

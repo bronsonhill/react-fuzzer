@@ -156,7 +156,7 @@ function stateTableRows(states: StateNode[], collapsedStateIds: Set<string>): st
     .map(
       (s) => `
       <tr class="${s.provenance === "generated-props" ? "row-generated" : "row-default"}">
-        <td><code${s.html !== undefined ? ` class="previewable" data-preview="${esc(s.id)}" tabindex="0"` : ""}>${esc(s.key)}</code></td>
+        <td><code${s.html !== undefined ? ` class="previewable" data-preview="${esc(s.id)}" tabindex="0" role="button" aria-expanded="false"` : ""}>${esc(s.key)}</code></td>
         <td>${esc(s.provenance)}</td>
         <td>${s.transient ? "yes" : "no"}</td>
         <td>${collapsedStateIds.has(s.id) ? "collapsed" : "shown"}</td>
@@ -408,21 +408,42 @@ tr.row-pruned { background: color-mix(in srgb, var(--row-pruned) 55%, var(--bg))
 .witness-note { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
 footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); padding-top: 1rem; }
 a { color: var(--link); }
-code.previewable { cursor: help; border-bottom: 1px dotted var(--accent); }
+code.previewable { cursor: pointer; border-bottom: 1px dotted var(--accent); }
 code.previewable:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-.mermaid g[data-previewable] { cursor: help; }
-#preview-card {
-  position: fixed; z-index: 50; display: none;
-  width: 24rem; max-width: calc(100vw - 1rem);
-  background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.28); overflow: hidden;
+code.previewable[aria-expanded="true"] { background: var(--accent); color: var(--bg); }
+.mermaid g[data-previewable] { cursor: pointer; }
+.mermaid g[data-previewable][aria-expanded="true"] rect,
+.mermaid g[data-previewable][aria-expanded="true"] polygon,
+.mermaid g[data-previewable][aria-expanded="true"] circle { stroke: var(--accent); stroke-width: 3px; }
+
+/* The side pane: fixed to the right edge, full height, off-screen until a
+   state is picked. Wide viewports also shift the (max-width, centred) body
+   left by the pane's width so the pane never covers the table you clicked
+   from; below 90rem there isn't room for that, and it overlays instead. */
+#preview-pane {
+  position: fixed; z-index: 50; top: 0; right: 0; bottom: 0;
+  width: min(34rem, 92vw);
+  display: flex; flex-direction: column;
+  background: var(--bg); border-left: 1px solid var(--border);
+  box-shadow: -6px 0 24px rgba(0, 0, 0, 0.28);
+  transform: translateX(100%); transition: transform 0.15s ease-out;
 }
-#preview-card .preview-head {
-  font-size: 0.8rem; color: var(--muted); padding: 0.35rem 0.6rem;
-  border-bottom: 1px solid var(--border); background: var(--card-bg);
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+#preview-pane[data-open] { transform: translateX(0); }
+#preview-pane .preview-head {
+  display: flex; align-items: baseline; gap: 0.5rem;
+  padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); background: var(--card-bg);
 }
-#preview-card iframe { display: block; width: 100%; height: 15rem; border: 0; background: var(--bg); }
+#preview-pane .preview-title { font-size: 0.85rem; font-weight: 600; overflow-wrap: anywhere; }
+#preview-pane .preview-note { font-size: 0.78rem; color: var(--muted); }
+#preview-pane .preview-close {
+  margin-left: auto; flex: none; cursor: pointer;
+  background: none; border: 1px solid var(--border); border-radius: 4px;
+  color: var(--fg); font-size: 0.9rem; line-height: 1; padding: 0.25rem 0.45rem;
+}
+#preview-pane iframe { display: block; flex: 1 1 auto; width: 100%; border: 0; background: var(--bg); }
+@media (min-width: 90rem) {
+  body.preview-open { margin-right: min(34rem, 92vw); }
+}
 `;
 
 /**
@@ -448,7 +469,10 @@ function jsonForScript(v: unknown): string {
 }
 
 /**
- * The state-preview payload and hover-card behaviour. Previews are stored
+ * The state-preview payload and side-pane behaviour. Clicking a state key
+ * (or a diagram node) opens a right-hand pane holding an iframe; clicking
+ * the same trigger again, the close button, or Escape shuts it. Previews
+ * are stored
  * markup captured during exploration (src/abstraction/domSnapshot.ts), not
  * a live re-render -- see StateNode.html for why that distinction matters
  * for transient states.
@@ -464,9 +488,12 @@ function previewScript(states: StateNode[], previewStylesheet: string | undefine
   return `
 const PREVIEWS = ${jsonForScript(previews)};
 const PREVIEW_CSS = ${jsonForScript(css)};
-const card = document.getElementById("preview-card");
-const head = card.querySelector(".preview-head");
-const frame = card.querySelector("iframe");
+const pane = document.getElementById("preview-pane");
+const title = pane.querySelector(".preview-title");
+const note = pane.querySelector(".preview-note");
+const frame = pane.querySelector("iframe");
+const closeBtn = pane.querySelector(".preview-close");
+const triggers = new Map();
 let current = null;
 
 function srcdocFor(id) {
@@ -474,37 +501,61 @@ function srcdocFor(id) {
   return "<!doctype html><meta charset=\\"utf-8\\"><style>" + PREVIEW_CSS + "</style>" + p.html;
 }
 
-function show(id, anchor) {
+function markTriggers() {
+  for (const [id, els] of triggers) {
+    for (const el of els) el.setAttribute("aria-expanded", id === current ? "true" : "false");
+  }
+}
+
+function show(id) {
   const p = PREVIEWS[id];
-  if (!p || current === id) return;
+  if (!p) return;
   current = id;
-  head.textContent = p.key + (p.transient ? " (transient \\u2014 snapshot taken mid-flight)" : "");
+  title.textContent = p.key;
+  note.textContent = p.transient ? "transient \\u2014 snapshot taken mid-flight" : "";
   frame.srcdoc = srcdocFor(id);
-  card.style.display = "block";
-  const r = anchor.getBoundingClientRect();
-  const w = card.offsetWidth;
-  const h = card.offsetHeight;
-  // Clamp inside the viewport: the card is position:fixed, so it can never
-  // widen the page body (which must not scroll horizontally).
-  let left = Math.min(r.left, window.innerWidth - w - 8);
-  if (left < 8) left = 8;
-  let top = r.bottom + 8;
-  if (top + h > window.innerHeight - 8) top = Math.max(8, r.top - h - 8);
-  card.style.left = left + "px";
-  card.style.top = top + "px";
+  pane.setAttribute("data-open", "");
+  pane.setAttribute("aria-hidden", "false");
+  document.body.classList.add("preview-open");
+  markTriggers();
 }
 
 function hide() {
   current = null;
-  card.style.display = "none";
+  pane.removeAttribute("data-open");
+  pane.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("preview-open");
+  // Dropping the srcdoc stops any timer/animation the previewed markup
+  // might be running once the pane is closed.
+  frame.removeAttribute("srcdoc");
+  markTriggers();
+}
+
+function toggle(id) {
+  if (current === id) hide();
+  else show(id);
 }
 
 function bind(el, id) {
-  el.addEventListener("mouseenter", () => show(id, el));
-  el.addEventListener("mouseleave", hide);
-  el.addEventListener("focus", () => show(id, el));
-  el.addEventListener("blur", hide);
+  const els = triggers.get(id) ?? [];
+  els.push(el);
+  triggers.set(id, els);
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggle(id);
+  });
+  el.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggle(id);
+    }
+  });
 }
+
+closeBtn.addEventListener("click", hide);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && current !== null) hide();
+});
 
 for (const el of document.querySelectorAll("code.previewable")) {
   bind(el, el.getAttribute("data-preview"));
@@ -523,6 +574,9 @@ function bindDiagram() {
       const parts = node.id.split(/[^a-zA-Z0-9_]+/);
       if (parts.indexOf(mid) !== -1) {
         node.setAttribute("data-previewable", "");
+        node.setAttribute("tabindex", "0");
+        node.setAttribute("role", "button");
+        node.setAttribute("aria-expanded", "false");
         bind(node, id);
         break;
       }
@@ -532,7 +586,7 @@ function bindDiagram() {
 `;
 }
 
-const PREVIEW_CARD_HTML = `<div id="preview-card" aria-hidden="true"><div class="preview-head"></div><iframe sandbox="" title="rendered output for this state"></iframe></div>`;
+const PREVIEW_CARD_HTML = `<aside id="preview-pane" aria-hidden="true" aria-label="state preview"><div class="preview-head"><span class="preview-title"></span><span class="preview-note"></span><button type="button" class="preview-close" aria-label="close preview">&times;</button></div><iframe sandbox="" title="rendered output for this state"></iframe></aside>`;
 
 export interface RenderHtmlOptions {
   /** Wall-clock elapsed time to show in the budget section (kept out of the JSON artefact, but fine to show here). */
@@ -604,7 +658,7 @@ function coreSections(result: ExplorationResult, opts: RenderHtmlOptions): strin
 
     <section id="states">
       <h2>State table</h2>
-      <p class="empty-note">Every state is listed here, including transient states collapsed out of the diagram above (see the "diagram" column). Hover (or tab to) a state key &mdash; or a node in the diagram &mdash; to preview the markup that state actually rendered.</p>
+      <p class="empty-note">Every state is listed here, including transient states collapsed out of the diagram above (see the "diagram" column). Click a state key &mdash; or a node in the diagram &mdash; to open the markup that state actually rendered in a side pane. Escape closes it.</p>
       <div class="table-scroll">
         <table>
           <thead><tr><th>key</th><th>provenance</th><th>transient</th><th>diagram</th><th>fields</th><th>witness</th></tr></thead>

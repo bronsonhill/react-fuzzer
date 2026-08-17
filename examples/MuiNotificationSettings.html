@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>react-fuzzer report: FetchList</title>
+<title>react-fuzzer report: MuiNotificationSettings</title>
 <style>
 :root {
   --bg: #ffffff;
@@ -142,8 +142,8 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
 <body>
 
     
-    <h1>FetchList</h1>
-    <p class="subtitle">4 states, 7 edges</p>
+    <h1>MuiNotificationSettings</h1>
+    <p class="subtitle">6 states, 30 edges</p>
 
     <section id="diagram">
       <h2>State diagram</h2>
@@ -157,25 +157,52 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
         <span>edge label prefixed <code>[non-det]</code> = same action from same state observed landing on different destinations</span>
         <span>edge label prefixed <code>[collapsed]</code>, with "(via ...)" = a whole transient async chain (user action &rarr; one or more transient intermediates &rarr; settled state) drawn as one edge; see the state table for the collapsed intermediates</span>
       </div>
-      <p class="empty-note">Transient async chains are collapsed in this diagram (default). Collapsed intermediates are still listed in the state table below, marked "collapsed". 3 chain(s) could not be fully collapsed because a transient state along the way had more than one outgoing edge (branching); those are left expanded -- see below.</p>
-      <div class="large-graph-warning"><strong>Chains left expanded due to branching:</strong><ul><li>Chain starting gen4:s1 --click button &quot;Retry&quot;--&gt; s0 was left expanded: transient state s0 has more than one outgoing edge, so the chain cannot be collapsed past that branch point.</li><li>Chain starting s1 --click button &quot;Retry&quot;--&gt; s0 was left expanded: transient state s0 has more than one outgoing edge, so the chain cannot be collapsed past that branch point.</li><li>Chain starting s1 --click button &quot;Retry&quot;--&gt; s0 was left expanded: transient state s0 has more than one outgoing edge, so the chain cannot be collapsed past that branch point.</li></ul></div>
+      <p class="empty-note">Transient async chains are collapsed in this diagram (default). Collapsed intermediates are still listed in the state table below, marked "collapsed". </p>
+      
       
       <div class="mermaid-container"><pre class="mermaid">stateDiagram-v2
-  n_gen1_s1 : gen1:s1: status='loaded', items=[{'id':'1','label':'O..., attempt=0 [generated]
-  n_gen4_s1 : gen4:s1: status='empty', items=[], attempt=0 [generated]
-  n_s0 : s0: status='loading', items=[], attempt=0 [transient]
-  n_s1 : s1: status='error', items=[], attempt=0
-  class n_gen1_s1 generatedProps
-  class n_gen4_s1 generatedProps
-  class n_s0 defaultProps,transientState
+  n_gen5_s1 : gen5:s1: enabled=false, digest=false, smsAlerts=true [generated]
+  n_gen5_s2 : gen5:s2: enabled=true, digest=false, smsAlerts=true [generated]
+  n_s0 : s0: enabled=false, digest=false, smsAlerts=false
+  n_s1 : s1: enabled=true, digest=false, smsAlerts=false
+  n_s2 : s2: enabled=true, digest=true, smsAlerts=false
+  n_s5 : s5: enabled=true, digest=true, smsAlerts=true [generated]
+  class n_gen5_s1 generatedProps
+  class n_gen5_s2 generatedProps
+  class n_s0 defaultProps
   class n_s1 defaultProps
-  n_gen4_s1 --&gt; n_s0 : [gen] click button 'Retry'
-  n_s0 --&gt; n_gen1_s1 : [gen] auto:microtask
-  n_s0 --&gt; n_gen4_s1 : [gen] auto:microtask
-  n_s0 --&gt; n_s1 : auto:microtask
-  n_s0 --&gt; n_s1 : [gen] auto:microtask
-  n_s1 --&gt; n_s0 : click button 'Retry'
-  n_s1 --&gt; n_s0 : [gen] click button 'Retry'
+  class n_s2 defaultProps
+  class n_s5 generatedProps
+  n_gen5_s1 --&gt; n_s0 : [gen] click button 'Reset'
+  n_gen5_s1 --&gt; n_s0 : [gen] toggle checkbox 'SMS alerts'
+  n_gen5_s1 --&gt; n_gen5_s2 : [gen] toggle switch 'Enable notifications'
+  n_gen5_s2 --&gt; n_s0 : [gen] click button 'Reset'
+  n_gen5_s2 --&gt; n_s1 : [gen] toggle checkbox 'SMS alerts'
+  n_gen5_s2 --&gt; n_s5 : [gen] toggle checkbox 'Weekly digest'
+  n_gen5_s2 --&gt; n_gen5_s1 : [gen] toggle switch 'Enable notifications'
+  n_s0 --&gt; n_s0 : click button 'Reset'
+  n_s0 --&gt; n_s0 : [gen] click button 'Reset'
+  n_s0 --&gt; n_gen5_s1 : [gen] toggle checkbox 'SMS alerts'
+  n_s0 --&gt; n_s1 : toggle switch 'Enable notifications'
+  n_s0 --&gt; n_s1 : [gen] toggle switch 'Enable notifications'
+  n_s1 --&gt; n_s0 : click button 'Reset'
+  n_s1 --&gt; n_s0 : [gen] click button 'Reset'
+  n_s1 --&gt; n_gen5_s2 : [gen] toggle checkbox 'SMS alerts'
+  n_s1 --&gt; n_s2 : toggle checkbox 'Weekly digest'
+  n_s1 --&gt; n_s2 : [gen] toggle checkbox 'Weekly digest'
+  n_s1 --&gt; n_s0 : toggle switch 'Enable notifications'
+  n_s1 --&gt; n_s0 : [gen] toggle switch 'Enable notifications'
+  n_s2 --&gt; n_s0 : click button 'Reset'
+  n_s2 --&gt; n_s0 : [gen] click button 'Reset'
+  n_s2 --&gt; n_s5 : [gen] toggle checkbox 'SMS alerts'
+  n_s2 --&gt; n_s1 : toggle checkbox 'Weekly digest'
+  n_s2 --&gt; n_s1 : [gen] toggle checkbox 'Weekly digest'
+  n_s2 --&gt; n_s0 : toggle switch 'Enable notifications'
+  n_s2 --&gt; n_s0 : [gen] toggle switch 'Enable notifications'
+  n_s5 --&gt; n_s0 : [gen] click button 'Reset'
+  n_s5 --&gt; n_s2 : [gen] toggle checkbox 'SMS alerts'
+  n_s5 --&gt; n_gen5_s2 : [gen] toggle checkbox 'Weekly digest'
+  n_s5 --&gt; n_gen5_s1 : [gen] toggle switch 'Enable notifications'
   classDef defaultProps fill:#3b6fb0,color:#fff,stroke:#1c3a5e
   classDef generatedProps fill:#8a5cc7,color:#fff,stroke:#4c2f75,stroke-dasharray: 3 2
   classDef transientState stroke-dasharray: 2 2,opacity:0.75</pre></div>
@@ -189,36 +216,52 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
           <thead><tr><th>key</th><th>provenance</th><th>transient</th><th>diagram</th><th>fields</th><th>witness</th></tr></thead>
           <tbody>
       <tr class="row-generated">
-        <td><code class="previewable" data-preview="gen1:s1" tabindex="0" role="button" aria-expanded="false">gen1:s1</code></td>
+        <td><code class="previewable" data-preview="gen5:s1" tabindex="0" role="button" aria-expanded="false">gen5:s1</code></td>
         <td>generated-props</td>
         <td>no</td>
         <td>shown</td>
-        <td><code>attempt=0</code><br/><code>items=[{&quot;id&quot;:&quot;1&quot;,&quot;label&quot;:&quot;One&quot;}]</code><br/><code>status=&quot;loaded&quot;</code></td>
-        <td><div class="witness-props"><strong>props:</strong> <code>{}</code></div><div class="witness-actions"><em>mount only, no actions</em></div></td>
+        <td><code>digest=false</code><br/><code>enabled=false</code><br/><code>smsAlerts=true</code></td>
+        <td><div class="witness-props"><strong>props:</strong> <code>{&quot;plan&quot;:&quot;pro&quot;}</code></div><ol class="witness-actions"><li>toggle: toggle checkbox &quot;SMS alerts&quot;</li></ol></td>
       </tr>
       <tr class="row-generated">
-        <td><code class="previewable" data-preview="gen4:s1" tabindex="0" role="button" aria-expanded="false">gen4:s1</code></td>
+        <td><code class="previewable" data-preview="gen5:s2" tabindex="0" role="button" aria-expanded="false">gen5:s2</code></td>
         <td>generated-props</td>
         <td>no</td>
         <td>shown</td>
-        <td><code>attempt=0</code><br/><code>items=[]</code><br/><code>status=&quot;empty&quot;</code></td>
-        <td><div class="witness-props"><strong>props:</strong> <code>{}</code></div><div class="witness-actions"><em>mount only, no actions</em></div></td>
+        <td><code>digest=false</code><br/><code>enabled=true</code><br/><code>smsAlerts=true</code></td>
+        <td><div class="witness-props"><strong>props:</strong> <code>{&quot;plan&quot;:&quot;pro&quot;}</code></div><ol class="witness-actions"><li>toggle: toggle checkbox &quot;SMS alerts&quot;</li><li>toggle: toggle switch &quot;Enable notifications&quot;</li></ol></td>
       </tr>
       <tr class="row-default">
         <td><code class="previewable" data-preview="s0" tabindex="0" role="button" aria-expanded="false">s0</code></td>
         <td>default-props</td>
-        <td>yes</td>
+        <td>no</td>
         <td>shown</td>
-        <td><code>attempt=0</code><br/><code>items=[]</code><br/><code>status=&quot;loading&quot;</code></td>
-        <td><div class="witness-props"><strong>props:</strong> <code>{}</code></div><div class="witness-actions"><em>mount only, no actions</em></div><div class="witness-note">reached only via an automatic transition (timer/microtask) after the witness actions; settle() runs to quiescence, so this intermediate state is not independently reachable by replay</div></td>
+        <td><code>digest=false</code><br/><code>enabled=false</code><br/><code>smsAlerts=false</code></td>
+        <td><div class="witness-props"><strong>props:</strong> <code>{&quot;plan&quot;:&quot;free&quot;}</code></div><div class="witness-actions"><em>mount only, no actions</em></div></td>
       </tr>
       <tr class="row-default">
         <td><code class="previewable" data-preview="s1" tabindex="0" role="button" aria-expanded="false">s1</code></td>
         <td>default-props</td>
         <td>no</td>
         <td>shown</td>
-        <td><code>attempt=0</code><br/><code>items=[]</code><br/><code>status=&quot;error&quot;</code></td>
-        <td><div class="witness-props"><strong>props:</strong> <code>{}</code></div><div class="witness-actions"><em>mount only, no actions</em></div></td>
+        <td><code>digest=false</code><br/><code>enabled=true</code><br/><code>smsAlerts=false</code></td>
+        <td><div class="witness-props"><strong>props:</strong> <code>{&quot;plan&quot;:&quot;free&quot;}</code></div><ol class="witness-actions"><li>toggle: toggle switch &quot;Enable notifications&quot;</li></ol></td>
+      </tr>
+      <tr class="row-default">
+        <td><code class="previewable" data-preview="s2" tabindex="0" role="button" aria-expanded="false">s2</code></td>
+        <td>default-props</td>
+        <td>no</td>
+        <td>shown</td>
+        <td><code>digest=true</code><br/><code>enabled=true</code><br/><code>smsAlerts=false</code></td>
+        <td><div class="witness-props"><strong>props:</strong> <code>{&quot;plan&quot;:&quot;free&quot;}</code></div><ol class="witness-actions"><li>toggle: toggle switch &quot;Enable notifications&quot;</li><li>toggle: toggle checkbox &quot;Weekly digest&quot;</li></ol></td>
+      </tr>
+      <tr class="row-generated">
+        <td><code class="previewable" data-preview="s5" tabindex="0" role="button" aria-expanded="false">s5</code></td>
+        <td>generated-props</td>
+        <td>no</td>
+        <td>shown</td>
+        <td><code>digest=true</code><br/><code>enabled=true</code><br/><code>smsAlerts=true</code></td>
+        <td><div class="witness-props"><strong>props:</strong> <code>{&quot;plan&quot;:&quot;pro&quot;}</code></div><ol class="witness-actions"><li>toggle: toggle checkbox &quot;SMS alerts&quot;</li><li>toggle: toggle switch &quot;Enable notifications&quot;</li><li>toggle: toggle checkbox &quot;SMS alerts&quot;</li><li>toggle: toggle checkbox &quot;Weekly digest&quot;</li><li>toggle: toggle checkbox &quot;SMS alerts&quot;</li></ol></td>
       </tr></tbody>
         </table>
       </div>
@@ -241,7 +284,7 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
   
       
     <h3>DOM-correlation-pruned hooks</h3>
-    <table class="prune-table"><thead><tr><th>hook</th><th>varied w/o DOM change</th><th>ever co-varied</th><th>pruned from identity</th></tr></thead><tbody><tr class=""><td><code>status</code></td><td>0</td><td>yes</td><td>no</td></tr><tr class=""><td><code>items</code></td><td>0</td><td>no</td><td>no</td></tr><tr class="row-pruned"><td><code>attempt</code></td><td>3</td><td>no</td><td>yes</td></tr></tbody></table>
+    <table class="prune-table"><thead><tr><th>hook</th><th>varied w/o DOM change</th><th>ever co-varied</th><th>pruned from identity</th></tr></thead><tbody><tr class=""><td><code>enabled</code></td><td>0</td><td>yes</td><td>no</td></tr><tr class=""><td><code>digest</code></td><td>0</td><td>yes</td><td>no</td></tr><tr class=""><td><code>smsAlerts</code></td><td>0</td><td>no</td><td>no</td></tr></tbody></table>
   
     </section>
   
@@ -250,9 +293,9 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
       <h2>Budget usage</h2>
       <table class="kv-table">
         <tbody>
-          <tr><th>actions used</th><td>45</td></tr>
-          <tr><th>states found</th><td>4</td></tr>
-          <tr><th>elapsed</th><td>97ms</td></tr>
+          <tr><th>actions used</th><td>342</td></tr>
+          <tr><th>states found</th><td>6</td></tr>
+          <tr><th>elapsed</th><td>612ms</td></tr>
           <tr><th>budget exhausted</th><td>no</td></tr>
         </tbody>
       </table>
@@ -266,32 +309,25 @@ code.previewable[aria-expanded="true"] { background: var(--accent); color: var(-
       <h2>Prop analysis</h2>
       <p>8 prop assignments sampled (1 example + 7 generated: one-prop-at-a-time and random).</p>
       <h3>Responsible props</h3>
-      <ul><li><code>fetchItems</code> (isolated): varying only &quot;fetchItems&quot; (to undefined, all other props held at their example values) changed the graph shape</li></ul>
+      <ul><li><code>plan</code> (correlated): two random assignments differing only in &quot;plan&quot; produced different graph shapes (no other prop happened to differ between them)</li></ul>
       <h3>Distinct graph shapes</h3>
       <div class="table-scroll">
         <table>
           <thead><tr><th>shape</th><th>example shape?</th><th>states</th><th>edges</th><th>produced by</th></tr></thead>
           <tbody>
       <tr class="row-default">
-        <td><code>states[attem...</code></td>
+        <td><code>states[diges...</code></td>
         <td>yes</td>
-        <td>2</td>
-        <td>13</td>
-        <td><div><code>example</code> {}</div><div><code>vary-one:fetchItems</code> {}</div><div><code>random</code> {}</div></td>
+        <td>3</td>
+        <td>11</td>
+        <td><div><code>example</code> {&quot;plan&quot;:&quot;free&quot;}</div><div><code>vary-one:plan</code> {&quot;plan&quot;:&quot;free&quot;}</div><div><code>vary-one:plan</code> {&quot;plan&quot;:&quot;free&quot;}</div><div><code>random</code> {&quot;plan&quot;:&quot;free&quot;}</div><div><code>random</code> {&quot;plan&quot;:&quot;free&quot;}</div><div><code>random</code> {&quot;plan&quot;:&quot;free&quot;}</div></td>
       </tr>
       <tr class="row-generated">
-        <td><code>states[attem...</code></td>
+        <td><code>states[diges...</code></td>
         <td>no</td>
-        <td>2</td>
-        <td>1</td>
-        <td><div><code>vary-one:fetchItems</code> {}</div><div><code>random</code> {}</div><div><code>random</code> {}</div></td>
-      </tr>
-      <tr class="row-generated">
-        <td><code>states[attem...</code></td>
-        <td>no</td>
-        <td>2</td>
-        <td>13</td>
-        <td><div><code>random</code> {}</div><div><code>random</code> {}</div></td>
+        <td>6</td>
+        <td>28</td>
+        <td><div><code>random</code> {&quot;plan&quot;:&quot;pro&quot;}</div><div><code>random</code> {&quot;plan&quot;:&quot;pro&quot;}</div></td>
       </tr></tbody>
         </table>
       </div>
@@ -3888,7 +3924,7 @@ cytoscape/dist/cytoscape.esm.mjs:
 globalThis["mermaid"] = globalThis.__esbuild_esm_mermaid_nm["mermaid"].default;
 </script>
 <script>
-const PREVIEWS = {"gen1:s1":{"key":"gen1:s1","html":"\u003cul>\u003cli>One\u003c/li>\u003c/ul>","transient":false},"gen4:s1":{"key":"gen4:s1","html":"\u003cdiv>\u003cp>No items found\u003c/p>\u003cbutton type=\"button\">Retry\u003c/button>\u003c/div>","transient":false},"s0":{"key":"s0","html":"\u003cp role=\"status\">Loading...\u003c/p>","transient":true},"s1":{"key":"s1","html":"\u003cdiv>\u003cp role=\"alert\">Failed to load items\u003c/p>\u003cbutton type=\"button\">Retry\u003c/button>\u003c/div>","transient":false}};
+const PREVIEWS = {"gen5:s1":{"key":"gen5:s1","html":"\u003cdiv class=\"MuiStack-root css-nen11g-MuiStack-root\">\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiSwitch-root MuiSwitch-sizeMedium css-rehya9-MuiSwitch-root\">\u003cspan class=\"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase\">\u003cinput class=\"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root\" role=\"switch\" type=\"checkbox\" value=\"on\"/>\u003cspan class=\"MuiSwitch-thumb css-1mw77bv-MuiSwitch-thumb\">\u003c/span>\u003c/span>\u003cspan class=\"MuiSwitch-track css-pm6g3f-MuiSwitch-track\">\u003c/span>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">Enable notifications\u003c/span>\u003c/label>\u003clabel class=\"MuiFormControlLabel-root Mui-disabled MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-disabled MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root\">\u003cinput class=\"PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root\" data-indeterminate=\"false\" disabled type=\"checkbox\" value=\"on\"/>\u003csvg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root\" data-testid=\"CheckBoxOutlineBlankIcon\" focusable=\"false\" viewBox=\"0 0 24 24\">\u003cpath d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\">\u003c/path>\u003c/svg>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label Mui-disabled css-rizt0-MuiTypography-root\">Weekly digest\u003c/span>\u003c/label>\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root\">\u003cinput checked class=\"PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root\" data-indeterminate=\"false\" type=\"checkbox\" value=\"on\"/>\u003csvg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root\" data-testid=\"CheckBoxIcon\" focusable=\"false\" viewBox=\"0 0 24 24\">\u003cpath d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\">\u003c/path>\u003c/svg>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">SMS alerts\u003c/span>\u003c/label>\u003cbutton class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Reset\u003c/button>\u003c/div>","transient":false},"gen5:s2":{"key":"gen5:s2","html":"\u003cdiv class=\"MuiStack-root css-nen11g-MuiStack-root\">\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiSwitch-root MuiSwitch-sizeMedium css-rehya9-MuiSwitch-root\">\u003cspan class=\"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase\">\u003cinput checked class=\"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root\" role=\"switch\" type=\"checkbox\" value=\"on\"/>\u003cspan class=\"MuiSwitch-thumb css-1mw77bv-MuiSwitch-thumb\">\u003c/span>\u003c/span>\u003cspan class=\"MuiSwitch-track css-pm6g3f-MuiSwitch-track\">\u003c/span>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">Enable notifications\u003c/span>\u003c/label>\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root\">\u003cinput class=\"PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root\" data-indeterminate=\"false\" type=\"checkbox\" value=\"on\"/>\u003csvg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root\" data-testid=\"CheckBoxOutlineBlankIcon\" focusable=\"false\" viewBox=\"0 0 24 24\">\u003cpath d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\">\u003c/path>\u003c/svg>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">Weekly digest\u003c/span>\u003c/label>\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root\">\u003cinput checked class=\"PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root\" data-indeterminate=\"false\" type=\"checkbox\" value=\"on\"/>\u003csvg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root\" data-testid=\"CheckBoxIcon\" focusable=\"false\" viewBox=\"0 0 24 24\">\u003cpath d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\">\u003c/path>\u003c/svg>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">SMS alerts\u003c/span>\u003c/label>\u003cbutton class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Reset\u003c/button>\u003c/div>","transient":false},"s0":{"key":"s0","html":"\u003cdiv class=\"MuiStack-root css-nen11g-MuiStack-root\">\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiSwitch-root MuiSwitch-sizeMedium css-rehya9-MuiSwitch-root\">\u003cspan class=\"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase\">\u003cinput class=\"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root\" role=\"switch\" type=\"checkbox\" value=\"on\"/>\u003cspan class=\"MuiSwitch-thumb css-1mw77bv-MuiSwitch-thumb\">\u003c/span>\u003c/span>\u003cspan class=\"MuiSwitch-track css-pm6g3f-MuiSwitch-track\">\u003c/span>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">Enable notifications\u003c/span>\u003c/label>\u003clabel class=\"MuiFormControlLabel-root Mui-disabled MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-disabled MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root\">\u003cinput class=\"PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root\" data-indeterminate=\"false\" disabled type=\"checkbox\" value=\"on\"/>\u003csvg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root\" data-testid=\"CheckBoxOutlineBlankIcon\" focusable=\"false\" viewBox=\"0 0 24 24\">\u003cpath d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\">\u003c/path>\u003c/svg>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label Mui-disabled css-rizt0-MuiTypography-root\">Weekly digest\u003c/span>\u003c/label>\u003cbutton class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Reset\u003c/button>\u003c/div>","transient":false},"s1":{"key":"s1","html":"\u003cdiv class=\"MuiStack-root css-nen11g-MuiStack-root\">\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiSwitch-root MuiSwitch-sizeMedium css-rehya9-MuiSwitch-root\">\u003cspan class=\"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase\">\u003cinput checked class=\"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root\" role=\"switch\" type=\"checkbox\" value=\"on\"/>\u003cspan class=\"MuiSwitch-thumb css-1mw77bv-MuiSwitch-thumb\">\u003c/span>\u003c/span>\u003cspan class=\"MuiSwitch-track css-pm6g3f-MuiSwitch-track\">\u003c/span>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">Enable notifications\u003c/span>\u003c/label>\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root\">\u003cinput class=\"PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root\" data-indeterminate=\"false\" type=\"checkbox\" value=\"on\"/>\u003csvg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root\" data-testid=\"CheckBoxOutlineBlankIcon\" focusable=\"false\" viewBox=\"0 0 24 24\">\u003cpath d=\"M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z\">\u003c/path>\u003c/svg>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">Weekly digest\u003c/span>\u003c/label>\u003cbutton class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Reset\u003c/button>\u003c/div>","transient":false},"s2":{"key":"s2","html":"\u003cdiv class=\"MuiStack-root css-nen11g-MuiStack-root\">\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiSwitch-root MuiSwitch-sizeMedium css-rehya9-MuiSwitch-root\">\u003cspan class=\"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase\">\u003cinput checked class=\"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root\" role=\"switch\" type=\"checkbox\" value=\"on\"/>\u003cspan class=\"MuiSwitch-thumb css-1mw77bv-MuiSwitch-thumb\">\u003c/span>\u003c/span>\u003cspan class=\"MuiSwitch-track css-pm6g3f-MuiSwitch-track\">\u003c/span>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">Enable notifications\u003c/span>\u003c/label>\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root\">\u003cinput checked class=\"PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root\" data-indeterminate=\"false\" type=\"checkbox\" value=\"on\"/>\u003csvg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root\" data-testid=\"CheckBoxIcon\" focusable=\"false\" viewBox=\"0 0 24 24\">\u003cpath d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\">\u003c/path>\u003c/svg>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">Weekly digest\u003c/span>\u003c/label>\u003cbutton class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Reset\u003c/button>\u003c/div>","transient":false},"s5":{"key":"s5","html":"\u003cdiv class=\"MuiStack-root css-nen11g-MuiStack-root\">\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiSwitch-root MuiSwitch-sizeMedium css-rehya9-MuiSwitch-root\">\u003cspan class=\"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked Mui-checked css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase\">\u003cinput checked class=\"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root\" role=\"switch\" type=\"checkbox\" value=\"on\"/>\u003cspan class=\"MuiSwitch-thumb css-1mw77bv-MuiSwitch-thumb\">\u003c/span>\u003c/span>\u003cspan class=\"MuiSwitch-track css-pm6g3f-MuiSwitch-track\">\u003c/span>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">Enable notifications\u003c/span>\u003c/label>\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root\">\u003cinput checked class=\"PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root\" data-indeterminate=\"false\" type=\"checkbox\" value=\"on\"/>\u003csvg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root\" data-testid=\"CheckBoxIcon\" focusable=\"false\" viewBox=\"0 0 24 24\">\u003cpath d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\">\u003c/path>\u003c/svg>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">Weekly digest\u003c/span>\u003c/label>\u003clabel class=\"MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root\">\u003cspan class=\"MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium Mui-checked MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root\">\u003cinput checked class=\"PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root\" data-indeterminate=\"false\" type=\"checkbox\" value=\"on\"/>\u003csvg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root\" data-testid=\"CheckBoxIcon\" focusable=\"false\" viewBox=\"0 0 24 24\">\u003cpath d=\"M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z\">\u003c/path>\u003c/svg>\u003c/span>\u003cspan class=\"MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root\">SMS alerts\u003c/span>\u003c/label>\u003cbutton class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Reset\u003c/button>\u003c/div>","transient":false}};
 const PREVIEW_CSS = "\n:root { color-scheme: light dark; }\nhtml, body { margin: 0; }\nbody { padding: 8px; background: Canvas; color: CanvasText; font: 13px/1.45 -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif; }\nimg { max-width: 100%; }\n";
 const pane = document.getElementById("preview-pane");
 const title = pane.querySelector(".preview-title");

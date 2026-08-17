@@ -66,7 +66,7 @@ jsdom rather than a real browser and why there's an explicit budget (`src/budget
 
 ```
 npm install
-npm test          # 137 passing, 1 skipped — see "Known constraints" below
+npm test          # 158 passing, 1 skipped — see "Known constraints" below
 npm run typecheck
 npm run explore -- [explore|approve|diff] --component <path> --export <ExportName> [options]
 ```
@@ -109,12 +109,12 @@ with that config passed through an environment variable, then exits with the chi
 exit code. `scripts/explore-runner.test.ts` is where the actual exploration and
 file-writing happen, reusing exactly the jsdom/devtools-hook setup every other test in
 this repo already relies on (`test/setup.ts`). This is honest rather than a workaround:
-`npm run explore` works end to end (verified against all seven benchmark components; see
+`npm run explore` works end to end (verified against all nine benchmark components; see
 `examples/`), it just does so by being a Vitest invocation under the hood.
 
 `scripts/explore-runner.test.ts`'s own test is `it.skipIf`'d to a no-op whenever the
 config environment variable isn't set — which is every ordinary `npm test` run. That is
-the one skipped test in the `129 passed | 1 skipped` total: it is not a failing or slow
+the one skipped test in the `158 passed | 1 skipped` total: it is not a failing or slow
 test being hidden, it is the CLI's driver test correctly doing nothing when nothing
 asked it to run an exploration.
 
@@ -158,6 +158,16 @@ This section is deliberately concrete, not a gesture at limitations.
   by how the input was typed to reach them. See `docs/m5-report-notes.md` for the full
   breakdown and what a fix (collapsing transient async chains into one labelled edge)
   would look like; it wasn't built in this milestone.
+- **Anything rendered through a portal is invisible to action discovery.**
+  `src/explore/actions.ts` queries the container returned by Testing Library's
+  `render()`. React portals — which is how every component library implements menus,
+  dropdowns, dialogs, tooltips and popovers — mount their content into `document.body`,
+  outside that container. `benchmarks/mui-portal-filter/` is the worked example: MUI's
+  Select menu and Dialog are both portalled, so the tool reports 2 of the component's 6
+  states, with no warning that it never opened either surface. Discovery is also
+  tag-based for clicks (`button`, `a[href]`, `[role="button"]`, input buttons), so a
+  `div[role="combobox"]` trigger isn't even clicked. Both are fixable — walk portal
+  roots, match on accessible role rather than tag — and neither is fixed.
 - **Everything under `src/fiber/` is unpinned React internals.** Fiber shape is not a
   public API and is not guaranteed stable across React versions. This repo pins React
   19.1.0 and isolates all fiber traversal behind `src/fiber/`'s adapter module
@@ -166,9 +176,9 @@ This section is deliberately concrete, not a gesture at limitations.
 - **No browser-based exploration, no layout/visual/CSS state.** jsdom has no layout
   engine; anything expressed only in computed style or actual rendered position is
   invisible to this tool, by design (see docs/poc-plan.md's non-goals).
-- **State previews arrive unstyled unless you supply a stylesheet.** Hovering a state
-  in the report shows the markup that state actually rendered, captured during
-  exploration. jsdom never loads your application's CSS, so what you get is structure,
+- **State previews arrive unstyled unless you supply a stylesheet.** Clicking a state
+  in the report opens a side pane showing the markup that state actually rendered,
+  captured during exploration. jsdom never loads your application's CSS, so what you get is structure,
   text, and form values: class names are all there, the rules behind them are not.
   Point `--preview-css` (or the config module's `previewStylesheet`) at plain CSS or a
   compiled Tailwind build to get styling back. CSS-in-JS that injects rules at runtime
@@ -184,7 +194,7 @@ tell you which.
 
 ## Generated example reports
 
-`examples/` holds real generated JSON + HTML for all seven benchmark components (not
+`examples/` holds real generated JSON + HTML for all nine benchmark components (not
 hand-written; regenerate with the `npm run explore` invocations recorded in
 `examples/configs/*.config.ts`, one config per component). Open the `.html` files
 directly in a browser — they are single self-contained files, no server needed:
@@ -205,6 +215,19 @@ directly in a browser — they are single self-contained files, no server needed
   the corpus's genuine presentation failure case (`docs/m5-report-notes.md`); as of M6 the
   diagram collapses the 12 transient states into labelled edges, down to 6 diagram nodes.
   See `docs/m6-baseline-report.md`.
+- `examples/MuiNotificationSettings.html` — the same prop-gating shape as PropGated, built
+  from Material UI's Switch, Checkbox and Button. 6 merged states, `plan` correctly
+  identified as the responsible prop, and the disabled-while-off digest checkbox reported
+  as an unavailable action rather than silently dropped. Nothing about MUI needed special
+  handling here: Switch and Checkbox render real `input[type=checkbox]` elements inside
+  their labels, so discovery finds them by accessible role and name like anything else.
+- `examples/MuiPortalFilter.html` — the corpus's negative case, also MUI. Its Select menu
+  and its confirm Dialog both render through React portals into `document.body`, and
+  action discovery only walks the RTL container, so the report shows 2 states where the
+  component has 6 and never drives the filter at all. Read it alongside
+  `benchmarks/mui-portal-filter/MuiPortalFilter.expected.ts`, which spells out the full
+  machine and what would have to change to reach it. Worth looking at before pointing
+  this tool at anything built on a portal-heavy component library.
 
 `docs/m5-report-notes.md` has the full per-component judgement on report usefulness —
 what's reviewable, what isn't, and specifically why (pre-M6 collapse; `docs/m6-baseline

@@ -1,5 +1,5 @@
 /**
- * M3 exit criterion: run exploreComponent against all seven benchmark
+ * M3 exit criterion: run exploreComponent against all benchmark
  * components under their default/example props and compare the discovered
  * graph against each component's hand-written .expected.ts machine.
  *
@@ -24,6 +24,8 @@ import { Wizard } from "../../benchmarks/wizard/Wizard.js";
 import { ValidatedForm } from "../../benchmarks/validated-form/ValidatedForm.js";
 import { FetchList, type Item } from "../../benchmarks/fetch-list/FetchList.js";
 import { DebouncedSearch, type SearchResult } from "../../benchmarks/debounced-search/DebouncedSearch.js";
+import { MuiNotificationSettings } from "../../benchmarks/mui-notification-settings/MuiNotificationSettings.js";
+import { MuiPortalFilter } from "../../benchmarks/mui-portal-filter/MuiPortalFilter.js";
 
 import { expected as toggleExpected } from "../../benchmarks/toggle/Toggle.expected.js";
 import { expected as counterExpected } from "../../benchmarks/counter/Counter.expected.js";
@@ -32,6 +34,8 @@ import { expected as wizardExpected } from "../../benchmarks/wizard/Wizard.expec
 import { expected as validatedFormExpected } from "../../benchmarks/validated-form/ValidatedForm.expected.js";
 import { expected as fetchListExpected } from "../../benchmarks/fetch-list/FetchList.expected.js";
 import { expected as debouncedSearchExpected } from "../../benchmarks/debounced-search/DebouncedSearch.expected.js";
+import { expected as muiSettingsExpected } from "../../benchmarks/mui-notification-settings/MuiNotificationSettings.expected.js";
+import { expected as muiPortalExpected } from "../../benchmarks/mui-portal-filter/MuiPortalFilter.expected.js";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(here, "../..");
@@ -289,5 +293,56 @@ describe("corpus: DebouncedSearch", () => {
     }
 
     expect(result.findings.replayDivergences.length).toBe(0);
+  });
+});
+
+describe("corpus: MuiNotificationSettings", () => {
+  it("plan=free matches the expected 3 reachable states exactly, with the disabled digest checkbox reported rather than dropped", async () => {
+    const result = await exploreComponent({
+      componentName: "MuiNotificationSettings",
+      render: (props) => <MuiNotificationSettings {...(props as any)} />,
+      props: { plan: "free" },
+      sourcePath: bench("mui-notification-settings/MuiNotificationSettings.tsx"),
+    });
+    const freeExpected = muiSettingsExpected.states.filter((s) => s.id.startsWith("free_"));
+    expect(result.graph.states.length).toBe(freeExpected.length);
+    expect(result.findings.replayDivergences.length).toBe(0);
+    expect(
+      result.unavailableActions.some((u) => u.action.label.includes("Weekly digest") && u.reason === "disabled"),
+    ).toBe(true);
+  });
+
+  it("plan=pro reaches all 6 states -- the SMS checkbox is only rendered here, and its hook survives the DOM-correlation pruner because domFingerprint reads input.checked as a property", async () => {
+    const result = await exploreComponent({
+      componentName: "MuiNotificationSettings",
+      render: (props) => <MuiNotificationSettings {...(props as any)} />,
+      props: { plan: "pro" },
+      sourcePath: bench("mui-notification-settings/MuiNotificationSettings.tsx"),
+    });
+    const proExpected = muiSettingsExpected.states.filter((s) => s.id.startsWith("pro_"));
+    expect(result.graph.states.length).toBe(proExpected.length);
+    expect(result.graph.states.some((s) => s.fields.smsAlerts === true)).toBe(true);
+    expect(result.graph.states.some((s) => s.fields.digest === true)).toBe(true);
+    expect(result.findings.replayDivergences.length).toBe(0);
+  });
+});
+
+describe("corpus: MuiPortalFilter", () => {
+  it("finds only the 2 dialog-open/closed states of the hand-written 6: MUI's Select menu and Dialog render into portals outside the RTL container, so discoverActions never sees them", async () => {
+    const result = await exploreComponent({
+      componentName: "MuiPortalFilter",
+      render: (props) => <MuiPortalFilter {...(props as any)} />,
+      props: { confirmClear: true },
+      sourcePath: bench("mui-portal-filter/MuiPortalFilter.tsx"),
+    });
+    expect(result.graph.states.length).toBe(2);
+    expect(result.graph.states.length).toBeLessThan(muiPortalExpected.states.length);
+    // status never moves: the Select trigger is a div[role=combobox], which
+    // the clickable query in actions.ts does not match, so no action can
+    // open the menu in the first place.
+    expect(new Set(result.graph.states.map((s) => s.fields.status))).toEqual(new Set(["all"]));
+    // What it did find is not wrong, just incomplete.
+    expect(result.findings.replayDivergences.length).toBe(0);
+    expect(result.budget.exhausted).toBe(false);
   });
 });

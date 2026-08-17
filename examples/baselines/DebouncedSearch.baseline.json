@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "component": "DebouncedSearch",
-  "generatedAt": "2026-08-16T00:22:13.487Z",
+  "generatedAt": "2026-08-17T07:31:31.367Z",
   "abstractionConfig": {
     "literalDomainLimit": 8,
     "domCorrelationEnabled": true,

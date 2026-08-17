@@ -5,7 +5,9 @@
  *
  * Normalisation keeps element tag names, trimmed text content, and a fixed
  * set of semantically relevant attributes (disabled, value, checked, role,
- * and all aria-* attributes), and drops everything else — inline styles,
+ * and all aria-* attributes) — with value/checked read from the live DOM
+ * property on form controls, since that is where a controlled input's
+ * current state actually lives — and drops everything else — inline styles,
  * class names, data-* attributes, React-internal markers — because those
  * are either volatile in ways unrelated to component state or not
  * meaningful to a user/assistive-technology observer, which is the
@@ -16,6 +18,18 @@ const SEMANTIC_ATTRS = new Set(["disabled", "value", "checked", "role"]);
 
 function isSemanticAttr(name: string): boolean {
   return SEMANTIC_ATTRS.has(name) || name.startsWith("aria-");
+}
+
+function liveControlState(el: Element): Record<string, string> {
+  const tag = el.tagName.toLowerCase();
+  if (tag === "input") {
+    const input = el as HTMLInputElement;
+    if (input.type === "checkbox" || input.type === "radio") return { checked: String(input.checked) };
+    return { value: input.value };
+  }
+  if (tag === "textarea") return { value: (el as HTMLTextAreaElement).value };
+  if (tag === "select") return { value: (el as HTMLSelectElement).value };
+  return {};
 }
 
 function walk(node: Node): string {
@@ -29,6 +43,23 @@ function walk(node: Node): string {
   const attrs: string[] = [];
   for (const attr of Array.from(el.attributes)) {
     if (isSemanticAttr(attr.name)) attrs.push(`${attr.name}=${attr.value}`);
+  }
+  // Form controls carry their current state in DOM *properties*, not
+  // attributes: React (and anything else driving a controlled input) sets
+  // `input.checked` / `input.value`, while the `checked` and `value`
+  // attributes keep holding the initial values. Reading the attributes
+  // alone makes a ticked checkbox indistinguishable from an unticked one,
+  // which in turn makes the DOM-correlation pruner delete the hook behind
+  // it as "state that never affects what is rendered". Overriding with the
+  // live property values fixes that; it showed up first against MUI's
+  // Checkbox/Switch, whose ticked/unticked difference is otherwise carried
+  // only by class names and an SVG path.
+  const live = liveControlState(el);
+  for (const [name, value] of Object.entries(live)) {
+    const idx = attrs.findIndex((a) => a.startsWith(`${name}=`));
+    const entry = `${name}=${value}`;
+    if (idx === -1) attrs.push(entry);
+    else attrs[idx] = entry;
   }
   attrs.sort();
 

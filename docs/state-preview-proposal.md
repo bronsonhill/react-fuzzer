@@ -1,9 +1,15 @@
 # Proposal: previewing a state's rendered output in the report
 
 Status: Option 1 is built (`src/abstraction/domSnapshot.ts` captures the markup,
-`StateNode.html` carries it, `src/report/html.ts` renders the hover card). Options 2
+`StateNode.html` carries it, `src/report/html.ts` renders it). Options 2
 and 3 are not, and the reasoning against them below still stands. Kept as written,
 with a postscript at the end on what the build turned up.
+
+One thing did change after first use: the preview shipped as a hover card and was
+poor to read — it covered the row you came from, it was too small for anything but a
+two-element component, and moving the mouse toward it dismissed it. It is now a
+click-to-open pane pinned to the right edge, full viewport height, closed with a second
+click, the close button, or Escape. Read "hover card" below as "side pane" throughout.
 
 ## The ask
 

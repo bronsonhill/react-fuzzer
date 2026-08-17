@@ -1,0 +1,2043 @@
+{
+  "schemaVersion": 1,
+  "kind": "multi-assignment",
+  "merged": {
+    "component": "MuiPortalFilter",
+    "graph": {
+      "states": [
+        {
+          "id": "s0",
+          "key": "s0",
+          "fields": {
+            "status": "all",
+            "confirming": false
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "confirmClear": true
+            },
+            "actions": []
+          },
+          "domFingerprint": "div[]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+          "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r1»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+          "transient": false
+        },
+        {
+          "id": "s1",
+          "key": "s1",
+          "fields": {
+            "status": "all",
+            "confirming": true
+          },
+          "provenance": "default-props",
+          "witness": {
+            "props": {
+              "confirmClear": true
+            },
+            "actions": [
+              {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            ]
+          },
+          "domFingerprint": "div[aria-hidden=true]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+          "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r5»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+          "transient": false
+        }
+      ],
+      "edges": [
+        {
+          "from": "s0",
+          "to": "s0",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Clear all\"",
+            "kind": "click",
+            "label": "click button \"Clear all\""
+          }
+        },
+        {
+          "from": "s0",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Clear all\"",
+            "kind": "click",
+            "label": "click button \"Clear all\""
+          }
+        },
+        {
+          "from": "s0",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Clear all\"",
+            "kind": "click",
+            "label": "click button \"Clear all\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "default-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Clear all\"",
+            "kind": "click",
+            "label": "click button \"Clear all\""
+          }
+        },
+        {
+          "from": "s1",
+          "to": "s1",
+          "kind": "user",
+          "provenance": "generated-props",
+          "stable": true,
+          "action": {
+            "id": "click:button:\"Clear all\"",
+            "kind": "click",
+            "label": "click button \"Clear all\""
+          }
+        }
+      ]
+    },
+    "unavailableActions": [
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s0",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\"",
+          "kind": "fill",
+          "label": "fill \"\" with \"\"",
+          "value": ""
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\":1",
+          "kind": "fill",
+          "label": "fill \"\" with \"sample text\"",
+          "value": "sample text"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      },
+      {
+        "state": "s1",
+        "action": {
+          "id": "fill:textbox:\"\":2",
+          "kind": "fill",
+          "label": "fill \"\" with \"not-an-email@\"",
+          "value": "not-an-email@"
+        },
+        "reason": "hidden"
+      }
+    ],
+    "findings": {
+      "unstable": [],
+      "nonDeterministic": [],
+      "replayDivergences": []
+    },
+    "budget": {
+      "actionsUsed": 36,
+      "statesFound": 2,
+      "exhausted": false
+    },
+    "unexploredFrontier": [],
+    "rekeyMerges": [],
+    "domPruneReport": [
+      {
+        "hookName": "confirming",
+        "variedNoDomCount": 0,
+        "everCoVaried": true,
+        "pruned": false
+      },
+      {
+        "hookName": "status",
+        "variedNoDomCount": 0,
+        "everCoVaried": false,
+        "pruned": false
+      }
+    ],
+    "demotedHooks": [],
+    "prunedHooks": []
+  },
+  "runs": [
+    {
+      "assignment": {
+        "source": "example",
+        "props": {
+          "confirmClear": true
+        }
+      },
+      "shapeHash": "states[confirming=false|status=\"all\",confirming=true|status=\"all\"]|edges[confirming=false|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\",confirming=true|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\"]",
+      "result": {
+        "component": "MuiPortalFilter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "status": "all",
+                "confirming": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "confirmClear": true
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r1»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "status": "all",
+                "confirming": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "confirmClear": true
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Clear all\"",
+                    "kind": "click",
+                    "label": "click button \"Clear all\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[aria-hidden=true]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r5»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "confirming",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "status",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "confirmClear": false
+        }
+      },
+      "shapeHash": "states[confirming=false|status=\"all\"]|edges[confirming=false|status=\"all\"::confirming=false|status=\"all\"::user::click:button:\"Clear all\"]",
+      "result": {
+        "component": "MuiPortalFilter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "status": "all",
+                "confirming": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "confirmClear": false
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r25»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 2,
+          "statesFound": 1,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "confirming",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "status",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "confirmClear": false
+        }
+      },
+      "shapeHash": "states[confirming=false|status=\"all\"]|edges[confirming=false|status=\"all\"::confirming=false|status=\"all\"::user::click:button:\"Clear all\"]",
+      "result": {
+        "component": "MuiPortalFilter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "status": "all",
+                "confirming": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "confirmClear": false
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r3d»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 2,
+          "statesFound": 1,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "confirming",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "status",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "confirmClear": true
+        }
+      },
+      "shapeHash": "states[confirming=false|status=\"all\",confirming=true|status=\"all\"]|edges[confirming=false|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\",confirming=true|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\"]",
+      "result": {
+        "component": "MuiPortalFilter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "status": "all",
+                "confirming": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "confirmClear": true
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r3p»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "status": "all",
+                "confirming": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "confirmClear": true
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Clear all\"",
+                    "kind": "click",
+                    "label": "click button \"Clear all\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[aria-hidden=true]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r3t»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "confirming",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "status",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {
+          "confirmClear": true
+        }
+      },
+      "shapeHash": "states[confirming=false|status=\"all\",confirming=true|status=\"all\"]|edges[confirming=false|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\",confirming=true|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\"]",
+      "result": {
+        "component": "MuiPortalFilter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "status": "all",
+                "confirming": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "confirmClear": true
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r4l»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "status": "all",
+                "confirming": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "confirmClear": true
+                },
+                "actions": [
+                  {
+                    "id": "click:button:\"Clear all\"",
+                    "kind": "click",
+                    "label": "click button \"Clear all\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[aria-hidden=true]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r4p»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "confirming",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "status",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "random",
+        "props": {}
+      },
+      "shapeHash": "states[confirming=false|status=\"all\",confirming=true|status=\"all\"]|edges[confirming=false|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\",confirming=true|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\"]",
+      "result": {
+        "component": "MuiPortalFilter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "status": "all",
+                "confirming": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r2h»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "status": "all",
+                "confirming": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "click:button:\"Clear all\"",
+                    "kind": "click",
+                    "label": "click button \"Clear all\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[aria-hidden=true]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r2l»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "confirming",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "status",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "confirmClear",
+        "props": {
+          "confirmClear": false
+        }
+      },
+      "shapeHash": "states[confirming=false|status=\"all\"]|edges[confirming=false|status=\"all\"::confirming=false|status=\"all\"::user::click:button:\"Clear all\"]",
+      "result": {
+        "component": "MuiPortalFilter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "status": "all",
+                "confirming": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {
+                  "confirmClear": false
+                },
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«rt»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s0",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 2,
+          "statesFound": 1,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "confirming",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          },
+          {
+            "hookName": "status",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    },
+    {
+      "assignment": {
+        "source": "vary-one",
+        "variedProp": "confirmClear",
+        "props": {}
+      },
+      "shapeHash": "states[confirming=false|status=\"all\",confirming=true|status=\"all\"]|edges[confirming=false|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\",confirming=true|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\"]",
+      "result": {
+        "component": "MuiPortalFilter",
+        "graph": {
+          "states": [
+            {
+              "id": "s0",
+              "key": "s0",
+              "fields": {
+                "status": "all",
+                "confirming": false
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": []
+              },
+              "domFingerprint": "div[]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r19»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            },
+            {
+              "id": "s1",
+              "key": "s1",
+              "fields": {
+                "status": "all",
+                "confirming": true
+              },
+              "provenance": "default-props",
+              "witness": {
+                "props": {},
+                "actions": [
+                  {
+                    "id": "click:button:\"Clear all\"",
+                    "kind": "click",
+                    "label": "click button \"Clear all\""
+                  }
+                ]
+              },
+              "domFingerprint": "div[aria-hidden=true]{div[]{label[]{#(Status)},div[]{div[aria-expanded=false;aria-haspopup=listbox;aria-labelledby=status-label;role=combobox]{#(All)},input[aria-hidden=true;aria-invalid=false;value=all]{},svg[aria-hidden=true]{path[]{}},fieldset[aria-hidden=true]{legend[]{span[aria-hidden=true]{#(​)}}}},p[]{#(Showing:),#(all)},button[]{#(Clear all)}}}",
+              "html": "<div><label class=\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated css-1tkmop-MuiFormLabel-root-MuiInputLabel-root\" id=\"status-label\">Status</label><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiSelect-root css-sc8y68-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root\"><div aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"status-label\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-jbz0k-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input\" role=\"combobox\" tabindex=\"0\">All</div><input aria-hidden=\"true\" aria-invalid=\"false\" class=\"MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput\" id=\"«r1d»\" tabindex=\"-1\" value=\"all\"/><svg aria-hidden=\"true\" class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon\" data-testid=\"ArrowDropDownIcon\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"></path></svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline\"><legend class=\"css-1nf2c5d-MuiNotchedOutlined-root\"><span aria-hidden=\"true\" class=\"notranslate\">​</span></legend></fieldset></div><p class=\"MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root\">Showing: all</p><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1uent87-MuiButtonBase-root-MuiButton-root\" tabindex=\"0\" type=\"button\">Clear all</button></div>",
+              "transient": false
+            }
+          ],
+          "edges": [
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s0",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            },
+            {
+              "from": "s1",
+              "to": "s1",
+              "kind": "user",
+              "provenance": "default-props",
+              "stable": true,
+              "action": {
+                "id": "click:button:\"Clear all\"",
+                "kind": "click",
+                "label": "click button \"Clear all\""
+              }
+            }
+          ]
+        },
+        "unavailableActions": [
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s0",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\"",
+              "kind": "fill",
+              "label": "fill \"\" with \"\"",
+              "value": ""
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\":1",
+              "kind": "fill",
+              "label": "fill \"\" with \"sample text\"",
+              "value": "sample text"
+            },
+            "reason": "hidden"
+          },
+          {
+            "state": "s1",
+            "action": {
+              "id": "fill:textbox:\"\":2",
+              "kind": "fill",
+              "label": "fill \"\" with \"not-an-email@\"",
+              "value": "not-an-email@"
+            },
+            "reason": "hidden"
+          }
+        ],
+        "findings": {
+          "unstable": [],
+          "nonDeterministic": [],
+          "replayDivergences": []
+        },
+        "budget": {
+          "actionsUsed": 6,
+          "statesFound": 2,
+          "exhausted": false
+        },
+        "unexploredFrontier": [],
+        "rekeyMerges": [],
+        "domPruneReport": [
+          {
+            "hookName": "confirming",
+            "variedNoDomCount": 0,
+            "everCoVaried": true,
+            "pruned": false
+          },
+          {
+            "hookName": "status",
+            "variedNoDomCount": 0,
+            "everCoVaried": false,
+            "pruned": false
+          }
+        ],
+        "demotedHooks": [],
+        "prunedHooks": []
+      }
+    }
+  ],
+  "distinctShapes": [
+    {
+      "shapeHash": "states[confirming=false|status=\"all\",confirming=true|status=\"all\"]|edges[confirming=false|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\",confirming=true|status=\"all\"::confirming=true|status=\"all\"::user::click:button:\"Clear all\"]",
+      "assignments": [
+        {
+          "source": "example",
+          "props": {
+            "confirmClear": true
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "confirmClear": true
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "confirmClear": true
+          }
+        },
+        {
+          "source": "random",
+          "props": {}
+        },
+        {
+          "source": "vary-one",
+          "variedProp": "confirmClear",
+          "props": {}
+        }
+      ],
+      "stateCount": 2,
+      "edgeCount": 4,
+      "isExampleShape": true
+    },
+    {
+      "shapeHash": "states[confirming=false|status=\"all\"]|edges[confirming=false|status=\"all\"::confirming=false|status=\"all\"::user::click:button:\"Clear all\"]",
+      "assignments": [
+        {
+          "source": "random",
+          "props": {
+            "confirmClear": false
+          }
+        },
+        {
+          "source": "random",
+          "props": {
+            "confirmClear": false
+          }
+        },
+        {
+          "source": "vary-one",
+          "variedProp": "confirmClear",
+          "props": {
+            "confirmClear": false
+          }
+        }
+      ],
+      "stateCount": 1,
+      "edgeCount": 2,
+      "isExampleShape": false
+    }
+  ],
+  "responsibleProps": [
+    {
+      "prop": "confirmClear",
+      "confidence": "isolated",
+      "evidence": "varying only \"confirmClear\" (to false, all other props held at their example values) changed the graph shape"
+    }
+  ],
+  "budget": {
+    "perAssignment": [
+      {
+        "assignment": {
+          "source": "example",
+          "props": {
+            "confirmClear": true
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "confirmClear": false
+          }
+        },
+        "actionsUsed": 2,
+        "statesFound": 1,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "confirmClear": false
+          }
+        },
+        "actionsUsed": 2,
+        "statesFound": 1,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "confirmClear": true
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {
+            "confirmClear": true
+          }
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "random",
+          "props": {}
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "confirmClear",
+          "props": {
+            "confirmClear": false
+          }
+        },
+        "actionsUsed": 2,
+        "statesFound": 1,
+        "exhausted": false
+      },
+      {
+        "assignment": {
+          "source": "vary-one",
+          "variedProp": "confirmClear",
+          "props": {}
+        },
+        "actionsUsed": 6,
+        "statesFound": 2,
+        "exhausted": false
+      }
+    ],
+    "aggregate": {
+      "actionsUsed": 36,
+      "statesFound": 2,
+      "anyExhausted": false
+    }
+  }
+}

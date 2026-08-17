@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "component": "MuiPortalFilter",
+  "generatedAt": "2026-08-17T07:29:29.969Z",
+  "abstractionConfig": {
+    "literalDomainLimit": 8,
+    "domCorrelationEnabled": true,
+    "domCorrelationMinObservations": 3,
+    "ignoreHooks": [],
+    "demotedHooks": [],
+    "prunedHooks": []
+  },
+  "states": [
+    {
+      "key": "confirming=false|status=\"lit:all\"",
+      "name": "confirming=false_status=_all",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "status": "all",
+        "confirming": false
+      }
+    },
+    {
+      "key": "confirming=true|status=\"lit:all\"",
+      "name": "confirming=true_status=_all",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "status": "all",
+        "confirming": true
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": "confirming=false|status=\"lit:all\"",
+      "to": "confirming=false|status=\"lit:all\"",
+      "kind": "user",
+      "actionId": "click:button:\"Clear all\"",
+      "actionLabel": "click button \"Clear all\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "confirming=false|status=\"lit:all\"",
+      "to": "confirming=true|status=\"lit:all\"",
+      "kind": "user",
+      "actionId": "click:button:\"Clear all\"",
+      "actionLabel": "click button \"Clear all\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "confirming=false|status=\"lit:all\"",
+      "to": "confirming=true|status=\"lit:all\"",
+      "kind": "user",
+      "actionId": "click:button:\"Clear all\"",
+      "actionLabel": "click button \"Clear all\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "confirming=true|status=\"lit:all\"",
+      "to": "confirming=true|status=\"lit:all\"",
+      "kind": "user",
+      "actionId": "click:button:\"Clear all\"",
+      "actionLabel": "click button \"Clear all\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "confirming=true|status=\"lit:all\"",
+      "to": "confirming=true|status=\"lit:all\"",
+      "kind": "user",
+      "actionId": "click:button:\"Clear all\"",
+      "actionLabel": "click button \"Clear all\"",
+      "provenance": "generated-props",
+      "stable": true
+    }
+  ]
+}

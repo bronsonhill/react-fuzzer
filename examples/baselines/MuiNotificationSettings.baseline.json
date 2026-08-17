@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "component": "MuiNotificationSettings",
+  "generatedAt": "2026-08-17T07:29:26.283Z",
+  "abstractionConfig": {
+    "literalDomainLimit": 8,
+    "domCorrelationEnabled": true,
+    "domCorrelationMinObservations": 3,
+    "ignoreHooks": [],
+    "demotedHooks": [],
+    "prunedHooks": []
+  },
+  "states": [
+    {
+      "key": "digest=false|enabled=false|smsAlerts=false",
+      "name": "digest=false_enabled=false_smsAlerts=false",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "enabled": false,
+        "digest": false,
+        "smsAlerts": false
+      }
+    },
+    {
+      "key": "digest=false|enabled=false|smsAlerts=true",
+      "name": "digest=false_enabled=false_smsAlerts=true",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "enabled": false,
+        "digest": false,
+        "smsAlerts": true
+      }
+    },
+    {
+      "key": "digest=false|enabled=true|smsAlerts=false",
+      "name": "digest=false_enabled=true_smsAlerts=false",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "enabled": true,
+        "digest": false,
+        "smsAlerts": false
+      }
+    },
+    {
+      "key": "digest=false|enabled=true|smsAlerts=true",
+      "name": "digest=false_enabled=true_smsAlerts=true",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "enabled": true,
+        "digest": false,
+        "smsAlerts": true
+      }
+    },
+    {
+      "key": "digest=true|enabled=true|smsAlerts=false",
+      "name": "digest=true_enabled=true_smsAlerts=false",
+      "provenance": "default-props",
+      "transient": false,
+      "fields": {
+        "enabled": true,
+        "digest": true,
+        "smsAlerts": false
+      }
+    },
+    {
+      "key": "digest=true|enabled=true|smsAlerts=true",
+      "name": "digest=true_enabled=true_smsAlerts=true",
+      "provenance": "generated-props",
+      "transient": false,
+      "fields": {
+        "enabled": true,
+        "digest": true,
+        "smsAlerts": true
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "from": "digest=false|enabled=false|smsAlerts=false",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "click:button:\"Reset\"",
+      "actionLabel": "click button \"Reset\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=false|smsAlerts=false",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "click:button:\"Reset\"",
+      "actionLabel": "click button \"Reset\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=false|smsAlerts=false",
+      "to": "digest=false|enabled=false|smsAlerts=true",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"SMS alerts\"",
+      "actionLabel": "toggle checkbox \"SMS alerts\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=false|smsAlerts=false",
+      "to": "digest=false|enabled=true|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:switch:\"Enable notifications\"",
+      "actionLabel": "toggle switch \"Enable notifications\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=false|smsAlerts=false",
+      "to": "digest=false|enabled=true|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:switch:\"Enable notifications\"",
+      "actionLabel": "toggle switch \"Enable notifications\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=false|smsAlerts=true",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "click:button:\"Reset\"",
+      "actionLabel": "click button \"Reset\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=false|smsAlerts=true",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"SMS alerts\"",
+      "actionLabel": "toggle checkbox \"SMS alerts\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=false|smsAlerts=true",
+      "to": "digest=false|enabled=true|smsAlerts=true",
+      "kind": "user",
+      "actionId": "toggle:switch:\"Enable notifications\"",
+      "actionLabel": "toggle switch \"Enable notifications\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=true|smsAlerts=false",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "click:button:\"Reset\"",
+      "actionLabel": "click button \"Reset\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=true|smsAlerts=false",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "click:button:\"Reset\"",
+      "actionLabel": "click button \"Reset\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=true|smsAlerts=false",
+      "to": "digest=false|enabled=true|smsAlerts=true",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"SMS alerts\"",
+      "actionLabel": "toggle checkbox \"SMS alerts\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=true|smsAlerts=false",
+      "to": "digest=true|enabled=true|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"Weekly digest\"",
+      "actionLabel": "toggle checkbox \"Weekly digest\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=true|smsAlerts=false",
+      "to": "digest=true|enabled=true|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"Weekly digest\"",
+      "actionLabel": "toggle checkbox \"Weekly digest\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=true|smsAlerts=false",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:switch:\"Enable notifications\"",
+      "actionLabel": "toggle switch \"Enable notifications\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=true|smsAlerts=false",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:switch:\"Enable notifications\"",
+      "actionLabel": "toggle switch \"Enable notifications\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=true|smsAlerts=true",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "click:button:\"Reset\"",
+      "actionLabel": "click button \"Reset\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=true|smsAlerts=true",
+      "to": "digest=false|enabled=true|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"SMS alerts\"",
+      "actionLabel": "toggle checkbox \"SMS alerts\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=true|smsAlerts=true",
+      "to": "digest=true|enabled=true|smsAlerts=true",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"Weekly digest\"",
+      "actionLabel": "toggle checkbox \"Weekly digest\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=false|enabled=true|smsAlerts=true",
+      "to": "digest=false|enabled=false|smsAlerts=true",
+      "kind": "user",
+      "actionId": "toggle:switch:\"Enable notifications\"",
+      "actionLabel": "toggle switch \"Enable notifications\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=true|enabled=true|smsAlerts=false",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "click:button:\"Reset\"",
+      "actionLabel": "click button \"Reset\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "digest=true|enabled=true|smsAlerts=false",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "click:button:\"Reset\"",
+      "actionLabel": "click button \"Reset\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=true|enabled=true|smsAlerts=false",
+      "to": "digest=true|enabled=true|smsAlerts=true",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"SMS alerts\"",
+      "actionLabel": "toggle checkbox \"SMS alerts\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=true|enabled=true|smsAlerts=false",
+      "to": "digest=false|enabled=true|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"Weekly digest\"",
+      "actionLabel": "toggle checkbox \"Weekly digest\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "digest=true|enabled=true|smsAlerts=false",
+      "to": "digest=false|enabled=true|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"Weekly digest\"",
+      "actionLabel": "toggle checkbox \"Weekly digest\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=true|enabled=true|smsAlerts=false",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:switch:\"Enable notifications\"",
+      "actionLabel": "toggle switch \"Enable notifications\"",
+      "provenance": "default-props",
+      "stable": true
+    },
+    {
+      "from": "digest=true|enabled=true|smsAlerts=false",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:switch:\"Enable notifications\"",
+      "actionLabel": "toggle switch \"Enable notifications\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=true|enabled=true|smsAlerts=true",
+      "to": "digest=false|enabled=false|smsAlerts=false",
+      "kind": "user",
+      "actionId": "click:button:\"Reset\"",
+      "actionLabel": "click button \"Reset\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=true|enabled=true|smsAlerts=true",
+      "to": "digest=true|enabled=true|smsAlerts=false",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"SMS alerts\"",
+      "actionLabel": "toggle checkbox \"SMS alerts\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=true|enabled=true|smsAlerts=true",
+      "to": "digest=false|enabled=true|smsAlerts=true",
+      "kind": "user",
+      "actionId": "toggle:checkbox:\"Weekly digest\"",
+      "actionLabel": "toggle checkbox \"Weekly digest\"",
+      "provenance": "generated-props",
+      "stable": true
+    },
+    {
+      "from": "digest=true|enabled=true|smsAlerts=true",
+      "to": "digest=false|enabled=false|smsAlerts=true",
+      "kind": "user",
+      "actionId": "toggle:switch:\"Enable notifications\"",
+      "actionLabel": "toggle switch \"Enable notifications\"",
+      "provenance": "generated-props",
+      "stable": true
+    }
+  ]
+}
